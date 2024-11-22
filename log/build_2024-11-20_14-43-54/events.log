@@ -1,0 +1,87 @@
+[0.000000] (-) TimerEvent: {}
+[0.000380] (my_first_pkg) JobQueued: {'identifier': 'my_first_pkg', 'dependencies': OrderedDict()}
+[0.000670] (my_first_pkg) JobStarted: {'identifier': 'my_first_pkg'}
+[0.009615] (my_first_pkg) JobProgress: {'identifier': 'my_first_pkg', 'progress': 'cmake'}
+[0.010524] (my_first_pkg) JobProgress: {'identifier': 'my_first_pkg', 'progress': 'build'}
+[0.011338] (my_first_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/test_workspace/build/my_first_pkg', '--', '-j4', '-l4'], 'cwd': '/home/pi/test_workspace/build/my_first_pkg', 'env': OrderedDict({'USER': 'pi', 'SSH_CLIENT': '192.168.1.80 54952 22', 'STARSHIP_SHELL': 'fish', 'XDG_SESSION_TYPE': 'tty', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'SHLVL': '1', 'HOME': '/home/pi', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'OPENAI_API_KEY': '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', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'COLCON_PREFIX_PATH': '/home/pi/test_workspace/install', 'LOGNAME': 'pi', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'TERM': 'screen-256color', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/bin:/Users/pi/.local/bin:/Users/pi/.local/share/nvim/mason/bin:usr/bin:/Users/Axel/.fzf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/home/pi/test_workspace/install/my_first_pkg:/opt/ros/jazzy', 'SHELL': '/usr/bin/fish', 'WIFI_SSID': 'MEO-BD8310', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/pi/test_workspace/build/my_first_pkg', 'SSH_CONNECTION': '192.168.1.80 54952 192.168.1.82 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'STARSHIP_SESSION_KEY': '2025848661253823', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/pi/test_workspace/install/my_first_pkg:/opt/ros/jazzy', 'EDITOR': 'nvim', 'WIFI_PASSWORD': '9f24731014', 'WARP_THEMES_DIR': '/home/pi/.warp/themes'}), 'shell': False}
+[0.100070] (-) TimerEvent: {}
+[0.102938] (my_first_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/simple.dir/src/main.cpp.o\x1b[0m\n'}
+[0.200201] (-) TimerEvent: {}
+[0.300611] (-) TimerEvent: {}
+[0.400890] (-) TimerEvent: {}
+[0.501133] (-) TimerEvent: {}
+[0.601407] (-) TimerEvent: {}
+[0.701656] (-) TimerEvent: {}
+[0.801898] (-) TimerEvent: {}
+[0.902141] (-) TimerEvent: {}
+[1.002400] (-) TimerEvent: {}
+[1.102651] (-) TimerEvent: {}
+[1.202893] (-) TimerEvent: {}
+[1.303122] (-) TimerEvent: {}
+[1.403378] (-) TimerEvent: {}
+[1.503615] (-) TimerEvent: {}
+[1.603843] (-) TimerEvent: {}
+[1.704065] (-) TimerEvent: {}
+[1.804313] (-) TimerEvent: {}
+[1.904532] (-) TimerEvent: {}
+[2.004741] (-) TimerEvent: {}
+[2.104956] (-) TimerEvent: {}
+[2.205188] (-) TimerEvent: {}
+[2.305403] (-) TimerEvent: {}
+[2.405614] (-) TimerEvent: {}
+[2.505818] (-) TimerEvent: {}
+[2.606020] (-) TimerEvent: {}
+[2.706226] (-) TimerEvent: {}
+[2.806456] (-) TimerEvent: {}
+[2.906664] (-) TimerEvent: {}
+[3.006872] (-) TimerEvent: {}
+[3.107075] (-) TimerEvent: {}
+[3.207295] (-) TimerEvent: {}
+[3.307510] (-) TimerEvent: {}
+[3.407718] (-) TimerEvent: {}
+[3.507925] (-) TimerEvent: {}
+[3.608125] (-) TimerEvent: {}
+[3.708337] (-) TimerEvent: {}
+[3.808538] (-) TimerEvent: {}
+[3.908754] (-) TimerEvent: {}
+[4.008960] (-) TimerEvent: {}
+[4.109197] (-) TimerEvent: {}
+[4.209443] (-) TimerEvent: {}
+[4.309658] (-) TimerEvent: {}
+[4.409871] (-) TimerEvent: {}
+[4.510074] (-) TimerEvent: {}
+[4.610286] (-) TimerEvent: {}
+[4.710485] (-) TimerEvent: {}
+[4.810691] (-) TimerEvent: {}
+[4.910912] (-) TimerEvent: {}
+[4.958082] (my_first_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable simple\x1b[0m\n'}
+[5.011044] (-) TimerEvent: {}
+[5.111450] (-) TimerEvent: {}
+[5.177213] (my_first_pkg) StdoutLine: {'line': b'[100%] Built target simple\n'}
+[5.196464] (my_first_pkg) CommandEnded: {'returncode': 0}
+[5.211535] (-) TimerEvent: {}
+[5.230825] (my_first_pkg) JobProgress: {'identifier': 'my_first_pkg', 'progress': 'install'}
+[5.246381] (my_first_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/test_workspace/build/my_first_pkg'], 'cwd': '/home/pi/test_workspace/build/my_first_pkg', 'env': OrderedDict({'USER': 'pi', 'SSH_CLIENT': '192.168.1.80 54952 22', 'STARSHIP_SHELL': 'fish', 'XDG_SESSION_TYPE': 'tty', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'SHLVL': '1', 'HOME': '/home/pi', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'OPENAI_API_KEY': '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', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'COLCON_PREFIX_PATH': '/home/pi/test_workspace/install', 'LOGNAME': 'pi', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'TERM': 'screen-256color', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/bin:/Users/pi/.local/bin:/Users/pi/.local/share/nvim/mason/bin:usr/bin:/Users/Axel/.fzf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/home/pi/test_workspace/install/my_first_pkg:/opt/ros/jazzy', 'SHELL': '/usr/bin/fish', 'WIFI_SSID': 'MEO-BD8310', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/pi/test_workspace/build/my_first_pkg', 'SSH_CONNECTION': '192.168.1.80 54952 192.168.1.82 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'STARSHIP_SESSION_KEY': '2025848661253823', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/pi/test_workspace/install/my_first_pkg:/opt/ros/jazzy', 'EDITOR': 'nvim', 'WIFI_PASSWORD': '9f24731014', 'WARP_THEMES_DIR': '/home/pi/.warp/themes'}), 'shell': False}
+[5.259857] (my_first_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.260519] (my_first_pkg) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[5.260951] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/lib/my_first_pkg/simple\n'}
+[5.261257] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/ament_index/resource_index/package_run_dependencies/my_first_pkg\n'}
+[5.261549] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/ament_index/resource_index/parent_prefix_path/my_first_pkg\n'}
+[5.261782] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/environment/ament_prefix_path.sh\n'}
+[5.261994] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/environment/ament_prefix_path.dsv\n'}
+[5.262223] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/environment/path.sh\n'}
+[5.262463] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/environment/path.dsv\n'}
+[5.262670] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/local_setup.bash\n'}
+[5.262876] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/local_setup.sh\n'}
+[5.263077] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/local_setup.zsh\n'}
+[5.263293] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/local_setup.dsv\n'}
+[5.263447] (my_first_pkg) StdoutLine: {'line': b'-- Symlinking: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/package.dsv\n'}
+[5.279317] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/ament_index/resource_index/packages/my_first_pkg\n'}
+[5.279519] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.279685] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/cmake/my_first_pkgConfig.cmake\n'}
+[5.279831] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/cmake/my_first_pkgConfig-version.cmake\n'}
+[5.280032] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/package.xml\n'}
+[5.282806] (my_first_pkg) CommandEnded: {'returncode': 0}
+[5.311628] (-) TimerEvent: {}
+[5.340386] (my_first_pkg) JobEnded: {'identifier': 'my_first_pkg', 'rc': 0}
+[5.341460] (-) EventReactorShutdown: {}

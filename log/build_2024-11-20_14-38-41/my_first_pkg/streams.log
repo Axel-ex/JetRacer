@@ -1,0 +1,46 @@
+[0.013s] Invoking command in '/home/pi/test_workspace/build/my_first_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/pi/test_workspace/build/my_first_pkg -- -j4 -l4
+[0.053s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.365s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.374s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.405s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.417s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.433s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.450s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.530s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.532s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.618s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.696s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.714s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.865s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.865s] -- Configured cppcheck include dirs: 
+[0.865s] -- Configured cppcheck exclude dirs and/or files: 
+[0.866s] -- Added test 'lint_cmake' to check CMake code style
+[0.867s] -- Added test 'uncrustify' to check C / C++ code style
+[0.867s] -- Configured uncrustify additional arguments: 
+[0.867s] -- Added test 'xmllint' to check XML markup files
+[0.869s] -- Configuring done (0.8s)
+[0.890s] -- Generating done (0.0s)
+[0.898s] -- Build files have been written to: /home/pi/test_workspace/build/my_first_pkg
+[0.971s] [100%] Built target simple
+[0.991s] Invoked command in '/home/pi/test_workspace/build/my_first_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/pi/test_workspace/build/my_first_pkg -- -j4 -l4
+[1.042s] Invoking command in '/home/pi/test_workspace/build/my_first_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/pi/test_workspace/build/my_first_pkg
+[1.054s] -- Install configuration: ""
+[1.055s] -- Execute custom install script
+[1.056s] -- Symlinking: /home/pi/test_workspace/install/my_first_pkg/lib/my_first_pkg/simple
+[1.072s] -- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/ament_index/resource_index/package_run_dependencies/my_first_pkg
+[1.072s] -- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/ament_index/resource_index/parent_prefix_path/my_first_pkg
+[1.072s] -- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/environment/ament_prefix_path.sh
+[1.072s] -- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/environment/ament_prefix_path.dsv
+[1.073s] -- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/environment/path.sh
+[1.073s] -- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/environment/path.dsv
+[1.073s] -- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/local_setup.bash
+[1.073s] -- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/local_setup.sh
+[1.073s] -- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/local_setup.zsh
+[1.073s] -- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/local_setup.dsv
+[1.074s] -- Symlinking: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/package.dsv
+[1.089s] -- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/ament_index/resource_index/packages/my_first_pkg
+[1.089s] -- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.089s] -- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/cmake/my_first_pkgConfig.cmake
+[1.090s] -- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/cmake/my_first_pkgConfig-version.cmake
+[1.090s] -- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/package.xml
+[1.093s] Invoked command in '/home/pi/test_workspace/build/my_first_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/pi/test_workspace/build/my_first_pkg
