@@ -1,0 +1,63 @@
+[0.013s] Invoking command in '/home/pi/test_workspace/build/screen_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/pi/test_workspace/src/screen_service -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pi/test_workspace/install/screen_service
+[0.125s] -- The C compiler identification is GNU 13.2.0
+[0.312s] -- The CXX compiler identification is GNU 13.2.0
+[0.340s] -- Detecting C compiler ABI info
+[0.507s] -- Detecting C compiler ABI info - done
+[0.522s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.522s] -- Detecting C compile features
+[0.523s] -- Detecting C compile features - done
+[0.537s] -- Detecting CXX compiler ABI info
+[0.725s] -- Detecting CXX compiler ABI info - done
+[0.740s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.740s] -- Detecting CXX compile features
+[0.741s] -- Detecting CXX compile features - done
+[0.743s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.985s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.125s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.153s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.195s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.211s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.231s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.253s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.347s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.350s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.471s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.494s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.529s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.618s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.811s] -- Configuring done (1.8s)
+[1.828s] -- Generating done (0.0s)
+[1.831s] -- Build files have been written to: /home/pi/test_workspace/build/screen_service
+[1.850s] Invoked command in '/home/pi/test_workspace/build/screen_service' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/pi/test_workspace/src/screen_service -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pi/test_workspace/install/screen_service
+[1.852s] Invoking command in '/home/pi/test_workspace/build/screen_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/pi/test_workspace/build/screen_service -- -j4 -l4
+[1.939s] [ 75%] [32mBuilding CXX object CMakeFiles/oled_display_node.dir/src/main.cpp.o[0m
+[1.940s] [ 75%] [32mBuilding C object CMakeFiles/oled_display_node.dir/src/ssd1306_linux/linux_i2c.c.o[0m
+[1.940s] [ 75%] [32mBuilding C object CMakeFiles/oled_display_node.dir/src/ssd1306_linux/ssd1306.c.o[0m
+[2.013s] [01m[K/home/pi/test_workspace/src/screen_service/src/ssd1306_linux/ssd1306.c:[m[K In function ‘[01m[Kssd1306_oled_write_string[m[K’:
+[2.013s] [01m[K/home/pi/test_workspace/src/screen_service/src/ssd1306_linux/ssd1306.c:372:10:[m[K [01;35m[Kwarning: [m[Kassignment discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+[2.013s]   372 |     line [01;35m[K=[m[K ptr;
+[2.013s]       |          [01;35m[K^[m[K
+[7.419s] [100%] [32m[1mLinking CXX executable oled_display_node[0m
+[7.681s] [100%] Built target oled_display_node
+[7.701s] Invoked command in '/home/pi/test_workspace/build/screen_service' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/pi/test_workspace/build/screen_service -- -j4 -l4
+[7.742s] Invoking command in '/home/pi/test_workspace/build/screen_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/pi/test_workspace/build/screen_service
+[7.757s] -- Install configuration: ""
+[7.758s] -- Execute custom install script
+[7.758s] -- Symlinking: /home/pi/test_workspace/install/screen_service/lib/screen_service/oled_display_node
+[7.775s] -- Symlinking: /home/pi/test_workspace/install/screen_service/share/ament_index/resource_index/package_run_dependencies/screen_service
+[7.791s] -- Symlinking: /home/pi/test_workspace/install/screen_service/share/ament_index/resource_index/parent_prefix_path/screen_service
+[7.807s] -- Symlinking: /home/pi/test_workspace/install/screen_service/share/screen_service/environment/ament_prefix_path.sh
+[7.823s] -- Symlinking: /home/pi/test_workspace/install/screen_service/share/screen_service/environment/ament_prefix_path.dsv
+[7.839s] -- Symlinking: /home/pi/test_workspace/install/screen_service/share/screen_service/environment/path.sh
+[7.854s] -- Symlinking: /home/pi/test_workspace/install/screen_service/share/screen_service/environment/path.dsv
+[7.870s] -- Symlinking: /home/pi/test_workspace/install/screen_service/share/screen_service/local_setup.bash
+[7.886s] -- Symlinking: /home/pi/test_workspace/install/screen_service/share/screen_service/local_setup.sh
+[7.901s] -- Symlinking: /home/pi/test_workspace/install/screen_service/share/screen_service/local_setup.zsh
+[7.916s] -- Symlinking: /home/pi/test_workspace/install/screen_service/share/screen_service/local_setup.dsv
+[7.931s] -- Symlinking: /home/pi/test_workspace/install/screen_service/share/screen_service/package.dsv
+[7.945s] -- Symlinking: /home/pi/test_workspace/install/screen_service/share/ament_index/resource_index/packages/screen_service
+[7.960s] -- Symlinking: /home/pi/test_workspace/install/screen_service/share/screen_service/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.975s] -- Symlinking: /home/pi/test_workspace/install/screen_service/share/screen_service/cmake/screen_serviceConfig.cmake
+[7.990s] -- Symlinking: /home/pi/test_workspace/install/screen_service/share/screen_service/cmake/screen_serviceConfig-version.cmake
+[8.005s] -- Symlinking: /home/pi/test_workspace/install/screen_service/share/screen_service/package.xml
+[8.024s] Invoked command in '/home/pi/test_workspace/build/screen_service' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/pi/test_workspace/build/screen_service

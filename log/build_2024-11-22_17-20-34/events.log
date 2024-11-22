@@ -1,0 +1,119 @@
+[0.000000] (-) TimerEvent: {}
+[0.000342] (my_first_pkg) JobQueued: {'identifier': 'my_first_pkg', 'dependencies': OrderedDict()}
+[0.000385] (screen_service) JobQueued: {'identifier': 'screen_service', 'dependencies': OrderedDict()}
+[0.000669] (my_first_pkg) JobStarted: {'identifier': 'my_first_pkg'}
+[0.006841] (screen_service) JobStarted: {'identifier': 'screen_service'}
+[0.012318] (my_first_pkg) JobProgress: {'identifier': 'my_first_pkg', 'progress': 'cmake'}
+[0.013167] (my_first_pkg) Command: {'cmd': ['/usr/bin/cmake', '/home/pi/test_workspace/src/my_first_pkg', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/pi/test_workspace/install/my_first_pkg'], 'cwd': '/home/pi/test_workspace/build/my_first_pkg', 'env': OrderedDict({'USER': 'pi', 'SSH_CLIENT': '192.168.1.80 64153 22', 'STARSHIP_SHELL': 'fish', 'XDG_SESSION_TYPE': 'tty', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'SHLVL': '1', 'HOME': '/home/pi', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'OPENAI_API_KEY': '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', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'COLCON_PREFIX_PATH': '/home/pi/test_workspace/install', 'LOGNAME': 'pi', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/bin:/Users/pi/.local/bin:/Users/pi/.local/share/nvim/mason/bin:usr/bin:/Users/Axel/.fzf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/usr/bin/fish', 'WIFI_SSID': 'MEO-BD8310', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/pi/test_workspace/build/my_first_pkg', 'SSH_CONNECTION': '192.168.1.80 64153 192.168.1.82 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'STARSHIP_SESSION_KEY': '1648126136261131', 'COLCON': '1', 'EDITOR': 'nvim', 'WIFI_PASSWORD': '9f24731014', 'WARP_THEMES_DIR': '/home/pi/.warp/themes', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.018580] (screen_service) JobProgress: {'identifier': 'screen_service', 'progress': 'cmake'}
+[0.019533] (screen_service) Command: {'cmd': ['/usr/bin/cmake', '/home/pi/test_workspace/src/screen_service', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/pi/test_workspace/install/screen_service'], 'cwd': '/home/pi/test_workspace/build/screen_service', 'env': OrderedDict({'USER': 'pi', 'SSH_CLIENT': '192.168.1.80 64153 22', 'STARSHIP_SHELL': 'fish', 'XDG_SESSION_TYPE': 'tty', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'SHLVL': '1', 'HOME': '/home/pi', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'OPENAI_API_KEY': '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', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'COLCON_PREFIX_PATH': '/home/pi/test_workspace/install', 'LOGNAME': 'pi', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/bin:/Users/pi/.local/bin:/Users/pi/.local/share/nvim/mason/bin:usr/bin:/Users/Axel/.fzf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/usr/bin/fish', 'WIFI_SSID': 'MEO-BD8310', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/pi/test_workspace/build/screen_service', 'SSH_CONNECTION': '192.168.1.80 64153 192.168.1.82 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'STARSHIP_SESSION_KEY': '1648126136261131', 'COLCON': '1', 'EDITOR': 'nvim', 'WIFI_PASSWORD': '9f24731014', 'WARP_THEMES_DIR': '/home/pi/.warp/themes', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[0.036309] (my_first_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.040831] (screen_service) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099691] (-) TimerEvent: {}
+[0.200081] (-) TimerEvent: {}
+[0.300418] (-) TimerEvent: {}
+[0.396945] (my_first_pkg) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.398636] (screen_service) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.400489] (-) TimerEvent: {}
+[0.406826] (my_first_pkg) StdoutLine: {'line': b'-- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.408432] (screen_service) StdoutLine: {'line': b'-- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.438200] (my_first_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.439806] (screen_service) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.451074] (my_first_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.452890] (screen_service) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.466863] (my_first_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.468909] (screen_service) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.488501] (my_first_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.490757] (screen_service) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.500588] (-) TimerEvent: {}
+[0.579678] (my_first_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.582454] (my_first_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.582655] (screen_service) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.585390] (screen_service) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.600701] (-) TimerEvent: {}
+[0.699284] (my_first_pkg) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[0.700778] (-) TimerEvent: {}
+[0.702947] (screen_service) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[0.723662] (my_first_pkg) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[0.726451] (screen_service) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[0.757395] (my_first_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.759402] (screen_service) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.800896] (-) TimerEvent: {}
+[0.846144] (my_first_pkg) StdoutLine: {'line': b'-- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[0.847261] (screen_service) StdoutLine: {'line': b'-- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[0.865707] (my_first_pkg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[0.901001] (-) TimerEvent: {}
+[1.001406] (-) TimerEvent: {}
+[1.046659] (screen_service) StdoutLine: {'line': b'-- Configuring done (1.0s)\n'}
+[1.061012] (my_first_pkg) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.061334] (my_first_pkg) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.061439] (my_first_pkg) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.062136] (my_first_pkg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.063362] (my_first_pkg) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.063525] (my_first_pkg) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.064049] (my_first_pkg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.066448] (my_first_pkg) StdoutLine: {'line': b'-- Configuring done (1.0s)\n'}
+[1.067184] (screen_service) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.071871] (screen_service) StdoutLine: {'line': b'-- Build files have been written to: /home/pi/test_workspace/build/screen_service\n'}
+[1.086220] (screen_service) CommandEnded: {'returncode': 0}
+[1.086955] (screen_service) JobProgress: {'identifier': 'screen_service', 'progress': 'build'}
+[1.087774] (screen_service) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/test_workspace/build/screen_service', '--', '-j4', '-l4'], 'cwd': '/home/pi/test_workspace/build/screen_service', 'env': OrderedDict({'USER': 'pi', 'SSH_CLIENT': '192.168.1.80 64153 22', 'STARSHIP_SHELL': 'fish', 'XDG_SESSION_TYPE': 'tty', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'SHLVL': '1', 'HOME': '/home/pi', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'OPENAI_API_KEY': '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', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'COLCON_PREFIX_PATH': '/home/pi/test_workspace/install', 'LOGNAME': 'pi', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/bin:/Users/pi/.local/bin:/Users/pi/.local/share/nvim/mason/bin:usr/bin:/Users/Axel/.fzf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/usr/bin/fish', 'WIFI_SSID': 'MEO-BD8310', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/pi/test_workspace/build/screen_service', 'SSH_CONNECTION': '192.168.1.80 64153 192.168.1.82 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'STARSHIP_SESSION_KEY': '1648126136261131', 'COLCON': '1', 'EDITOR': 'nvim', 'WIFI_PASSWORD': '9f24731014', 'WARP_THEMES_DIR': '/home/pi/.warp/themes', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[1.089154] (my_first_pkg) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.093998] (my_first_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/pi/test_workspace/build/my_first_pkg\n'}
+[1.101553] (-) TimerEvent: {}
+[1.110545] (my_first_pkg) CommandEnded: {'returncode': 0}
+[1.111279] (my_first_pkg) JobProgress: {'identifier': 'my_first_pkg', 'progress': 'build'}
+[1.111643] (my_first_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/pi/test_workspace/build/my_first_pkg', '--', '-j4', '-l4'], 'cwd': '/home/pi/test_workspace/build/my_first_pkg', 'env': OrderedDict({'USER': 'pi', 'SSH_CLIENT': '192.168.1.80 64153 22', 'STARSHIP_SHELL': 'fish', 'XDG_SESSION_TYPE': 'tty', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'SHLVL': '1', 'HOME': '/home/pi', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'OPENAI_API_KEY': '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', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'COLCON_PREFIX_PATH': '/home/pi/test_workspace/install', 'LOGNAME': 'pi', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/bin:/Users/pi/.local/bin:/Users/pi/.local/share/nvim/mason/bin:usr/bin:/Users/Axel/.fzf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/usr/bin/fish', 'WIFI_SSID': 'MEO-BD8310', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/pi/test_workspace/build/my_first_pkg', 'SSH_CONNECTION': '192.168.1.80 64153 192.168.1.82 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'STARSHIP_SESSION_KEY': '1648126136261131', 'COLCON': '1', 'EDITOR': 'nvim', 'WIFI_PASSWORD': '9f24731014', 'WARP_THEMES_DIR': '/home/pi/.warp/themes', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[1.186520] (screen_service) StdoutLine: {'line': b'[100%] Built target oled_display_node\n'}
+[1.201617] (-) TimerEvent: {}
+[1.204300] (screen_service) CommandEnded: {'returncode': 0}
+[1.240380] (my_first_pkg) StdoutLine: {'line': b'[100%] Built target simple\n'}
+[1.245350] (screen_service) JobProgress: {'identifier': 'screen_service', 'progress': 'install'}
+[1.259884] (screen_service) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/test_workspace/build/screen_service'], 'cwd': '/home/pi/test_workspace/build/screen_service', 'env': OrderedDict({'USER': 'pi', 'SSH_CLIENT': '192.168.1.80 64153 22', 'STARSHIP_SHELL': 'fish', 'XDG_SESSION_TYPE': 'tty', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'SHLVL': '1', 'HOME': '/home/pi', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'OPENAI_API_KEY': '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', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'COLCON_PREFIX_PATH': '/home/pi/test_workspace/install', 'LOGNAME': 'pi', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/bin:/Users/pi/.local/bin:/Users/pi/.local/share/nvim/mason/bin:usr/bin:/Users/Axel/.fzf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/usr/bin/fish', 'WIFI_SSID': 'MEO-BD8310', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/pi/test_workspace/build/screen_service', 'SSH_CONNECTION': '192.168.1.80 64153 192.168.1.82 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'STARSHIP_SESSION_KEY': '1648126136261131', 'COLCON': '1', 'EDITOR': 'nvim', 'WIFI_PASSWORD': '9f24731014', 'WARP_THEMES_DIR': '/home/pi/.warp/themes', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[1.262202] (my_first_pkg) CommandEnded: {'returncode': 0}
+[1.274483] (screen_service) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.275125] (screen_service) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.275569] (screen_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/screen_service/lib/screen_service/oled_display_node\n'}
+[1.275853] (screen_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/screen_service/share/ament_index/resource_index/package_run_dependencies/screen_service\n'}
+[1.276089] (screen_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/screen_service/share/ament_index/resource_index/parent_prefix_path/screen_service\n'}
+[1.276363] (screen_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/screen_service/share/screen_service/environment/ament_prefix_path.sh\n'}
+[1.276590] (screen_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/screen_service/share/screen_service/environment/ament_prefix_path.dsv\n'}
+[1.276802] (screen_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/screen_service/share/screen_service/environment/path.sh\n'}
+[1.277010] (screen_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/screen_service/share/screen_service/environment/path.dsv\n'}
+[1.277203] (screen_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/screen_service/share/screen_service/local_setup.bash\n'}
+[1.277423] (screen_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/screen_service/share/screen_service/local_setup.sh\n'}
+[1.277628] (screen_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/screen_service/share/screen_service/local_setup.zsh\n'}
+[1.277833] (screen_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/screen_service/share/screen_service/local_setup.dsv\n'}
+[1.277974] (screen_service) StdoutLine: {'line': b'-- Symlinking: /home/pi/test_workspace/install/screen_service/share/screen_service/package.dsv\n'}
+[1.297551] (my_first_pkg) JobProgress: {'identifier': 'my_first_pkg', 'progress': 'install'}
+[1.298033] (my_first_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/pi/test_workspace/build/my_first_pkg'], 'cwd': '/home/pi/test_workspace/build/my_first_pkg', 'env': OrderedDict({'USER': 'pi', 'SSH_CLIENT': '192.168.1.80 64153 22', 'STARSHIP_SHELL': 'fish', 'XDG_SESSION_TYPE': 'tty', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'SHLVL': '1', 'HOME': '/home/pi', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'OPENAI_API_KEY': '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', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'ROS_DISTRO': 'jazzy', 'COLCON_PREFIX_PATH': '/home/pi/test_workspace/install', 'LOGNAME': 'pi', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '1', 'PATH': '/opt/ros/jazzy/bin:/Users/pi/.local/bin:/Users/pi/.local/share/nvim/mason/bin:usr/bin:/Users/Axel/.fzf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/usr/bin/fish', 'WIFI_SSID': 'MEO-BD8310', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/pi/test_workspace/build/my_first_pkg', 'SSH_CONNECTION': '192.168.1.80 64153 192.168.1.82 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'STARSHIP_SESSION_KEY': '1648126136261131', 'COLCON': '1', 'EDITOR': 'nvim', 'WIFI_PASSWORD': '9f24731014', 'WARP_THEMES_DIR': '/home/pi/.warp/themes', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy'}), 'shell': False}
+[1.299559] (screen_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/screen_service/share/ament_index/resource_index/packages/screen_service\n'}
+[1.300225] (screen_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/screen_service/share/screen_service/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.300462] (screen_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/screen_service/share/screen_service/cmake/screen_serviceConfig.cmake\n'}
+[1.300594] (screen_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/screen_service/share/screen_service/cmake/screen_serviceConfig-version.cmake\n'}
+[1.300688] (screen_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/screen_service/share/screen_service/package.xml\n'}
+[1.301683] (-) TimerEvent: {}
+[1.302274] (screen_service) CommandEnded: {'returncode': 0}
+[1.312736] (my_first_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[1.313397] (my_first_pkg) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[1.314451] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/lib/my_first_pkg/simple\n'}
+[1.315173] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/ament_index/resource_index/package_run_dependencies/my_first_pkg\n'}
+[1.315325] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/ament_index/resource_index/parent_prefix_path/my_first_pkg\n'}
+[1.315413] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/environment/ament_prefix_path.sh\n'}
+[1.315495] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/environment/ament_prefix_path.dsv\n'}
+[1.315660] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/environment/path.sh\n'}
+[1.315749] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/environment/path.dsv\n'}
+[1.315830] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/local_setup.bash\n'}
+[1.315959] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/local_setup.sh\n'}
+[1.316183] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/local_setup.zsh\n'}
+[1.316276] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/local_setup.dsv\n'}
+[1.316475] (my_first_pkg) StdoutLine: {'line': b'-- Symlinking: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/package.dsv\n'}
+[1.332750] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/ament_index/resource_index/packages/my_first_pkg\n'}
+[1.333079] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[1.333237] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/cmake/my_first_pkgConfig.cmake\n'}
+[1.333359] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/cmake/my_first_pkgConfig-version.cmake\n'}
+[1.333654] (my_first_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/pi/test_workspace/install/my_first_pkg/share/my_first_pkg/package.xml\n'}
+[1.336869] (my_first_pkg) CommandEnded: {'returncode': 0}
+[1.369472] (screen_service) JobEnded: {'identifier': 'screen_service', 'rc': 0}
+[1.393337] (my_first_pkg) JobEnded: {'identifier': 'my_first_pkg', 'rc': 0}
+[1.394626] (-) EventReactorShutdown: {}

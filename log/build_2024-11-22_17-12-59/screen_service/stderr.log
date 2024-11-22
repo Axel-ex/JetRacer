@@ -1,0 +1,4 @@
+[01m[K/home/pi/test_workspace/src/screen_service/src/ssd1306_linux/ssd1306.c:[m[K In function ‘[01m[Kssd1306_oled_write_string[m[K’:
+[01m[K/home/pi/test_workspace/src/screen_service/src/ssd1306_linux/ssd1306.c:372:10:[m[K [01;35m[Kwarning: [m[Kassignment discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+  372 |     line [01;35m[K=[m[K ptr;
+      |          [01;35m[K^[m[K

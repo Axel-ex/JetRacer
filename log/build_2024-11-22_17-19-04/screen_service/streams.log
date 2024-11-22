@@ -1,0 +1,20 @@
+[0.014s] Invoking command in '/home/pi/test_workspace/build/screen_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}: /home/pi/test_workspace/install/screen_service  /home/pi/test_workspace/install/my_first_pkg /opt/ros/jazzy /usr/bin/cmake /home/pi/test_workspace/src/screen_service -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pi/test_workspace/install/screen_service
+[0.033s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.392s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.402s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.433s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.446s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.462s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_typesupport_c/cmake/get_used_typesupports.cmake:35 (message):
+[0.462s]   No 'rosidl_typesupport_c' found
+[0.462s] Call Stack (most recent call first):
+[0.462s]   /opt/ros/jazzy/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:8 (get_used_typesupports)
+[0.462s]   /opt/ros/jazzy/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)
+[0.463s]   /opt/ros/jazzy/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[0.463s]   /opt/ros/jazzy/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)
+[0.463s]   /opt/ros/jazzy/share/rclcpp/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[0.463s]   /opt/ros/jazzy/share/rclcpp/cmake/rclcppConfig.cmake:41 (include)
+[0.463s]   CMakeLists.txt:13 (find_package)
+[0.463s] 
+[0.463s] [0m
+[0.463s] -- Configuring incomplete, errors occurred!
+[0.472s] Invoked command in '/home/pi/test_workspace/build/screen_service' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}: /home/pi/test_workspace/install/screen_service  /home/pi/test_workspace/install/my_first_pkg /opt/ros/jazzy /usr/bin/cmake /home/pi/test_workspace/src/screen_service -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pi/test_workspace/install/screen_service

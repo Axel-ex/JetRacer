@@ -1,40 +1,26 @@
 cmake_minimum_required(VERSION 3.8)
 project(screen_service)
 
-if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-  add_compile_options(-Wall -Wextra -Wpedantic)
-endif()
-
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-set(dependencies
-	rclcpp
-	std_msgs)
+# Include directories for the ssd1306 and linux_i2c sources
+include_directories(
+  include
+  ${CMAKE_SOURCE_DIR}/include
+)
 
-# find dependencies
+# Find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 
-#WARNING: add those lines!!
-add_executable(simple src/main.cpp)
-ament_target_dependencies(simple ${dependencies})
+# Add the executable and link necessary libraries
+add_executable(oled_display_node src/main.cpp src/ssd1306_linux/ssd1306.c src/ssd1306_linux/linux_i2c.c)
 
+ament_target_dependencies(oled_display_node rclcpp std_msgs)
 
-if(BUILD_TESTING)
-  find_package(ament_lint_auto REQUIRED)
-  # the following line skips the linter which checks for copyrights
-  # comment the line when a copyright and license is added to all source files
-  set(ament_cmake_copyright_FOUND TRUE)
-  # the following line skips cpplint (only works in a git repo)
-  # comment the line when this package is in a git repo and when
-  # a copyright and license is added to all source files
-  set(ament_cmake_cpplint_FOUND TRUE)
-  ament_lint_auto_find_test_dependencies()
-endif()
+# Install target
+install(TARGETS oled_display_node DESTINATION lib/${PROJECT_NAME})
 
-install(TARGETS
-    simple
-    DESTINATION lib/${PROJECT_NAME})
-
-ament_export_dependencies(${dependencies})
+ament_export_dependencies(rclcpp std_msgs)
 ament_package()
+

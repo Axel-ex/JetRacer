@@ -1,0 +1,18 @@
+-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[31mCMake Error at /opt/ros/jazzy/share/rosidl_typesupport_c/cmake/get_used_typesupports.cmake:35 (message):
+  No 'rosidl_typesupport_c' found
+-- Configuring incomplete, errors occurred!
+Call Stack (most recent call first):
+  /opt/ros/jazzy/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:8 (get_used_typesupports)
+  /opt/ros/jazzy/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)
+  /opt/ros/jazzy/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /opt/ros/jazzy/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)
+  /opt/ros/jazzy/share/rclcpp/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /opt/ros/jazzy/share/rclcpp/cmake/rclcppConfig.cmake:41 (include)
+  CMakeLists.txt:13 (find_package)
+
+[0m
