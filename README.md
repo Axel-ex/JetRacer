@@ -1,7 +1,7 @@
 # Suggestion for the project structure
 
 ```
-Piracer/
+piracer/
 ├── src/
 │   ├── bus_interfaces/
 │   │   ├── can_interface/
@@ -48,6 +48,6 @@ Piracer/
 # Build
 
 ```
-cd Piracer
+cd piracer
 colcon build --symlink-install
 ```
