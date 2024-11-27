@@ -1,0 +1,50 @@
+[0.014s] Invoking command in '/home/jetpack/piracer/build/can_interface': AMENT_PREFIX_PATH=/home/jetpack/piracer/install/bus_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/piracer/install/bus_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jetpack/piracer/build/can_interface -- -j4 -l4
+[0.056s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.366s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.376s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.409s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.423s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.439s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.457s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.539s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.541s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.632s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.714s] -- Found bus_msgs: 0.0.0 (/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/cmake)
+[1.938s] -- Configuring done (1.9s)
+[1.965s] -- Generating done (0.0s)
+[1.977s] -- Build files have been written to: /home/jetpack/piracer/build/can_interface
+[2.046s] [ 40%] Built target sockcanpp
+[2.093s] [ 60%] [32mBuilding CXX object CMakeFiles/can_interface_node.dir/src/CanInterface.cpp.o[0m
+[8.629s] [ 80%] [32m[1mLinking CXX executable can_interface_node[0m
+[8.926s] [100%] Built target can_interface_node
+[8.947s] Invoked command in '/home/jetpack/piracer/build/can_interface' returned '0': AMENT_PREFIX_PATH=/home/jetpack/piracer/install/bus_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/piracer/install/bus_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jetpack/piracer/build/can_interface -- -j4 -l4
+[8.991s] Invoking command in '/home/jetpack/piracer/build/can_interface': AMENT_PREFIX_PATH=/home/jetpack/piracer/install/bus_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/piracer/install/bus_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jetpack/piracer/build/can_interface
+[9.006s] -- Install configuration: ""
+[9.006s] -- Execute custom install script
+[9.007s] -- Symlinking: /home/jetpack/piracer/install/can_interface/lib/cmake/sockcanpp/libsockcanppConfig.cmake
+[9.023s] -- Symlinking: /home/jetpack/piracer/install/can_interface/lib/cmake/sockcanpp/libsockcanppConfigVersion.cmake
+[9.040s] -- Symlinking: /home/jetpack/piracer/install/can_interface/lib/pkgconfig/libsockcanpp.pc
+[9.055s] -- Symlinking: /home/jetpack/piracer/install/can_interface/lib/can_interface/can_interface_node
+[9.071s] -- Symlinking: /home/jetpack/piracer/install/can_interface/share/ament_index/resource_index/package_run_dependencies/can_interface
+[9.087s] -- Symlinking: /home/jetpack/piracer/install/can_interface/share/ament_index/resource_index/parent_prefix_path/can_interface
+[9.104s] -- Symlinking: /home/jetpack/piracer/install/can_interface/share/can_interface/environment/ament_prefix_path.sh
+[9.121s] -- Symlinking: /home/jetpack/piracer/install/can_interface/share/can_interface/environment/ament_prefix_path.dsv
+[9.137s] -- Symlinking: /home/jetpack/piracer/install/can_interface/share/can_interface/environment/path.sh
+[9.153s] -- Symlinking: /home/jetpack/piracer/install/can_interface/share/can_interface/environment/path.dsv
+[9.169s] -- Symlinking: /home/jetpack/piracer/install/can_interface/share/can_interface/local_setup.bash
+[9.185s] -- Symlinking: /home/jetpack/piracer/install/can_interface/share/can_interface/local_setup.sh
+[9.201s] -- Symlinking: /home/jetpack/piracer/install/can_interface/share/can_interface/local_setup.zsh
+[9.217s] -- Symlinking: /home/jetpack/piracer/install/can_interface/share/can_interface/local_setup.dsv
+[9.234s] -- Symlinking: /home/jetpack/piracer/install/can_interface/share/can_interface/package.dsv
+[9.250s] -- Symlinking: /home/jetpack/piracer/install/can_interface/share/ament_index/resource_index/packages/can_interface
+[9.267s] -- Symlinking: /home/jetpack/piracer/install/can_interface/share/can_interface/cmake/can_interfaceConfig.cmake
+[9.282s] -- Symlinking: /home/jetpack/piracer/install/can_interface/share/can_interface/cmake/can_interfaceConfig-version.cmake
+[9.297s] -- Symlinking: /home/jetpack/piracer/install/can_interface/share/can_interface/package.xml
+[9.314s] -- Installing: /home/jetpack/piracer/install/can_interface/lib/sockcanpp.so.1.1.0
+[9.315s] -- Installing: /home/jetpack/piracer/install/can_interface/lib/sockcanpp.so
+[9.315s] -- Installing: /home/jetpack/piracer/install/can_interface/include/CanDriver.hpp
+[9.315s] -- Installing: /home/jetpack/piracer/install/can_interface/include/CanId.hpp
+[9.315s] -- Installing: /home/jetpack/piracer/install/can_interface/include/CanMessage.hpp
+[9.315s] -- Installing: /home/jetpack/piracer/install/can_interface/lib/cmake/sockcanpp/sockcanppTargets.cmake
+[9.316s] -- Installing: /home/jetpack/piracer/install/can_interface/lib/cmake/sockcanpp/sockcanppTargets-noconfig.cmake
+[9.319s] Invoked command in '/home/jetpack/piracer/build/can_interface' returned '0': AMENT_PREFIX_PATH=/home/jetpack/piracer/install/bus_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/piracer/install/bus_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jetpack/piracer/build/can_interface

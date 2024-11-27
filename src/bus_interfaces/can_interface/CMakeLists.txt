@@ -11,6 +11,7 @@ set(exec_name ${PROJECT_NAME}_node)
 # Add source files
 set(srcs
   src/main.cpp
+  src/CanInterface.cpp
 )
 
 # Include necessary directories

@@ -1,3 +1,1 @@
-uint32 id
-uint32 data_len
-uint8[8] data
+/home/jetpack/piracer/src/bus_interfaces/bus_msgs/msg/CanPacket.msg

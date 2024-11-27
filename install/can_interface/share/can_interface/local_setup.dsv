@@ -1,2 +1,1 @@
-source;share/can_interface/environment/ament_prefix_path.sh
-source;share/can_interface/environment/path.sh
+/home/jetpack/piracer/build/can_interface/ament_cmake_environment_hooks/local_setup.dsv

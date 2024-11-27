@@ -1,0 +1,36 @@
+[0.014s] Invoking command in '/home/jetpack/piracer/build/can_interface': CMAKE_PREFIX_PATH=/home/jetpack/piracer/install/bus_msgs:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/can_interface:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/piracer/install/bus_msgs/lib:/home/jetpack/piracer/install/can_interface/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /home/jetpack/piracer/build/can_interface -- -j4 -l4
+[0.104s] [ 40%] Built target sockcanpp
+[0.159s] [ 60%] [32mBuilding CXX object CMakeFiles/can_interface_node.dir/src/CanInterface.cpp.o[0m
+[7.379s] [ 80%] [32m[1mLinking CXX executable can_interface_node[0m
+[7.692s] [100%] Built target can_interface_node
+[7.713s] Invoked command in '/home/jetpack/piracer/build/can_interface' returned '0': CMAKE_PREFIX_PATH=/home/jetpack/piracer/install/bus_msgs:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/can_interface:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/piracer/install/bus_msgs/lib:/home/jetpack/piracer/install/can_interface/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /home/jetpack/piracer/build/can_interface -- -j4 -l4
+[7.757s] Invoking command in '/home/jetpack/piracer/build/can_interface': CMAKE_PREFIX_PATH=/home/jetpack/piracer/install/bus_msgs:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/can_interface:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/piracer/install/bus_msgs/lib:/home/jetpack/piracer/install/can_interface/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --install /home/jetpack/piracer/build/can_interface
+[7.772s] -- Install configuration: ""
+[7.773s] -- Execute custom install script
+[7.773s] -- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/lib/cmake/sockcanpp/libsockcanppConfig.cmake
+[7.773s] -- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/lib/cmake/sockcanpp/libsockcanppConfigVersion.cmake
+[7.774s] -- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/lib/pkgconfig/libsockcanpp.pc
+[7.774s] -- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/lib/can_interface/can_interface_node
+[7.774s] -- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/share/ament_index/resource_index/package_run_dependencies/can_interface
+[7.774s] -- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/share/ament_index/resource_index/parent_prefix_path/can_interface
+[7.775s] -- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/share/can_interface/environment/ament_prefix_path.sh
+[7.775s] -- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/share/can_interface/environment/ament_prefix_path.dsv
+[7.775s] -- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/share/can_interface/environment/path.sh
+[7.775s] -- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/share/can_interface/environment/path.dsv
+[7.775s] -- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/share/can_interface/local_setup.bash
+[7.775s] -- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/share/can_interface/local_setup.sh
+[7.776s] -- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/share/can_interface/local_setup.zsh
+[7.776s] -- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/share/can_interface/local_setup.dsv
+[7.776s] -- Symlinking: /home/jetpack/piracer/install/can_interface/share/can_interface/package.dsv
+[7.793s] -- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/share/ament_index/resource_index/packages/can_interface
+[7.793s] -- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/share/can_interface/cmake/can_interfaceConfig.cmake
+[7.793s] -- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/share/can_interface/cmake/can_interfaceConfig-version.cmake
+[7.793s] -- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/share/can_interface/package.xml
+[7.794s] -- Up-to-date: /home/jetpack/piracer/install/can_interface/lib/sockcanpp.so.1.1.0
+[7.794s] -- Up-to-date: /home/jetpack/piracer/install/can_interface/lib/sockcanpp.so
+[7.794s] -- Up-to-date: /home/jetpack/piracer/install/can_interface/include/CanDriver.hpp
+[7.794s] -- Up-to-date: /home/jetpack/piracer/install/can_interface/include/CanId.hpp
+[7.794s] -- Up-to-date: /home/jetpack/piracer/install/can_interface/include/CanMessage.hpp
+[7.795s] -- Up-to-date: /home/jetpack/piracer/install/can_interface/lib/cmake/sockcanpp/sockcanppTargets.cmake
+[7.795s] -- Up-to-date: /home/jetpack/piracer/install/can_interface/lib/cmake/sockcanpp/sockcanppTargets-noconfig.cmake
+[7.798s] Invoked command in '/home/jetpack/piracer/build/can_interface' returned '0': CMAKE_PREFIX_PATH=/home/jetpack/piracer/install/bus_msgs:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/can_interface:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/piracer/install/bus_msgs/lib:/home/jetpack/piracer/install/can_interface/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --install /home/jetpack/piracer/build/can_interface

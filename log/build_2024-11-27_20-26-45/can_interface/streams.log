@@ -1,0 +1,44 @@
+[0.012s] Invoking command in '/home/jetpack/piracer/build/can_interface': AMENT_PREFIX_PATH=/home/jetpack/piracer/install/bus_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/piracer/install/bus_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/jetpack/piracer/src/bus_interfaces/can_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jetpack/piracer/install/can_interface
+[0.112s] -- The C compiler identification is GNU 13.2.0
+[0.217s] -- The CXX compiler identification is GNU 13.2.0
+[0.245s] -- Detecting C compiler ABI info
+[0.403s] -- Detecting C compiler ABI info - done
+[0.417s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.417s] -- Detecting C compile features
+[0.418s] -- Detecting C compile features - done
+[0.432s] -- Detecting CXX compiler ABI info
+[0.607s] -- Detecting CXX compiler ABI info - done
+[0.621s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.622s] -- Detecting CXX compile features
+[0.622s] -- Detecting CXX compile features - done
+[0.626s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.857s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.988s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.029s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.082s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.101s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.124s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.150s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.256s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.260s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.391s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.417s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.454s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.551s] -- Found bus_msgs: 0.0.0 (/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/cmake)
+[6.302s] -- Configuring done (6.3s)
+[6.324s] -- Generating done (0.0s)
+[6.327s] -- Build files have been written to: /home/jetpack/piracer/build/can_interface
+[6.349s] Invoked command in '/home/jetpack/piracer/build/can_interface' returned '0': AMENT_PREFIX_PATH=/home/jetpack/piracer/install/bus_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/piracer/install/bus_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/jetpack/piracer/src/bus_interfaces/can_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jetpack/piracer/install/can_interface
+[6.351s] Invoking command in '/home/jetpack/piracer/build/can_interface': AMENT_PREFIX_PATH=/home/jetpack/piracer/install/bus_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/piracer/install/bus_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jetpack/piracer/build/can_interface -- -j4 -l4
+[6.439s] [ 25%] [32mBuilding CXX object _deps/sockcanpp-build/CMakeFiles/sockcanpp.dir/src/CanDriver.cpp.o[0m
+[7.164s] [ 50%] [32m[1mLinking CXX shared library sockcanpp.so[0m
+[7.373s] [ 50%] Built target sockcanpp
+[7.408s] [ 75%] [32mBuilding CXX object CMakeFiles/can_interface_node.dir/src/main.cpp.o[0m
+[12.125s] [100%] [32m[1mLinking CXX executable can_interface_node[0m
+[12.309s] /usr/bin/ld: CMakeFiles/can_interface_node.dir/src/main.cpp.o: in function `void std::_Construct<CanInterface>(CanInterface*)':
+[12.310s] main.cpp:(.text._ZSt10_ConstructI12CanInterfaceJEEvPT_DpOT0_[_ZSt10_ConstructI12CanInterfaceJEEvPT_DpOT0_]+0x30): undefined reference to `CanInterface::CanInterface()'
+[12.322s] collect2: error: ld returned 1 exit status
+[12.325s] gmake[2]: *** [CMakeFiles/can_interface_node.dir/build.make:172: can_interface_node] Error 1
+[12.325s] gmake[1]: *** [CMakeFiles/Makefile2:190: CMakeFiles/can_interface_node.dir/all] Error 2
+[12.326s] gmake: *** [Makefile:166: all] Error 2
+[12.329s] Invoked command in '/home/jetpack/piracer/build/can_interface' returned '2': AMENT_PREFIX_PATH=/home/jetpack/piracer/install/bus_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/piracer/install/bus_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jetpack/piracer/build/can_interface -- -j4 -l4

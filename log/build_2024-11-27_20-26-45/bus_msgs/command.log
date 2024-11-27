@@ -1,0 +1,6 @@
+Invoking command in '/home/jetpack/piracer/build/bus_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/jetpack/piracer/src/bus_interfaces/bus_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jetpack/piracer/install/bus_msgs
+Invoked command in '/home/jetpack/piracer/build/bus_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/jetpack/piracer/src/bus_interfaces/bus_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jetpack/piracer/install/bus_msgs
+Invoking command in '/home/jetpack/piracer/build/bus_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jetpack/piracer/build/bus_msgs -- -j4 -l4
+Invoked command in '/home/jetpack/piracer/build/bus_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jetpack/piracer/build/bus_msgs -- -j4 -l4
+Invoking command in '/home/jetpack/piracer/build/bus_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jetpack/piracer/build/bus_msgs
+Invoked command in '/home/jetpack/piracer/build/bus_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jetpack/piracer/build/bus_msgs

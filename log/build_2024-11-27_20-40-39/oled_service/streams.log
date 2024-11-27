@@ -1,0 +1,24 @@
+[0.020s] Invoking command in '/home/jetpack/piracer/build/oled_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jetpack/piracer/build/oled_service -- -j4 -l4
+[0.124s] [100%] Built target oled_display
+[0.146s] Invoked command in '/home/jetpack/piracer/build/oled_service' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jetpack/piracer/build/oled_service -- -j4 -l4
+[0.260s] Invoking command in '/home/jetpack/piracer/build/oled_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jetpack/piracer/build/oled_service
+[0.277s] -- Install configuration: ""
+[0.278s] -- Execute custom install script
+[0.278s] -- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/lib/oled_service/oled_display
+[0.279s] -- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/ament_index/resource_index/package_run_dependencies/oled_service
+[0.281s] -- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/ament_index/resource_index/parent_prefix_path/oled_service
+[0.281s] -- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/oled_service/environment/ament_prefix_path.sh
+[0.281s] -- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/oled_service/environment/ament_prefix_path.dsv
+[0.281s] -- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/oled_service/environment/path.sh
+[0.281s] -- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/oled_service/environment/path.dsv
+[0.281s] -- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/oled_service/local_setup.bash
+[0.281s] -- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/oled_service/local_setup.sh
+[0.282s] -- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/oled_service/local_setup.zsh
+[0.282s] -- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/oled_service/local_setup.dsv
+[0.282s] -- Symlinking: /home/jetpack/piracer/install/oled_service/share/oled_service/package.dsv
+[0.300s] -- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/ament_index/resource_index/packages/oled_service
+[0.300s] -- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/oled_service/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.301s] -- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/oled_service/cmake/oled_serviceConfig.cmake
+[0.301s] -- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/oled_service/cmake/oled_serviceConfig-version.cmake
+[0.301s] -- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/oled_service/package.xml
+[0.305s] Invoked command in '/home/jetpack/piracer/build/oled_service' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jetpack/piracer/build/oled_service

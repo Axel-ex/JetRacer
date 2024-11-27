@@ -103,14 +103,3 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   endif()
 endif()
 
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/sockcanpp" TYPE FILE FILES
-    "/home/jetpack/piracer/build/can_interface/_deps/sockcanpp-src/cmake/libsockcanppConfig.cmake"
-    "/home/jetpack/piracer/build/can_interface/_deps/sockcanpp-build/libsockcanppConfigVersion.cmake"
-    )
-endif()
-
-if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/jetpack/piracer/build/can_interface/libsockcanpp.pc")
-endif()
-

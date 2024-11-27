@@ -1,3 +1,1 @@
-# include(CMakeFindDependencyMacro)
-# find_dependency(xxx 2.0)
-include(${CMAKE_CURRENT_LIST_DIR}/libsockcanppTargets.cmake)
+/home/jetpack/piracer/build/can_interface/_deps/sockcanpp-src/cmake/libsockcanppConfig.cmake

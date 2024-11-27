@@ -1,0 +1,294 @@
+[0.139s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.139s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffff9e83aed0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff9e9a5b50>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff9e9a5b50>>, mixin_verb=('build',))
+[0.194s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.194s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.194s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.194s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.194s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.194s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.194s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jetpack/piracer'
+[0.194s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces) by extension 'ignore'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces) by extension 'ignore_ament_install'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces) by extensions ['colcon_pkg']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces) by extension 'colcon_pkg'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces) by extensions ['colcon_meta']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces) by extension 'colcon_meta'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces) by extensions ['ros']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces) by extension 'ros'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces) by extensions ['cmake', 'python']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces) by extension 'cmake'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces) by extension 'python'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces) by extensions ['python_setup_py']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces) by extension 'python_setup_py'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/bus_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/bus_msgs) by extension 'ignore'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/bus_msgs) by extension 'ignore_ament_install'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/bus_msgs) by extensions ['colcon_pkg']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/bus_msgs) by extension 'colcon_pkg'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/bus_msgs) by extensions ['colcon_meta']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/bus_msgs) by extension 'colcon_meta'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/bus_msgs) by extensions ['ros']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/bus_msgs) by extension 'ros'
+[0.237s] DEBUG:colcon.colcon_core.package_identification:Package 'src/bus_interfaces/bus_msgs' with type 'ros.ament_cmake' and name 'bus_msgs'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/can_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/can_interface) by extension 'ignore'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/can_interface) by extension 'ignore_ament_install'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/can_interface) by extensions ['colcon_pkg']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/can_interface) by extension 'colcon_pkg'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/can_interface) by extensions ['colcon_meta']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/can_interface) by extension 'colcon_meta'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/can_interface) by extensions ['ros']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/can_interface) by extension 'ros'
+[0.239s] DEBUG:colcon.colcon_core.package_identification:Package 'src/bus_interfaces/can_interface' with type 'ros.ament_cmake' and name 'can_interface'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals) by extension 'ignore_ament_install'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals) by extensions ['colcon_pkg']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals) by extension 'colcon_pkg'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals) by extensions ['colcon_meta']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals) by extension 'colcon_meta'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals) by extensions ['ros']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals) by extension 'ros'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals) by extensions ['cmake', 'python']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals) by extension 'cmake'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals) by extension 'python'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals) by extensions ['python_setup_py']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals) by extension 'python_setup_py'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/oled_service) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/oled_service) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/oled_service) by extension 'ignore_ament_install'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/oled_service) by extensions ['colcon_pkg']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/oled_service) by extension 'colcon_pkg'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/oled_service) by extensions ['colcon_meta']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/oled_service) by extension 'colcon_meta'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/oled_service) by extensions ['ros']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/oled_service) by extension 'ros'
+[0.240s] DEBUG:colcon.colcon_core.package_identification:Package 'src/peripherals/oled_service' with type 'ros.ament_cmake' and name 'oled_service'
+[0.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.240s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.263s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.267s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 285 installed packages in /opt/ros/jazzy
+[0.268s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'bus_msgs' build argument 'cmake_args' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'bus_msgs' build argument 'cmake_target' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'bus_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'bus_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'bus_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'bus_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'bus_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'bus_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'bus_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.326s] DEBUG:colcon.colcon_core.verb:Building package 'bus_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetpack/piracer/build/bus_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetpack/piracer/install/bus_msgs', 'merge_install': False, 'path': '/home/jetpack/piracer/src/bus_interfaces/bus_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'oled_service' build argument 'cmake_args' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'oled_service' build argument 'cmake_target' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'oled_service' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'oled_service' build argument 'cmake_clean_cache' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'oled_service' build argument 'cmake_clean_first' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'oled_service' build argument 'cmake_force_configure' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'oled_service' build argument 'ament_cmake_args' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'oled_service' build argument 'catkin_cmake_args' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'oled_service' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.327s] DEBUG:colcon.colcon_core.verb:Building package 'oled_service' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetpack/piracer/build/oled_service', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetpack/piracer/install/oled_service', 'merge_install': False, 'path': '/home/jetpack/piracer/src/peripherals/oled_service', 'symlink_install': True, 'test_result_base': None}
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'can_interface' build argument 'cmake_args' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'can_interface' build argument 'cmake_target' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'can_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'can_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'can_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'can_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'can_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'can_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.327s] Level 5:colcon.colcon_core.verb:set package 'can_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.327s] DEBUG:colcon.colcon_core.verb:Building package 'can_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetpack/piracer/build/can_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetpack/piracer/install/can_interface', 'merge_install': False, 'path': '/home/jetpack/piracer/src/bus_interfaces/can_interface', 'symlink_install': True, 'test_result_base': None}
+[0.328s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.329s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.329s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jetpack/piracer/src/bus_interfaces/bus_msgs' with build type 'ament_cmake'
+[0.329s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jetpack/piracer/src/bus_interfaces/bus_msgs'
+[0.332s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.332s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.332s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.336s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jetpack/piracer/src/peripherals/oled_service' with build type 'ament_cmake'
+[0.336s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jetpack/piracer/src/peripherals/oled_service'
+[0.336s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.336s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.344s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetpack/piracer/build/bus_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/jetpack/piracer/src/bus_interfaces/bus_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jetpack/piracer/install/bus_msgs
+[0.350s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetpack/piracer/build/oled_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/jetpack/piracer/src/peripherals/oled_service -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jetpack/piracer/install/oled_service
+[2.161s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetpack/piracer/build/oled_service' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/jetpack/piracer/src/peripherals/oled_service -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jetpack/piracer/install/oled_service
+[2.163s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetpack/piracer/build/oled_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jetpack/piracer/build/oled_service -- -j4 -l4
+[5.101s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetpack/piracer/build/bus_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/jetpack/piracer/src/bus_interfaces/bus_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jetpack/piracer/install/bus_msgs
+[5.104s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetpack/piracer/build/bus_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jetpack/piracer/build/bus_msgs -- -j4 -l4
+[10.217s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetpack/piracer/build/bus_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jetpack/piracer/build/bus_msgs -- -j4 -l4
+[10.320s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetpack/piracer/build/bus_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jetpack/piracer/build/bus_msgs
+[11.417s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bus_msgs)
+[11.417s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetpack/piracer/build/bus_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jetpack/piracer/build/bus_msgs
+[11.420s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/bus_msgs' for CMake module files
+[11.421s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/bus_msgs' for CMake config files
+[11.421s] Level 1:colcon.colcon_core.shell:create_environment_hook('bus_msgs', 'cmake_prefix_path')
+[11.422s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/hook/cmake_prefix_path.ps1'
+[11.422s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/hook/cmake_prefix_path.dsv'
+[11.423s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/hook/cmake_prefix_path.sh'
+[11.424s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/bus_msgs/lib'
+[11.424s] Level 1:colcon.colcon_core.shell:create_environment_hook('bus_msgs', 'ld_library_path_lib')
+[11.424s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/hook/ld_library_path_lib.ps1'
+[11.425s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/hook/ld_library_path_lib.dsv'
+[11.425s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/hook/ld_library_path_lib.sh'
+[11.425s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/bus_msgs/bin'
+[11.425s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/bus_msgs/lib/pkgconfig/bus_msgs.pc'
+[11.426s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages'
+[11.426s] Level 1:colcon.colcon_core.shell:create_environment_hook('bus_msgs', 'pythonpath')
+[11.426s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/hook/pythonpath.ps1'
+[11.427s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/hook/pythonpath.dsv'
+[11.427s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/hook/pythonpath.sh'
+[11.428s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/bus_msgs/bin'
+[11.428s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/package.ps1'
+[11.429s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/package.dsv'
+[11.429s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/package.sh'
+[11.430s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/package.bash'
+[11.431s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/package.zsh'
+[11.432s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetpack/piracer/install/bus_msgs/share/colcon-core/packages/bus_msgs)
+[11.516s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bus_msgs)
+[11.517s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/bus_msgs' for CMake module files
+[11.518s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/bus_msgs' for CMake config files
+[11.518s] Level 1:colcon.colcon_core.shell:create_environment_hook('bus_msgs', 'cmake_prefix_path')
+[11.519s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/hook/cmake_prefix_path.ps1'
+[11.519s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/hook/cmake_prefix_path.dsv'
+[11.520s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/hook/cmake_prefix_path.sh'
+[11.521s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/bus_msgs/lib'
+[11.521s] Level 1:colcon.colcon_core.shell:create_environment_hook('bus_msgs', 'ld_library_path_lib')
+[11.522s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/hook/ld_library_path_lib.ps1'
+[11.522s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/hook/ld_library_path_lib.dsv'
+[11.523s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/hook/ld_library_path_lib.sh'
+[11.523s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/bus_msgs/bin'
+[11.523s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/bus_msgs/lib/pkgconfig/bus_msgs.pc'
+[11.524s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages'
+[11.524s] Level 1:colcon.colcon_core.shell:create_environment_hook('bus_msgs', 'pythonpath')
+[11.524s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/hook/pythonpath.ps1'
+[11.525s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/hook/pythonpath.dsv'
+[11.525s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/hook/pythonpath.sh'
+[11.526s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/bus_msgs/bin'
+[11.527s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/package.ps1'
+[11.528s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/package.dsv'
+[11.528s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/package.sh'
+[11.529s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/package.bash'
+[11.530s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/piracer/install/bus_msgs/share/bus_msgs/package.zsh'
+[11.531s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetpack/piracer/install/bus_msgs/share/colcon-core/packages/bus_msgs)
+[11.531s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jetpack/piracer/src/bus_interfaces/can_interface' with build type 'ament_cmake'
+[11.532s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jetpack/piracer/src/bus_interfaces/can_interface'
+[11.532s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[11.532s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[11.545s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetpack/piracer/build/can_interface': AMENT_PREFIX_PATH=/home/jetpack/piracer/install/bus_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/piracer/install/bus_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/jetpack/piracer/src/bus_interfaces/can_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jetpack/piracer/install/can_interface
+[17.081s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetpack/piracer/build/oled_service' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jetpack/piracer/build/oled_service -- -j4 -l4
+[17.126s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetpack/piracer/build/oled_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jetpack/piracer/build/oled_service
+[17.421s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(oled_service)
+[17.422s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/oled_service' for CMake module files
+[17.422s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetpack/piracer/build/oled_service' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jetpack/piracer/build/oled_service
+[17.423s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/oled_service' for CMake config files
+[17.423s] Level 1:colcon.colcon_core.shell:create_environment_hook('oled_service', 'cmake_prefix_path')
+[17.423s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/piracer/install/oled_service/share/oled_service/hook/cmake_prefix_path.ps1'
+[17.424s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetpack/piracer/install/oled_service/share/oled_service/hook/cmake_prefix_path.dsv'
+[17.424s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/piracer/install/oled_service/share/oled_service/hook/cmake_prefix_path.sh'
+[17.425s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/oled_service/lib'
+[17.425s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/oled_service/bin'
+[17.425s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/oled_service/lib/pkgconfig/oled_service.pc'
+[17.426s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/oled_service/lib/python3.12/site-packages'
+[17.426s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/oled_service/bin'
+[17.426s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/piracer/install/oled_service/share/oled_service/package.ps1'
+[17.427s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetpack/piracer/install/oled_service/share/oled_service/package.dsv'
+[17.427s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/piracer/install/oled_service/share/oled_service/package.sh'
+[17.428s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/piracer/install/oled_service/share/oled_service/package.bash'
+[17.428s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/piracer/install/oled_service/share/oled_service/package.zsh'
+[17.429s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetpack/piracer/install/oled_service/share/colcon-core/packages/oled_service)
+[17.470s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(oled_service)
+[17.470s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/oled_service' for CMake module files
+[17.471s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/oled_service' for CMake config files
+[17.471s] Level 1:colcon.colcon_core.shell:create_environment_hook('oled_service', 'cmake_prefix_path')
+[17.472s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/piracer/install/oled_service/share/oled_service/hook/cmake_prefix_path.ps1'
+[17.472s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetpack/piracer/install/oled_service/share/oled_service/hook/cmake_prefix_path.dsv'
+[17.473s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/piracer/install/oled_service/share/oled_service/hook/cmake_prefix_path.sh'
+[17.474s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/oled_service/lib'
+[17.474s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/oled_service/bin'
+[17.474s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/oled_service/lib/pkgconfig/oled_service.pc'
+[17.475s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/oled_service/lib/python3.12/site-packages'
+[17.475s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/oled_service/bin'
+[17.475s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/piracer/install/oled_service/share/oled_service/package.ps1'
+[17.476s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetpack/piracer/install/oled_service/share/oled_service/package.dsv'
+[17.477s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/piracer/install/oled_service/share/oled_service/package.sh'
+[17.478s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/piracer/install/oled_service/share/oled_service/package.bash'
+[17.479s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/piracer/install/oled_service/share/oled_service/package.zsh'
+[17.479s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetpack/piracer/install/oled_service/share/colcon-core/packages/oled_service)
+[17.883s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetpack/piracer/build/can_interface' returned '0': AMENT_PREFIX_PATH=/home/jetpack/piracer/install/bus_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/piracer/install/bus_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/jetpack/piracer/src/bus_interfaces/can_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jetpack/piracer/install/can_interface
+[17.884s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetpack/piracer/build/can_interface': AMENT_PREFIX_PATH=/home/jetpack/piracer/install/bus_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/piracer/install/bus_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jetpack/piracer/build/can_interface -- -j4 -l4
+[23.862s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetpack/piracer/build/can_interface' returned '2': AMENT_PREFIX_PATH=/home/jetpack/piracer/install/bus_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/piracer/install/bus_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jetpack/piracer/build/can_interface -- -j4 -l4
+[23.904s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(can_interface)
+[23.904s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/can_interface' for CMake module files
+[23.905s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/can_interface' for CMake config files
+[23.905s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/can_interface/bin'
+[23.905s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/can_interface/lib/pkgconfig/can_interface.pc'
+[23.906s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/can_interface/lib/python3.12/site-packages'
+[23.906s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/piracer/install/can_interface/bin'
+[23.906s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/piracer/install/can_interface/share/can_interface/package.ps1'
+[23.907s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetpack/piracer/install/can_interface/share/can_interface/package.dsv'
+[23.907s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/piracer/install/can_interface/share/can_interface/package.sh'
+[23.908s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/piracer/install/can_interface/share/can_interface/package.bash'
+[23.908s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/piracer/install/can_interface/share/can_interface/package.zsh'
+[23.909s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetpack/piracer/install/can_interface/share/colcon-core/packages/can_interface)
+[23.919s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[23.920s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[23.920s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[23.920s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[23.929s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[23.930s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[23.930s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[23.931s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[23.931s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[23.932s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetpack/piracer/install/local_setup.ps1'
+[23.933s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jetpack/piracer/install/_local_setup_util_ps1.py'
+[23.934s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetpack/piracer/install/setup.ps1'
+[23.935s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetpack/piracer/install/local_setup.sh'
+[23.935s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jetpack/piracer/install/_local_setup_util_sh.py'
+[23.936s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetpack/piracer/install/setup.sh'
+[23.937s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetpack/piracer/install/local_setup.bash'
+[23.938s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetpack/piracer/install/setup.bash'
+[23.939s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetpack/piracer/install/local_setup.zsh'
+[23.939s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetpack/piracer/install/setup.zsh'

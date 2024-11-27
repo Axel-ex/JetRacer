@@ -1,0 +1,289 @@
+[0.000000] (-) TimerEvent: {}
+[0.000348] (bus_msgs) JobQueued: {'identifier': 'bus_msgs', 'dependencies': OrderedDict()}
+[0.000393] (oled_service) JobQueued: {'identifier': 'oled_service', 'dependencies': OrderedDict()}
+[0.000415] (can_interface) JobQueued: {'identifier': 'can_interface', 'dependencies': OrderedDict({'bus_msgs': '/home/jetpack/piracer/install/bus_msgs'})}
+[0.000696] (bus_msgs) JobStarted: {'identifier': 'bus_msgs'}
+[0.048774] (oled_service) JobStarted: {'identifier': 'oled_service'}
+[0.055296] (bus_msgs) JobProgress: {'identifier': 'bus_msgs', 'progress': 'cmake'}
+[0.056154] (bus_msgs) JobProgress: {'identifier': 'bus_msgs', 'progress': 'build'}
+[0.056931] (bus_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jetpack/piracer/build/bus_msgs', '--', '-j4', '-l4'], 'cwd': '/home/jetpack/piracer/build/bus_msgs', 'env': OrderedDict({'USER': 'jetpack', 'SSH_CLIENT': '192.168.1.16 63697 22', 'STARSHIP_SHELL': 'fish', 'XDG_SESSION_TYPE': 'tty', 'LD_LIBRARY_PATH': '/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'SHLVL': '1', 'HOME': '/home/jetpack', 'SSH_TTY': '/dev/pts/0', 'OPENAI_API_KEY': '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', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'ROS_DISTRO': 'jazzy', 'OMF_PATH': '/home/jetpack/.local/share/omf', 'COLCON_PREFIX_PATH': '/home/jetpack/piracer/install', 'LOGNAME': 'jetpack', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '8', 'PATH': '/Users/Axel/miniconda3/bin:/opt/ros/jazzy/bin:/home/jetpack/miniconda3/bin:/Users/Axel/.local/bin:/Users/Axel/.local/share/nvim/mason/bin:usr/bin:/Users/Axel/.fzf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy', 'SHELL': '/usr/bin/fish', 'WIFI_SSID': 'MEO-BD8310', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/jetpack/piracer/build/bus_msgs', 'SSH_CONNECTION': '192.168.1.16 63697 192.168.1.21 22', 'OMF_CONFIG': '/home/jetpack/.config/omf', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'STARSHIP_SESSION_KEY': '2370417680128141', 'COLCON': '1', 'WARP_THEMES_DIR': '/home/jetpack/.warp/themes', 'EDITOR': 'nvim', 'CMAKE_PREFIX_PATH': '/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WIFI_PASSWORD': '9f24731014'}), 'shell': False}
+[0.062233] (oled_service) JobProgress: {'identifier': 'oled_service', 'progress': 'cmake'}
+[0.063122] (oled_service) JobProgress: {'identifier': 'oled_service', 'progress': 'build'}
+[0.063478] (oled_service) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jetpack/piracer/build/oled_service', '--', '-j4', '-l4'], 'cwd': '/home/jetpack/piracer/build/oled_service', 'env': OrderedDict({'USER': 'jetpack', 'SSH_CLIENT': '192.168.1.16 63697 22', 'STARSHIP_SHELL': 'fish', 'XDG_SESSION_TYPE': 'tty', 'LD_LIBRARY_PATH': '/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'SHLVL': '1', 'HOME': '/home/jetpack', 'SSH_TTY': '/dev/pts/0', 'OPENAI_API_KEY': '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', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'ROS_DISTRO': 'jazzy', 'OMF_PATH': '/home/jetpack/.local/share/omf', 'COLCON_PREFIX_PATH': '/home/jetpack/piracer/install', 'LOGNAME': 'jetpack', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '8', 'PATH': '/Users/Axel/miniconda3/bin:/opt/ros/jazzy/bin:/home/jetpack/miniconda3/bin:/Users/Axel/.local/bin:/Users/Axel/.local/share/nvim/mason/bin:usr/bin:/Users/Axel/.fzf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy', 'SHELL': '/usr/bin/fish', 'WIFI_SSID': 'MEO-BD8310', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/jetpack/piracer/build/oled_service', 'SSH_CONNECTION': '192.168.1.16 63697 192.168.1.21 22', 'OMF_CONFIG': '/home/jetpack/.config/omf', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'STARSHIP_SESSION_KEY': '2370417680128141', 'COLCON': '1', 'WARP_THEMES_DIR': '/home/jetpack/.warp/themes', 'EDITOR': 'nvim', 'CMAKE_PREFIX_PATH': '/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WIFI_PASSWORD': '9f24731014'}), 'shell': False}
+[0.099732] (-) TimerEvent: {}
+[0.146022] (bus_msgs) StdoutLine: {'line': b'[  2%] Built target bus_msgs__rosidl_generator_type_description\n'}
+[0.165556] (bus_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_symlink_bus_msgs\n'}
+[0.165996] (oled_service) StdoutLine: {'line': b'[100%] Built target oled_display\n'}
+[0.185709] (bus_msgs) StdoutLine: {'line': b'[ 14%] Built target bus_msgs__cpp\n'}
+[0.186037] (bus_msgs) StdoutLine: {'line': b'[ 20%] Built target bus_msgs__rosidl_generator_c\n'}
+[0.189311] (oled_service) CommandEnded: {'returncode': 0}
+[0.203680] (-) TimerEvent: {}
+[0.234712] (bus_msgs) StdoutLine: {'line': b'[ 29%] Built target bus_msgs__rosidl_typesupport_c\n'}
+[0.244308] (bus_msgs) StdoutLine: {'line': b'[ 38%] Built target bus_msgs__rosidl_typesupport_introspection_c\n'}
+[0.253942] (bus_msgs) StdoutLine: {'line': b'[ 47%] Built target bus_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[0.271513] (oled_service) JobProgress: {'identifier': 'oled_service', 'progress': 'install'}
+[0.291642] (oled_service) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jetpack/piracer/build/oled_service'], 'cwd': '/home/jetpack/piracer/build/oled_service', 'env': OrderedDict({'USER': 'jetpack', 'SSH_CLIENT': '192.168.1.16 63697 22', 'STARSHIP_SHELL': 'fish', 'XDG_SESSION_TYPE': 'tty', 'LD_LIBRARY_PATH': '/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'SHLVL': '1', 'HOME': '/home/jetpack', 'SSH_TTY': '/dev/pts/0', 'OPENAI_API_KEY': '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', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'ROS_DISTRO': 'jazzy', 'OMF_PATH': '/home/jetpack/.local/share/omf', 'COLCON_PREFIX_PATH': '/home/jetpack/piracer/install', 'LOGNAME': 'jetpack', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '8', 'PATH': '/Users/Axel/miniconda3/bin:/opt/ros/jazzy/bin:/home/jetpack/miniconda3/bin:/Users/Axel/.local/bin:/Users/Axel/.local/share/nvim/mason/bin:usr/bin:/Users/Axel/.fzf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy', 'SHELL': '/usr/bin/fish', 'WIFI_SSID': 'MEO-BD8310', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/jetpack/piracer/build/oled_service', 'SSH_CONNECTION': '192.168.1.16 63697 192.168.1.21 22', 'OMF_CONFIG': '/home/jetpack/.config/omf', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'STARSHIP_SESSION_KEY': '2370417680128141', 'COLCON': '1', 'WARP_THEMES_DIR': '/home/jetpack/.warp/themes', 'EDITOR': 'nvim', 'CMAKE_PREFIX_PATH': '/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WIFI_PASSWORD': '9f24731014'}), 'shell': False}
+[0.303805] (-) TimerEvent: {}
+[0.309232] (bus_msgs) StdoutLine: {'line': b'[ 55%] Built target bus_msgs__rosidl_typesupport_cpp\n'}
+[0.310003] (bus_msgs) StdoutLine: {'line': b'[ 64%] Built target bus_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.312819] (bus_msgs) StdoutLine: {'line': b'[ 73%] Built target bus_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.313499] (oled_service) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.314251] (oled_service) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.315017] (oled_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/lib/oled_service/oled_display\n'}
+[0.315371] (oled_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/ament_index/resource_index/package_run_dependencies/oled_service\n'}
+[0.315590] (oled_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/ament_index/resource_index/parent_prefix_path/oled_service\n'}
+[0.315784] (oled_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/oled_service/environment/ament_prefix_path.sh\n'}
+[0.315953] (oled_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/oled_service/environment/ament_prefix_path.dsv\n'}
+[0.316185] (oled_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/oled_service/environment/path.sh\n'}
+[0.316407] (oled_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/oled_service/environment/path.dsv\n'}
+[0.316692] (oled_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/oled_service/local_setup.bash\n'}
+[0.316957] (oled_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/oled_service/local_setup.sh\n'}
+[0.318829] (oled_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/oled_service/local_setup.zsh\n'}
+[0.319114] (oled_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/oled_service/local_setup.dsv\n'}
+[0.319226] (oled_service) StdoutLine: {'line': b'-- Symlinking: /home/jetpack/piracer/install/oled_service/share/oled_service/package.dsv\n'}
+[0.334710] (oled_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/ament_index/resource_index/packages/oled_service\n'}
+[0.335054] (oled_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/oled_service/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.335243] (oled_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/oled_service/cmake/oled_serviceConfig.cmake\n'}
+[0.335457] (oled_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/oled_service/cmake/oled_serviceConfig-version.cmake\n'}
+[0.335653] (oled_service) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/oled_service/share/oled_service/package.xml\n'}
+[0.338674] (oled_service) CommandEnded: {'returncode': 0}
+[0.352859] (bus_msgs) StdoutLine: {'line': b'[ 73%] Built target bus_msgs\n'}
+[0.389591] (bus_msgs) StdoutLine: {'line': b'[ 76%] Built target bus_msgs__py\n'}
+[0.403916] (-) TimerEvent: {}
+[0.419368] (oled_service) JobEnded: {'identifier': 'oled_service', 'rc': 0}
+[0.429364] (bus_msgs) StdoutLine: {'line': b'[ 82%] Built target bus_msgs__rosidl_generator_py\n'}
+[0.471128] (bus_msgs) StdoutLine: {'line': b'[ 88%] Built target bus_msgs_s__rosidl_typesupport_c\n'}
+[0.481987] (bus_msgs) StdoutLine: {'line': b'[ 94%] Built target bus_msgs_s__rosidl_typesupport_introspection_c\n'}
+[0.482216] (bus_msgs) StdoutLine: {'line': b'[100%] Built target bus_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[0.503990] (-) TimerEvent: {}
+[0.535215] (bus_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[0.559826] (bus_msgs) StdoutLine: {'line': b'writing bus_msgs.egg-info/PKG-INFO\n'}
+[0.560194] (bus_msgs) StdoutLine: {'line': b'writing dependency_links to bus_msgs.egg-info/dependency_links.txt\n'}
+[0.560845] (bus_msgs) StdoutLine: {'line': b'writing top-level names to bus_msgs.egg-info/top_level.txt\n'}
+[0.604059] (-) TimerEvent: {}
+[0.633789] (bus_msgs) StdoutLine: {'line': b"reading manifest file 'bus_msgs.egg-info/SOURCES.txt'\n"}
+[0.634566] (bus_msgs) StdoutLine: {'line': b"writing manifest file 'bus_msgs.egg-info/SOURCES.txt'\n"}
+[0.696183] (bus_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_bus_msgs_egg\n'}
+[0.704223] (-) TimerEvent: {}
+[0.716197] (bus_msgs) CommandEnded: {'returncode': 0}
+[0.804324] (-) TimerEvent: {}
+[0.805697] (bus_msgs) JobProgress: {'identifier': 'bus_msgs', 'progress': 'install'}
+[0.807042] (bus_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jetpack/piracer/build/bus_msgs'], 'cwd': '/home/jetpack/piracer/build/bus_msgs', 'env': OrderedDict({'USER': 'jetpack', 'SSH_CLIENT': '192.168.1.16 63697 22', 'STARSHIP_SHELL': 'fish', 'XDG_SESSION_TYPE': 'tty', 'LD_LIBRARY_PATH': '/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'SHLVL': '1', 'HOME': '/home/jetpack', 'SSH_TTY': '/dev/pts/0', 'OPENAI_API_KEY': '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', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'ROS_DISTRO': 'jazzy', 'OMF_PATH': '/home/jetpack/.local/share/omf', 'COLCON_PREFIX_PATH': '/home/jetpack/piracer/install', 'LOGNAME': 'jetpack', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '8', 'PATH': '/Users/Axel/miniconda3/bin:/opt/ros/jazzy/bin:/home/jetpack/miniconda3/bin:/Users/Axel/.local/bin:/Users/Axel/.local/share/nvim/mason/bin:usr/bin:/Users/Axel/.fzf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy', 'SHELL': '/usr/bin/fish', 'WIFI_SSID': 'MEO-BD8310', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/jetpack/piracer/build/bus_msgs', 'SSH_CONNECTION': '192.168.1.16 63697 192.168.1.21 22', 'OMF_CONFIG': '/home/jetpack/.config/omf', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'STARSHIP_SESSION_KEY': '2370417680128141', 'COLCON': '1', 'WARP_THEMES_DIR': '/home/jetpack/.warp/themes', 'EDITOR': 'nvim', 'CMAKE_PREFIX_PATH': '/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WIFI_PASSWORD': '9f24731014'}), 'shell': False}
+[0.823242] (bus_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.823967] (bus_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.824279] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/share/ament_index/resource_index/rosidl_interfaces/bus_msgs\n'}
+[0.824511] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/msg/CanPacket.json\n'}
+[0.825036] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/can_packet.h\n'}
+[0.825186] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/detail/can_packet__functions.h\n'}
+[0.825336] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/detail/can_packet__struct.h\n'}
+[0.825479] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/detail/can_packet__type_support.h\n'}
+[0.825621] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.825836] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/environment/library_path.sh\n'}
+[0.826026] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/environment/library_path.dsv\n'}
+[0.826538] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/detail/can_packet__rosidl_typesupport_fastrtps_c.h\n'}
+[0.826705] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.827084] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/detail/can_packet__rosidl_typesupport_introspection_c.h\n'}
+[0.827218] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.827645] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/can_packet.hpp\n'}
+[0.827788] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/detail/can_packet__builder.hpp\n'}
+[0.827927] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/detail/can_packet__struct.hpp\n'}
+[0.828065] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/detail/can_packet__traits.hpp\n'}
+[0.828209] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/detail/can_packet__type_support.hpp\n'}
+[0.828342] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.828884] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/detail/can_packet__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.829026] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.829414] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/detail/can_packet__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.829687] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/environment/pythonpath.sh\n'}
+[0.829872] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/environment/pythonpath.dsv\n'}
+[0.830227] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[0.830364] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[0.830523] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[0.830660] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[0.831264] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/__init__.py\n'}
+[0.831398] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/_bus_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[0.831554] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/_bus_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.831743] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/_bus_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.831919] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/bus_msgs_s__rosidl_typesupport_c.so\n'}
+[0.832052] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/bus_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[0.832182] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/bus_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[0.832316] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/msg/__init__.py\n'}
+[0.832457] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/msg/_can_packet.py\n'}
+[0.832602] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/msg/_can_packet_s.c\n'}
+[0.832944] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/bus_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[0.833240] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/bus_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[0.833533] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/bus_msgs_s__rosidl_typesupport_c.so\n'}
+[0.833739] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/msg/CanPacket.idl\n'}
+[0.833928] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/msg/CanPacket.msg\n'}
+[0.834133] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/share/ament_index/resource_index/package_run_dependencies/bus_msgs\n'}
+[0.834331] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/share/ament_index/resource_index/parent_prefix_path/bus_msgs\n'}
+[0.834535] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/environment/ament_prefix_path.sh\n'}
+[0.834723] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/environment/ament_prefix_path.dsv\n'}
+[0.834912] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/environment/path.sh\n'}
+[0.835103] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/environment/path.dsv\n'}
+[0.835269] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/local_setup.bash\n'}
+[0.835445] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/local_setup.sh\n'}
+[0.835632] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/local_setup.zsh\n'}
+[0.835807] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/local_setup.dsv\n'}
+[0.835939] (bus_msgs) StdoutLine: {'line': b'-- Symlinking: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/package.dsv\n'}
+[0.852090] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/share/ament_index/resource_index/packages/bus_msgs\n'}
+[0.852295] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[0.852518] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.852733] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.852926] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.853109] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.853293] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.853874] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.853969] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/cmake/bus_msgsConfig.cmake\n'}
+[0.854054] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/cmake/bus_msgsConfig-version.cmake\n'}
+[0.854164] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/package.xml\n'}
+[0.854355] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/bus_msgs/lib/libbus_msgs__rosidl_generator_c.so\n'}
+[0.854773] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/bus_msgs/lib/libbus_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[0.855137] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/bus_msgs/lib/libbus_msgs__rosidl_typesupport_introspection_c.so\n'}
+[0.855487] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/bus_msgs/lib/libbus_msgs__rosidl_typesupport_c.so\n'}
+[0.855852] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/bus_msgs/lib/libbus_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.856231] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/bus_msgs/lib/libbus_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[0.856676] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/bus_msgs/lib/libbus_msgs__rosidl_typesupport_cpp.so\n'}
+[0.904408] (-) TimerEvent: {}
+[0.906398] (bus_msgs) StdoutLine: {'line': b"Listing '/home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs'...\n"}
+[0.906620] (bus_msgs) StdoutLine: {'line': b"Listing '/home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/msg'...\n"}
+[0.917391] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/bus_msgs/lib/libbus_msgs__rosidl_generator_py.so\n'}
+[0.917739] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/cmake/export_bus_msgs__rosidl_generator_cExport.cmake\n'}
+[0.917886] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/cmake/export_bus_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.918010] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/cmake/export_bus_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.918091] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/cmake/export_bus_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.918204] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/cmake/bus_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.918303] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/cmake/bus_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.918386] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/cmake/bus_msgs__rosidl_typesupport_cExport.cmake\n'}
+[0.918507] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/cmake/bus_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.918593] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/cmake/export_bus_msgs__rosidl_generator_cppExport.cmake\n'}
+[0.918706] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/cmake/export_bus_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.918791] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/cmake/export_bus_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.918905] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/cmake/bus_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.918988] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/cmake/bus_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.919068] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/cmake/bus_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[0.919180] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/cmake/bus_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.919257] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/cmake/export_bus_msgs__rosidl_generator_pyExport.cmake\n'}
+[0.919349] (bus_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/bus_msgs/share/bus_msgs/cmake/export_bus_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.922292] (bus_msgs) CommandEnded: {'returncode': 0}
+[1.004498] (-) TimerEvent: {}
+[1.043695] (bus_msgs) JobEnded: {'identifier': 'bus_msgs', 'rc': 0}
+[1.044964] (can_interface) JobStarted: {'identifier': 'can_interface'}
+[1.056046] (can_interface) JobProgress: {'identifier': 'can_interface', 'progress': 'cmake'}
+[1.056969] (can_interface) JobProgress: {'identifier': 'can_interface', 'progress': 'build'}
+[1.057346] (can_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jetpack/piracer/build/can_interface', '--', '-j4', '-l4'], 'cwd': '/home/jetpack/piracer/build/can_interface', 'env': OrderedDict({'USER': 'jetpack', 'SSH_CLIENT': '192.168.1.16 63697 22', 'STARSHIP_SHELL': 'fish', 'XDG_SESSION_TYPE': 'tty', 'LD_LIBRARY_PATH': '/home/jetpack/piracer/install/bus_msgs/lib:/home/jetpack/piracer/install/can_interface/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'SHLVL': '1', 'HOME': '/home/jetpack', 'SSH_TTY': '/dev/pts/0', 'OPENAI_API_KEY': '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', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'ROS_DISTRO': 'jazzy', 'OMF_PATH': '/home/jetpack/.local/share/omf', 'COLCON_PREFIX_PATH': '/home/jetpack/piracer/install', 'LOGNAME': 'jetpack', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '8', 'PATH': '/Users/Axel/miniconda3/bin:/opt/ros/jazzy/bin:/home/jetpack/miniconda3/bin:/Users/Axel/.local/bin:/Users/Axel/.local/share/nvim/mason/bin:usr/bin:/Users/Axel/.fzf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy', 'SHELL': '/usr/bin/fish', 'WIFI_SSID': 'MEO-BD8310', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/jetpack/piracer/build/can_interface', 'SSH_CONNECTION': '192.168.1.16 63697 192.168.1.21 22', 'OMF_CONFIG': '/home/jetpack/.config/omf', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'STARSHIP_SESSION_KEY': '2370417680128141', 'COLCON': '1', 'WARP_THEMES_DIR': '/home/jetpack/.warp/themes', 'EDITOR': 'nvim', 'CMAKE_PREFIX_PATH': '/home/jetpack/piracer/install/bus_msgs:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/can_interface:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WIFI_PASSWORD': '9f24731014'}), 'shell': False}
+[1.104609] (-) TimerEvent: {}
+[1.148813] (can_interface) StdoutLine: {'line': b'[ 40%] Built target sockcanpp\n'}
+[1.203372] (can_interface) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/can_interface_node.dir/src/CanInterface.cpp.o\x1b[0m\n'}
+[1.204680] (-) TimerEvent: {}
+[1.304934] (-) TimerEvent: {}
+[1.405247] (-) TimerEvent: {}
+[1.505559] (-) TimerEvent: {}
+[1.605846] (-) TimerEvent: {}
+[1.706142] (-) TimerEvent: {}
+[1.806457] (-) TimerEvent: {}
+[1.906760] (-) TimerEvent: {}
+[2.007066] (-) TimerEvent: {}
+[2.107368] (-) TimerEvent: {}
+[2.207658] (-) TimerEvent: {}
+[2.307945] (-) TimerEvent: {}
+[2.408226] (-) TimerEvent: {}
+[2.508515] (-) TimerEvent: {}
+[2.608795] (-) TimerEvent: {}
+[2.709087] (-) TimerEvent: {}
+[2.809383] (-) TimerEvent: {}
+[2.909675] (-) TimerEvent: {}
+[3.009951] (-) TimerEvent: {}
+[3.110225] (-) TimerEvent: {}
+[3.210503] (-) TimerEvent: {}
+[3.310777] (-) TimerEvent: {}
+[3.411051] (-) TimerEvent: {}
+[3.511319] (-) TimerEvent: {}
+[3.611573] (-) TimerEvent: {}
+[3.711828] (-) TimerEvent: {}
+[3.812068] (-) TimerEvent: {}
+[3.912315] (-) TimerEvent: {}
+[4.012565] (-) TimerEvent: {}
+[4.112810] (-) TimerEvent: {}
+[4.213065] (-) TimerEvent: {}
+[4.313310] (-) TimerEvent: {}
+[4.413577] (-) TimerEvent: {}
+[4.513875] (-) TimerEvent: {}
+[4.614144] (-) TimerEvent: {}
+[4.714470] (-) TimerEvent: {}
+[4.814771] (-) TimerEvent: {}
+[4.915066] (-) TimerEvent: {}
+[5.015352] (-) TimerEvent: {}
+[5.115612] (-) TimerEvent: {}
+[5.215866] (-) TimerEvent: {}
+[5.316104] (-) TimerEvent: {}
+[5.416353] (-) TimerEvent: {}
+[5.516646] (-) TimerEvent: {}
+[5.616904] (-) TimerEvent: {}
+[5.717151] (-) TimerEvent: {}
+[5.817412] (-) TimerEvent: {}
+[5.917693] (-) TimerEvent: {}
+[6.017967] (-) TimerEvent: {}
+[6.118221] (-) TimerEvent: {}
+[6.218478] (-) TimerEvent: {}
+[6.318730] (-) TimerEvent: {}
+[6.418989] (-) TimerEvent: {}
+[6.519281] (-) TimerEvent: {}
+[6.619592] (-) TimerEvent: {}
+[6.719925] (-) TimerEvent: {}
+[6.820234] (-) TimerEvent: {}
+[6.920524] (-) TimerEvent: {}
+[7.020812] (-) TimerEvent: {}
+[7.121099] (-) TimerEvent: {}
+[7.221379] (-) TimerEvent: {}
+[7.321671] (-) TimerEvent: {}
+[7.421952] (-) TimerEvent: {}
+[7.522240] (-) TimerEvent: {}
+[7.622552] (-) TimerEvent: {}
+[7.722835] (-) TimerEvent: {}
+[7.823120] (-) TimerEvent: {}
+[7.923389] (-) TimerEvent: {}
+[8.023677] (-) TimerEvent: {}
+[8.123949] (-) TimerEvent: {}
+[8.224272] (-) TimerEvent: {}
+[8.324640] (-) TimerEvent: {}
+[8.423708] (can_interface) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable can_interface_node\x1b[0m\n'}
+[8.424703] (-) TimerEvent: {}
+[8.524966] (-) TimerEvent: {}
+[8.625339] (-) TimerEvent: {}
+[8.725653] (-) TimerEvent: {}
+[8.737217] (can_interface) StdoutLine: {'line': b'[100%] Built target can_interface_node\n'}
+[8.757314] (can_interface) CommandEnded: {'returncode': 0}
+[8.800496] (can_interface) JobProgress: {'identifier': 'can_interface', 'progress': 'install'}
+[8.800964] (can_interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jetpack/piracer/build/can_interface'], 'cwd': '/home/jetpack/piracer/build/can_interface', 'env': OrderedDict({'USER': 'jetpack', 'SSH_CLIENT': '192.168.1.16 63697 22', 'STARSHIP_SHELL': 'fish', 'XDG_SESSION_TYPE': 'tty', 'LD_LIBRARY_PATH': '/home/jetpack/piracer/install/bus_msgs/lib:/home/jetpack/piracer/install/can_interface/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'SHLVL': '1', 'HOME': '/home/jetpack', 'SSH_TTY': '/dev/pts/0', 'OPENAI_API_KEY': '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', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'ROS_DISTRO': 'jazzy', 'OMF_PATH': '/home/jetpack/.local/share/omf', 'COLCON_PREFIX_PATH': '/home/jetpack/piracer/install', 'LOGNAME': 'jetpack', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '8', 'PATH': '/Users/Axel/miniconda3/bin:/opt/ros/jazzy/bin:/home/jetpack/miniconda3/bin:/Users/Axel/.local/bin:/Users/Axel/.local/share/nvim/mason/bin:usr/bin:/Users/Axel/.fzf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy', 'SHELL': '/usr/bin/fish', 'WIFI_SSID': 'MEO-BD8310', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/jetpack/piracer/build/can_interface', 'SSH_CONNECTION': '192.168.1.16 63697 192.168.1.21 22', 'OMF_CONFIG': '/home/jetpack/.config/omf', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetpack/piracer/install/bus_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'STARSHIP_SESSION_KEY': '2370417680128141', 'COLCON': '1', 'WARP_THEMES_DIR': '/home/jetpack/.warp/themes', 'EDITOR': 'nvim', 'CMAKE_PREFIX_PATH': '/home/jetpack/piracer/install/bus_msgs:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/can_interface:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WIFI_PASSWORD': '9f24731014'}), 'shell': False}
+[8.817070] (can_interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.817858] (can_interface) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[8.818173] (can_interface) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/lib/cmake/sockcanpp/libsockcanppConfig.cmake\n'}
+[8.818323] (can_interface) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/lib/cmake/sockcanpp/libsockcanppConfigVersion.cmake\n'}
+[8.818526] (can_interface) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/lib/pkgconfig/libsockcanpp.pc\n'}
+[8.818840] (can_interface) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/lib/can_interface/can_interface_node\n'}
+[8.819066] (can_interface) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/share/ament_index/resource_index/package_run_dependencies/can_interface\n'}
+[8.819274] (can_interface) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/share/ament_index/resource_index/parent_prefix_path/can_interface\n'}
+[8.819481] (can_interface) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/share/can_interface/environment/ament_prefix_path.sh\n'}
+[8.819670] (can_interface) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/share/can_interface/environment/ament_prefix_path.dsv\n'}
+[8.819858] (can_interface) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/share/can_interface/environment/path.sh\n'}
+[8.820037] (can_interface) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/share/can_interface/environment/path.dsv\n'}
+[8.820214] (can_interface) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/share/can_interface/local_setup.bash\n'}
+[8.820390] (can_interface) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/share/can_interface/local_setup.sh\n'}
+[8.820578] (can_interface) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/share/can_interface/local_setup.zsh\n'}
+[8.820755] (can_interface) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/share/can_interface/local_setup.dsv\n'}
+[8.820884] (can_interface) StdoutLine: {'line': b'-- Symlinking: /home/jetpack/piracer/install/can_interface/share/can_interface/package.dsv\n'}
+[8.825715] (-) TimerEvent: {}
+[8.837548] (can_interface) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/share/ament_index/resource_index/packages/can_interface\n'}
+[8.837802] (can_interface) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/share/can_interface/cmake/can_interfaceConfig.cmake\n'}
+[8.837933] (can_interface) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/share/can_interface/cmake/can_interfaceConfig-version.cmake\n'}
+[8.838067] (can_interface) StdoutLine: {'line': b'-- Up-to-date symlink: /home/jetpack/piracer/install/can_interface/share/can_interface/package.xml\n'}
+[8.838927] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/can_interface/lib/sockcanpp.so.1.1.0\n'}
+[8.839038] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/can_interface/lib/sockcanpp.so\n'}
+[8.839169] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/can_interface/include/CanDriver.hpp\n'}
+[8.839268] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/can_interface/include/CanId.hpp\n'}
+[8.839350] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/can_interface/include/CanMessage.hpp\n'}
+[8.839445] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/can_interface/lib/cmake/sockcanpp/sockcanppTargets.cmake\n'}
+[8.839889] (can_interface) StdoutLine: {'line': b'-- Up-to-date: /home/jetpack/piracer/install/can_interface/lib/cmake/sockcanpp/sockcanppTargets-noconfig.cmake\n'}
+[8.842149] (can_interface) CommandEnded: {'returncode': 0}
+[8.909890] (can_interface) JobEnded: {'identifier': 'can_interface', 'rc': 0}
+[8.911003] (-) EventReactorShutdown: {}

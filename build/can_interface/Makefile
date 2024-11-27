@@ -256,6 +256,30 @@ docs/fast:
 	$(MAKE) $(MAKESILENT) -f _deps/sockcanpp-build/CMakeFiles/docs.dir/build.make _deps/sockcanpp-build/CMakeFiles/docs.dir/build
 .PHONY : docs/fast
 
+src/CanInterface.o: src/CanInterface.cpp.o
+.PHONY : src/CanInterface.o
+
+# target to build an object file
+src/CanInterface.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/can_interface_node.dir/build.make CMakeFiles/can_interface_node.dir/src/CanInterface.cpp.o
+.PHONY : src/CanInterface.cpp.o
+
+src/CanInterface.i: src/CanInterface.cpp.i
+.PHONY : src/CanInterface.i
+
+# target to preprocess a source file
+src/CanInterface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/can_interface_node.dir/build.make CMakeFiles/can_interface_node.dir/src/CanInterface.cpp.i
+.PHONY : src/CanInterface.cpp.i
+
+src/CanInterface.s: src/CanInterface.cpp.s
+.PHONY : src/CanInterface.s
+
+# target to generate assembly for a file
+src/CanInterface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/can_interface_node.dir/build.make CMakeFiles/can_interface_node.dir/src/CanInterface.cpp.s
+.PHONY : src/CanInterface.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -300,6 +324,9 @@ help:
 	@echo "... uninstall"
 	@echo "... can_interface_node"
 	@echo "... sockcanpp"
+	@echo "... src/CanInterface.o"
+	@echo "... src/CanInterface.i"
+	@echo "... src/CanInterface.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

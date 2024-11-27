@@ -4,3 +4,5 @@ bus_msgs.egg-info/PKG-INFO
 bus_msgs.egg-info/SOURCES.txt
 bus_msgs.egg-info/dependency_links.txt
 bus_msgs.egg-info/top_level.txt
+bus_msgs/msg/__init__.py
+bus_msgs/msg/_can_packet.py
