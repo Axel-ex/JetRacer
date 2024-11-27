@@ -1,0 +1,6 @@
+{
+  "package_name": "bus_msgs",
+  "non_idl_tuples": [
+    "/home/jetpack/piracer/src/bus_interfaces/bus_msgs:msg/CanPacket.msg"
+  ]
+}

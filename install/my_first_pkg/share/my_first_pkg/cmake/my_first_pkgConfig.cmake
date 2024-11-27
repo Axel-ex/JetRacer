@@ -1,1 +1,0 @@
-/home/pi/test_workspace/build/my_first_pkg/ament_cmake_core/my_first_pkgConfig.cmake

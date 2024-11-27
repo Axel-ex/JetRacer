@@ -1,0 +1,4 @@
+source;share/bus_msgs/local_setup.bash
+source;share/bus_msgs/local_setup.dsv
+source;share/bus_msgs/local_setup.sh
+source;share/bus_msgs/local_setup.zsh

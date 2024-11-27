@@ -1,6 +1,0 @@
-Invoking command in '/home/pi/test_workspace/build/my_first_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/pi/test_workspace/src/my_first_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pi/test_workspace/install/my_first_pkg
-Invoked command in '/home/pi/test_workspace/build/my_first_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/pi/test_workspace/src/my_first_pkg -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/pi/test_workspace/install/my_first_pkg
-Invoking command in '/home/pi/test_workspace/build/my_first_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/pi/test_workspace/build/my_first_pkg -- -j4 -l4
-Invoked command in '/home/pi/test_workspace/build/my_first_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/pi/test_workspace/build/my_first_pkg -- -j4 -l4
-Invoking command in '/home/pi/test_workspace/build/my_first_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/pi/test_workspace/build/my_first_pkg
-Invoked command in '/home/pi/test_workspace/build/my_first_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/pi/test_workspace/build/my_first_pkg
