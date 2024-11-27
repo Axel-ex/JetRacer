@@ -1,5 +1,6 @@
-### Suggestion for the project structure
+# Suggestion for the project structure
 
+```
 Piracer/
 ├── src/
 │   ├── bus_interfaces/
@@ -42,8 +43,9 @@ Piracer/
 │   │       └── include/
 ├── CMakeLists.txt
 └── colcon.meta
+```
 
-## build
+# Build
 
 ```
 cd Piracer
