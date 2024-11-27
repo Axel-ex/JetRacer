@@ -1,7 +1,0 @@
-{
-  "package_name": "bus_msgs",
-  "output_dir": "/home/jetpack/piracer/build/bus_msgs/rosidl_generator_type_description/bus_msgs",
-  "idl_tuples": [
-    "/home/jetpack/piracer/build/bus_msgs/rosidl_adapter/bus_msgs:msg/CanPacket.idl"
-  ]
-}

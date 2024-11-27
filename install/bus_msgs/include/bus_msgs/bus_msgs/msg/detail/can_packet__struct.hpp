@@ -1,1 +1,0 @@
-/home/jetpack/piracer/build/bus_msgs/rosidl_generator_cpp/bus_msgs/msg/detail/can_packet__struct.hpp

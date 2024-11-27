@@ -1,1 +1,0 @@
-/home/jetpack/piracer/src/bus_interfaces/bus_msgs/msg/CanPacket.msg
