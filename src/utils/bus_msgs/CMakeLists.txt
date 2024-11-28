@@ -10,7 +10,7 @@ find_package(ament_cmake REQUIRED)
 
 find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/CanPacket.msg"
+	"msg/CanFrame.msg"
   "srv/I2cService.srv"
   "srv/CanService.srv"
 )
