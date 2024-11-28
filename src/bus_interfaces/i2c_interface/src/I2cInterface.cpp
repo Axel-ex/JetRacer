@@ -5,6 +5,7 @@
 #include <fcntl.h>
 #include <linux/i2c-dev.h>
 #include <rclcpp/future_return_code.hpp>
+#include <rclcpp/logger.hpp>
 #include <rclcpp/logging.hpp>
 #include <stdexcept>
 #include <string>
@@ -15,8 +16,8 @@
 
 I2cInterface::I2cInterface() : Node("i2c_interface")
 {
+    this->get_logger().set_level(rclcpp::Logger::Level::Debug);
     init_();
-
     i2c_service_ = this->create_service<bus_msgs::srv::I2cService>(
         "i2c_service", std::bind(&I2cInterface::handleI2cRequest, this,
                                  std::placeholders::_1, std::placeholders::_2));
