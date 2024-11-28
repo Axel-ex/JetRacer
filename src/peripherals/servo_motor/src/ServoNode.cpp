@@ -20,21 +20,35 @@ ServoNode::ServoNode() : Node("servo_node")
 
 ServoNode::~ServoNode() {}
 
+/**
+ * @brief request to the i2c service a write operation upon receiving a message
+ * in the direction topic
+ *
+ * @param direction
+ */
 void ServoNode::writeDirectionToI2C(
     const std_msgs::msg::UInt8::SharedPtr direction)
 {
+    // create the request
     bus_msgs::srv::I2cService::Request::SharedPtr request =
         std::make_shared<bus_msgs::srv::I2cService::Request>();
     ;
 
+    // populate it with the right data
     request->set__device_address(SERVO_ADRESS);
     request->write_data.push_back(direction->data);
 
+    // send it to the i2c interface via the client
     auto response = client_->async_send_request(
         request,
         std::bind(&ServoNode::handleI2CResponse, this, std::placeholders::_1));
 }
 
+/**
+ * @brief handle the response from the i2c service
+ *
+ * @param response
+ */
 void ServoNode::handleI2CResponse(
     rclcpp::Client<bus_msgs::srv::I2cService>::SharedFuture response)
 {

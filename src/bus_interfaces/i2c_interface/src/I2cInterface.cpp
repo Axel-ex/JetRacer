@@ -30,6 +30,10 @@ I2cInterface::~I2cInterface()
         close(i2c_fd_);
 }
 
+/**
+ * @brief Open the /dev/i2c-1. this operation will fail if the user is not in
+ * the i2c group ("sudo usermod -aG i2c $USER")
+ */
 void I2cInterface::init_()
 {
     std::string i2c_dev = "/dev/i2c-1";
@@ -42,6 +46,12 @@ void I2cInterface::init_()
     }
 }
 
+/**
+ * @brief select a device on the bus by specifying its address
+ *
+ * @param address
+ * @return
+ */
 int I2cInterface::setAddress_(uint8_t address)
 {
     return ioctl(i2c_fd_, I2C_SLAVE, address);
@@ -59,8 +69,8 @@ int I2cInterface::write_(std::vector<uint8_t>& data)
     size_t total_written = 0;
     while (total_written < data.size())
     {
-        ssize_t bytes_written = ::write(i2c_fd_, data.data() + total_written,
-                                        data.size() - total_written);
+        ssize_t bytes_written = write(i2c_fd_, data.data() + total_written,
+                                      data.size() - total_written);
         if (bytes_written < 0)
         {
             RCLCPP_ERROR(this->get_logger(), "Failed to write to I2C device");
@@ -81,7 +91,7 @@ std::vector<uint8_t> I2cInterface::read_(size_t length)
 {
     std::vector<uint8_t> buffer(length);
 
-    ssize_t bytes_read = ::read(i2c_fd_, buffer.data(), length);
+    ssize_t bytes_read = read(i2c_fd_, buffer.data(), length);
     if (bytes_read < 0)
     {
         RCLCPP_ERROR(this->get_logger(), "Failed to read from I2C device");
@@ -98,6 +108,18 @@ std::vector<uint8_t> I2cInterface::read_(size_t length)
     return buffer;
 }
 
+/**
+ * @brief function beeing called upon a request to the i2c service. the struct
+ * of the i2c service allows writting and reading operation. To see the service
+ * definition do "ros2 interface show bus_msgs/srv/I2cService" or see
+ * JetRacer/src/bus_interfaces/bus_msgs/srv/I2cService.
+ *
+ * this node essentially write to the bus using the information passed in the
+ * request and construct an appropriated response
+ *
+ * @param request
+ * @param response
+ */
 void I2cInterface::handleI2cRequest(
     const std::shared_ptr<bus_msgs::srv::I2cService::Request> request,
     std::shared_ptr<bus_msgs::srv::I2cService::Response> response)
