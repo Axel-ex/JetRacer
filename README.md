@@ -29,12 +29,17 @@ JetRacer/
 │   │   │   ├── package.xml
 │   │   │   ├── src/
 │   │   │   └── include/
-│   │   ├── servo/
+│   │   ├── servo_motor/
 │   │   │   ├── CMakeLists.txt
 │   │   │   ├── package.xml
 │   │   │   ├── src/
 │   │   │   └── include/
 │   │   ├── dc_motors/
+│   │   │   ├── CMakeLists.txt
+│   │   │   ├── package.xml
+│   │   │   ├── src/
+│   │   │   └── include/
+│   │   ├── speed_sensor/
 │   │       ├── CMakeLists.txt
 │   │       ├── package.xml
 │   │       ├── src/
