@@ -1,0 +1,144 @@
+#include "I2cInterface.hpp"
+#include "bus_msgs/srv/i2c_service.hpp"
+#include <cstddef>
+#include <cstdint>
+#include <fcntl.h>
+#include <linux/i2c-dev.h>
+#include <rclcpp/future_return_code.hpp>
+#include <rclcpp/logging.hpp>
+#include <stdexcept>
+#include <string>
+#include <sys/ioctl.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <vector>
+
+I2cInterface::I2cInterface() : Node("i2c_interface")
+{
+    init_();
+
+    i2c_service_ = this->create_service<bus_msgs::srv::I2cService>(
+        "i2c_service", std::bind(&I2cInterface::handleI2cRequest, this,
+                                 std::placeholders::_1, std::placeholders::_2));
+    RCLCPP_INFO(this->get_logger(), "Starting i2c interface");
+}
+
+I2cInterface::~I2cInterface()
+{
+    if (i2c_fd_ > 0)
+        close(i2c_fd_);
+}
+
+void I2cInterface::init_()
+{
+    std::string i2c_dev = "/dev/i2c-1";
+
+    i2c_fd_ = open(i2c_dev.c_str(), O_RDWR);
+    if (i2c_fd_ < 0)
+    {
+        RCLCPP_ERROR(this->get_logger(), "Fail opening %s", i2c_dev.c_str());
+        throw std::runtime_error("Could not open i2c device");
+    }
+}
+
+int I2cInterface::setAddress_(uint8_t address)
+{
+    return ioctl(i2c_fd_, I2C_SLAVE, address);
+}
+
+/**
+ * @brief write to the i2c bus. the function is designed to handle partial
+ * writes
+ *
+ * @param data
+ * @return
+ */
+int I2cInterface::write_(std::vector<uint8_t>& data)
+{
+    size_t total_written = 0;
+    while (total_written < data.size())
+    {
+        ssize_t bytes_written = ::write(i2c_fd_, data.data() + total_written,
+                                        data.size() - total_written);
+        if (bytes_written < 0)
+        {
+            RCLCPP_ERROR(this->get_logger(), "Failed to write to I2C device");
+            return -1;
+        }
+        total_written += bytes_written;
+    }
+    return 0;
+}
+
+/**
+ * @brief Read from i2c bus. The function is designed to handle partial reads
+ *
+ * @param length
+ * @return
+ */
+std::vector<uint8_t> I2cInterface::read_(size_t length)
+{
+    std::vector<uint8_t> buffer(length);
+
+    ssize_t bytes_read = ::read(i2c_fd_, buffer.data(), length);
+    if (bytes_read < 0)
+    {
+        RCLCPP_ERROR(this->get_logger(), "Failed to read from I2C device");
+        buffer.clear();
+    }
+    if (static_cast<size_t>(bytes_read) < length)
+    {
+        RCLCPP_WARN(
+            this->get_logger(),
+            "Incomplete read operation, requested %zu but got %zd bytes",
+            length, bytes_read);
+        buffer.resize(bytes_read);
+    }
+    return buffer;
+}
+
+void I2cInterface::handleI2cRequest(
+    const std::shared_ptr<bus_msgs::srv::I2cService::Request> request,
+    std::shared_ptr<bus_msgs::srv::I2cService::Response> response)
+{
+    response->set__success(true);
+
+    if (setAddress_(request->device_address) != 0)
+    {
+        std::string error_msg = "Fail to set the device at address " +
+                                std::to_string(request->device_address);
+        RCLCPP_ERROR(this->get_logger(), "%s", error_msg.c_str());
+        response->set__success(false);
+        response->set__error_message(error_msg);
+        return;
+    }
+
+    if (request->read_request)
+    {
+        std::vector<uint8_t> data = read_(request->read_length);
+        if (data.empty() && request->read_length > 0)
+        {
+            std::string error_msg = "Fail to read data from device " +
+                                    std::to_string(request->device_address);
+            RCLCPP_ERROR(this->get_logger(), "%s", error_msg.c_str());
+            response->set__success(false);
+            response->set__error_message(error_msg);
+            return;
+        }
+        response->set__read_data(data);
+    }
+    else
+    {
+        if (write_(request->write_data) != 0)
+        {
+            std::string error_msg = "Fail to write to device " +
+                                    std::to_string(request->device_address);
+            RCLCPP_ERROR(this->get_logger(), "%s", error_msg.c_str());
+            response->set__success(false);
+            response->set__error_message(error_msg);
+            return;
+        }
+        RCLCPP_DEBUG(this->get_logger(), "Succefully writen at address %x",
+                     request->device_address);
+    }
+}
