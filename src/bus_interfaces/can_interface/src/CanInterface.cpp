@@ -29,6 +29,10 @@ CanInterface::~CanInterface()
         polling_thread_.join();
 }
 
+/**
+ * @brief This function will simply pool the bus for new information and publish
+ * it in a topic. so far this node only handle reading operations
+ */
 void CanInterface::pollCanBus()
 {
     while (rclcpp::ok())

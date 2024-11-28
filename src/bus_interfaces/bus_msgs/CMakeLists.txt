@@ -12,6 +12,7 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/CanPacket.msg"
   "srv/I2cService.srv"
+  "srv/CanService.srv"
 )
 
 if(BUILD_TESTING)

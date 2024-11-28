@@ -132,7 +132,7 @@ void I2cInterface::handleI2cRequest(
                                 std::to_string(request->device_address);
         RCLCPP_ERROR(this->get_logger(), "%s", error_msg.c_str());
         response->set__success(false);
-        response->set__error_message(error_msg);
+        response->set__message(error_msg);
         return;
     }
 
@@ -145,7 +145,7 @@ void I2cInterface::handleI2cRequest(
                                     std::to_string(request->device_address);
             RCLCPP_ERROR(this->get_logger(), "%s", error_msg.c_str());
             response->set__success(false);
-            response->set__error_message(error_msg);
+            response->set__message(error_msg);
             return;
         }
         response->set__read_data(data);
@@ -158,7 +158,7 @@ void I2cInterface::handleI2cRequest(
                                     std::to_string(request->device_address);
             RCLCPP_ERROR(this->get_logger(), "%s", error_msg.c_str());
             response->set__success(false);
-            response->set__error_message(error_msg);
+            response->set__message(error_msg);
             return;
         }
         RCLCPP_DEBUG(this->get_logger(), "Succefully writen at address %x",

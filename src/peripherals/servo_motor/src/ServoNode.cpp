@@ -56,5 +56,5 @@ void ServoNode::handleI2CResponse(
         RCLCPP_DEBUG(this->get_logger(), "Servo direction updated succefully");
     else
         RCLCPP_ERROR(this->get_logger(), "Failed to update direction: %s",
-                     response.get()->error_message.c_str());
+                     response.get()->message.c_str());
 }
