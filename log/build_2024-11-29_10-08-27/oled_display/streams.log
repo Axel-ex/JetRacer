@@ -1,0 +1,41 @@
+[0.018s] Invoking command in '/home/jetpack/JetRacer/build/oled_display': AMENT_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jetpack/JetRacer/build/oled_display -- -j4 -l4
+[0.061s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.381s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.414s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.427s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.442s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.460s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.540s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.542s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.630s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.709s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.726s] -- Found bus_msgs: 0.0.0 (/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake)
+[0.888s] -- Configuring done (0.8s)
+[0.909s] -- Generating done (0.0s)
+[0.916s] -- Build files have been written to: /home/jetpack/JetRacer/build/oled_display
+[0.990s] [ 66%] [32mBuilding CXX object CMakeFiles/oled_display_node.dir/src/OledDisplayNode.cpp.o[0m
+[0.990s] [ 66%] [32mBuilding CXX object CMakeFiles/oled_display_node.dir/src/main.cpp.o[0m
+[14.399s] [100%] [32m[1mLinking CXX executable oled_display_node[0m
+[15.069s] [100%] Built target oled_display_node
+[15.089s] Invoked command in '/home/jetpack/JetRacer/build/oled_display' returned '0': AMENT_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jetpack/JetRacer/build/oled_display -- -j4 -l4
+[15.146s] Invoking command in '/home/jetpack/JetRacer/build/oled_display': AMENT_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jetpack/JetRacer/build/oled_display
+[15.159s] -- Install configuration: ""
+[15.159s] -- Installing: /home/jetpack/JetRacer/install/oled_display/lib/oled_display/oled_display_node
+[15.170s] -- Set non-toolchain portion of runtime path of "/home/jetpack/JetRacer/install/oled_display/lib/oled_display/oled_display_node" to ""
+[15.170s] -- Up-to-date: /home/jetpack/JetRacer/install/oled_display/share/ament_index/resource_index/package_run_dependencies/oled_display
+[15.170s] -- Up-to-date: /home/jetpack/JetRacer/install/oled_display/share/ament_index/resource_index/parent_prefix_path/oled_display
+[15.170s] -- Up-to-date: /home/jetpack/JetRacer/install/oled_display/share/oled_display/environment/ament_prefix_path.sh
+[15.170s] -- Up-to-date: /home/jetpack/JetRacer/install/oled_display/share/oled_display/environment/ament_prefix_path.dsv
+[15.171s] -- Up-to-date: /home/jetpack/JetRacer/install/oled_display/share/oled_display/environment/path.sh
+[15.171s] -- Up-to-date: /home/jetpack/JetRacer/install/oled_display/share/oled_display/environment/path.dsv
+[15.171s] -- Up-to-date: /home/jetpack/JetRacer/install/oled_display/share/oled_display/local_setup.bash
+[15.171s] -- Up-to-date: /home/jetpack/JetRacer/install/oled_display/share/oled_display/local_setup.sh
+[15.171s] -- Up-to-date: /home/jetpack/JetRacer/install/oled_display/share/oled_display/local_setup.zsh
+[15.171s] -- Up-to-date: /home/jetpack/JetRacer/install/oled_display/share/oled_display/local_setup.dsv
+[15.171s] -- Installing: /home/jetpack/JetRacer/install/oled_display/share/oled_display/package.dsv
+[15.171s] -- Up-to-date: /home/jetpack/JetRacer/install/oled_display/share/ament_index/resource_index/packages/oled_display
+[15.171s] -- Installing: /home/jetpack/JetRacer/install/oled_display/share/oled_display/cmake/ament_cmake_export_dependencies-extras.cmake
+[15.171s] -- Up-to-date: /home/jetpack/JetRacer/install/oled_display/share/oled_display/cmake/oled_displayConfig.cmake
+[15.171s] -- Up-to-date: /home/jetpack/JetRacer/install/oled_display/share/oled_display/cmake/oled_displayConfig-version.cmake
+[15.171s] -- Up-to-date: /home/jetpack/JetRacer/install/oled_display/share/oled_display/package.xml
+[15.174s] Invoked command in '/home/jetpack/JetRacer/build/oled_display' returned '0': AMENT_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jetpack/JetRacer/build/oled_display

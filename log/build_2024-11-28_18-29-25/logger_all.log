@@ -1,0 +1,537 @@
+[0.140s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.140s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0xffffb6b76db0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb6c99340>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb6c99340>>, mixin_verb=('build',))
+[0.195s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.195s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.195s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.195s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.195s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.195s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.195s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jetpack/JetRacer'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.195s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.196s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces) by extension 'ignore'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces) by extension 'ignore_ament_install'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces) by extensions ['colcon_pkg']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces) by extension 'colcon_pkg'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces) by extensions ['colcon_meta']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces) by extension 'colcon_meta'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces) by extensions ['ros']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces) by extension 'ros'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces) by extensions ['cmake', 'python']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces) by extension 'cmake'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces) by extension 'python'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces) by extensions ['python_setup_py']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces) by extension 'python_setup_py'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/can_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/can_interface) by extension 'ignore'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/can_interface) by extension 'ignore_ament_install'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/can_interface) by extensions ['colcon_pkg']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/can_interface) by extension 'colcon_pkg'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/can_interface) by extensions ['colcon_meta']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/can_interface) by extension 'colcon_meta'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/can_interface) by extensions ['ros']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/can_interface) by extension 'ros'
+[0.238s] DEBUG:colcon.colcon_core.package_identification:Package 'src/bus_interfaces/can_interface' with type 'ros.ament_cmake' and name 'can_interface'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/i2c_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/i2c_interface) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/i2c_interface) by extension 'ignore_ament_install'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/i2c_interface) by extensions ['colcon_pkg']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/i2c_interface) by extension 'colcon_pkg'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/i2c_interface) by extensions ['colcon_meta']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/i2c_interface) by extension 'colcon_meta'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/i2c_interface) by extensions ['ros']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/bus_interfaces/i2c_interface) by extension 'ros'
+[0.240s] DEBUG:colcon.colcon_core.package_identification:Package 'src/bus_interfaces/i2c_interface' with type 'ros.ament_cmake' and name 'i2c_interface'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals) by extensions ['ignore', 'ignore_ament_install']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals) by extension 'ignore'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals) by extension 'ignore_ament_install'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals) by extensions ['colcon_pkg']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals) by extension 'colcon_pkg'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals) by extensions ['colcon_meta']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals) by extension 'colcon_meta'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals) by extensions ['ros']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals) by extension 'ros'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals) by extensions ['cmake', 'python']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals) by extension 'cmake'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals) by extension 'python'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals) by extensions ['python_setup_py']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals) by extension 'python_setup_py'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/oled_service) by extensions ['ignore', 'ignore_ament_install']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/oled_service) by extension 'ignore'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/oled_service) by extension 'ignore_ament_install'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/oled_service) by extensions ['colcon_pkg']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/oled_service) by extension 'colcon_pkg'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/oled_service) by extensions ['colcon_meta']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/oled_service) by extension 'colcon_meta'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/oled_service) by extensions ['ros']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/oled_service) by extension 'ros'
+[0.241s] DEBUG:colcon.colcon_core.package_identification:Package 'src/peripherals/oled_service' with type 'ros.ament_cmake' and name 'oled_service'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/servo_motor) by extensions ['ignore', 'ignore_ament_install']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/servo_motor) by extension 'ignore'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/servo_motor) by extension 'ignore_ament_install'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/servo_motor) by extensions ['colcon_pkg']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/servo_motor) by extension 'colcon_pkg'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/servo_motor) by extensions ['colcon_meta']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/servo_motor) by extension 'colcon_meta'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/servo_motor) by extensions ['ros']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/servo_motor) by extension 'ros'
+[0.243s] DEBUG:colcon.colcon_core.package_identification:Package 'src/peripherals/servo_motor' with type 'ros.ament_cmake' and name 'servo_motor'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/speed_sensor) by extensions ['ignore', 'ignore_ament_install']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/speed_sensor) by extension 'ignore'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/speed_sensor) by extension 'ignore_ament_install'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/speed_sensor) by extensions ['colcon_pkg']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/speed_sensor) by extension 'colcon_pkg'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/speed_sensor) by extensions ['colcon_meta']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/speed_sensor) by extension 'colcon_meta'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/speed_sensor) by extensions ['ros']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/peripherals/speed_sensor) by extension 'ros'
+[0.244s] DEBUG:colcon.colcon_core.package_identification:Package 'src/peripherals/speed_sensor' with type 'ros.ament_cmake' and name 'speed_sensor'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/utils) by extensions ['ignore', 'ignore_ament_install']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/utils) by extension 'ignore'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/utils) by extension 'ignore_ament_install'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/utils) by extensions ['colcon_pkg']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/utils) by extension 'colcon_pkg'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/utils) by extensions ['colcon_meta']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/utils) by extension 'colcon_meta'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/utils) by extensions ['ros']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/utils) by extension 'ros'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/utils) by extensions ['cmake', 'python']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/utils) by extension 'cmake'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/utils) by extension 'python'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/utils) by extensions ['python_setup_py']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/utils) by extension 'python_setup_py'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/utils/bus_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/utils/bus_msgs) by extension 'ignore'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/utils/bus_msgs) by extension 'ignore_ament_install'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/utils/bus_msgs) by extensions ['colcon_pkg']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/utils/bus_msgs) by extension 'colcon_pkg'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/utils/bus_msgs) by extensions ['colcon_meta']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/utils/bus_msgs) by extension 'colcon_meta'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/utils/bus_msgs) by extensions ['ros']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/utils/bus_msgs) by extension 'ros'
+[0.245s] DEBUG:colcon.colcon_core.package_identification:Package 'src/utils/bus_msgs' with type 'ros.ament_cmake' and name 'bus_msgs'
+[0.245s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.246s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.246s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.246s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.246s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.269s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.269s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.270s] WARNING:colcon.colcon_core.prefix_path.colcon:The path '/home/jetpack/piracer/install' in the environment variable COLCON_PREFIX_PATH doesn't exist
+[0.271s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jetpack/piracer/install/oled_service' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.271s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jetpack/piracer/install/i2c_interface' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.271s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jetpack/piracer/install/can_interface' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.271s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/jetpack/piracer/install/bus_msgs' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.271s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jetpack/piracer/install/oled_service' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.271s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jetpack/piracer/install/i2c_interface' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.271s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jetpack/piracer/install/can_interface' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.271s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/jetpack/piracer/install/bus_msgs' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.272s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 6 installed packages in /home/jetpack/JetRacer/install
+[0.274s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 285 installed packages in /opt/ros/jazzy
+[0.275s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'bus_msgs' build argument 'cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'bus_msgs' build argument 'cmake_target' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'bus_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'bus_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'bus_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'bus_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'bus_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'bus_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'bus_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.334s] DEBUG:colcon.colcon_core.verb:Building package 'bus_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetpack/JetRacer/build/bus_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetpack/JetRacer/install/bus_msgs', 'merge_install': False, 'path': '/home/jetpack/JetRacer/src/utils/bus_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.334s] Level 5:colcon.colcon_core.verb:set package 'oled_service' build argument 'cmake_args' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'oled_service' build argument 'cmake_target' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'oled_service' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'oled_service' build argument 'cmake_clean_cache' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'oled_service' build argument 'cmake_clean_first' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'oled_service' build argument 'cmake_force_configure' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'oled_service' build argument 'ament_cmake_args' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'oled_service' build argument 'catkin_cmake_args' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'oled_service' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.335s] DEBUG:colcon.colcon_core.verb:Building package 'oled_service' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetpack/JetRacer/build/oled_service', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetpack/JetRacer/install/oled_service', 'merge_install': False, 'path': '/home/jetpack/JetRacer/src/peripherals/oled_service', 'symlink_install': True, 'test_result_base': None}
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'can_interface' build argument 'cmake_args' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'can_interface' build argument 'cmake_target' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'can_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'can_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'can_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'can_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'can_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'can_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.335s] Level 5:colcon.colcon_core.verb:set package 'can_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.335s] DEBUG:colcon.colcon_core.verb:Building package 'can_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetpack/JetRacer/build/can_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetpack/JetRacer/install/can_interface', 'merge_install': False, 'path': '/home/jetpack/JetRacer/src/bus_interfaces/can_interface', 'symlink_install': True, 'test_result_base': None}
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'i2c_interface' build argument 'cmake_args' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'i2c_interface' build argument 'cmake_target' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'i2c_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'i2c_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'i2c_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'i2c_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'i2c_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'i2c_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'i2c_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.336s] DEBUG:colcon.colcon_core.verb:Building package 'i2c_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetpack/JetRacer/build/i2c_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetpack/JetRacer/install/i2c_interface', 'merge_install': False, 'path': '/home/jetpack/JetRacer/src/bus_interfaces/i2c_interface', 'symlink_install': True, 'test_result_base': None}
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'servo_motor' build argument 'cmake_args' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'servo_motor' build argument 'cmake_target' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'servo_motor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'servo_motor' build argument 'cmake_clean_cache' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'servo_motor' build argument 'cmake_clean_first' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'servo_motor' build argument 'cmake_force_configure' from command line to 'False'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'servo_motor' build argument 'ament_cmake_args' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'servo_motor' build argument 'catkin_cmake_args' from command line to 'None'
+[0.336s] Level 5:colcon.colcon_core.verb:set package 'servo_motor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.336s] DEBUG:colcon.colcon_core.verb:Building package 'servo_motor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetpack/JetRacer/build/servo_motor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetpack/JetRacer/install/servo_motor', 'merge_install': False, 'path': '/home/jetpack/JetRacer/src/peripherals/servo_motor', 'symlink_install': True, 'test_result_base': None}
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'speed_sensor' build argument 'cmake_args' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'speed_sensor' build argument 'cmake_target' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'speed_sensor' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'speed_sensor' build argument 'cmake_clean_cache' from command line to 'False'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'speed_sensor' build argument 'cmake_clean_first' from command line to 'False'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'speed_sensor' build argument 'cmake_force_configure' from command line to 'False'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'speed_sensor' build argument 'ament_cmake_args' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'speed_sensor' build argument 'catkin_cmake_args' from command line to 'None'
+[0.337s] Level 5:colcon.colcon_core.verb:set package 'speed_sensor' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.337s] DEBUG:colcon.colcon_core.verb:Building package 'speed_sensor' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jetpack/JetRacer/build/speed_sensor', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jetpack/JetRacer/install/speed_sensor', 'merge_install': False, 'path': '/home/jetpack/JetRacer/src/peripherals/speed_sensor', 'symlink_install': True, 'test_result_base': None}
+[0.337s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.338s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.338s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jetpack/JetRacer/src/utils/bus_msgs' with build type 'ament_cmake'
+[0.339s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jetpack/JetRacer/src/utils/bus_msgs'
+[0.341s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.341s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.341s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.346s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jetpack/JetRacer/src/peripherals/oled_service' with build type 'ament_cmake'
+[0.346s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jetpack/JetRacer/src/peripherals/oled_service'
+[0.346s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.347s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.359s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetpack/JetRacer/build/bus_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jetpack/JetRacer/build/bus_msgs -- -j4 -l4
+[0.365s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetpack/JetRacer/build/oled_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jetpack/JetRacer/build/oled_service -- -j4 -l4
+[0.489s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetpack/JetRacer/build/oled_service' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jetpack/JetRacer/build/oled_service -- -j4 -l4
+[0.598s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetpack/JetRacer/build/oled_service': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jetpack/JetRacer/build/oled_service
+[0.648s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(oled_service)
+[0.651s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetpack/JetRacer/build/oled_service' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jetpack/JetRacer/build/oled_service
+[0.652s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/oled_service' for CMake module files
+[0.652s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/oled_service' for CMake config files
+[0.653s] Level 1:colcon.colcon_core.shell:create_environment_hook('oled_service', 'cmake_prefix_path')
+[0.653s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/oled_service/share/oled_service/hook/cmake_prefix_path.ps1'
+[0.654s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetpack/JetRacer/install/oled_service/share/oled_service/hook/cmake_prefix_path.dsv'
+[0.655s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/oled_service/share/oled_service/hook/cmake_prefix_path.sh'
+[0.657s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/oled_service/lib'
+[0.657s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/oled_service/bin'
+[0.657s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/oled_service/lib/pkgconfig/oled_service.pc'
+[0.658s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/oled_service/lib/python3.12/site-packages'
+[0.658s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/oled_service/bin'
+[0.658s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/oled_service/share/oled_service/package.ps1'
+[0.660s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetpack/JetRacer/install/oled_service/share/oled_service/package.dsv'
+[0.660s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/oled_service/share/oled_service/package.sh'
+[0.661s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/oled_service/share/oled_service/package.bash'
+[0.662s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/oled_service/share/oled_service/package.zsh'
+[0.663s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetpack/JetRacer/install/oled_service/share/colcon-core/packages/oled_service)
+[0.715s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(oled_service)
+[0.716s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/oled_service' for CMake module files
+[0.716s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/oled_service' for CMake config files
+[0.717s] Level 1:colcon.colcon_core.shell:create_environment_hook('oled_service', 'cmake_prefix_path')
+[0.717s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/oled_service/share/oled_service/hook/cmake_prefix_path.ps1'
+[0.718s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetpack/JetRacer/install/oled_service/share/oled_service/hook/cmake_prefix_path.dsv'
+[0.718s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/oled_service/share/oled_service/hook/cmake_prefix_path.sh'
+[0.719s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/oled_service/lib'
+[0.720s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/oled_service/bin'
+[0.720s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/oled_service/lib/pkgconfig/oled_service.pc'
+[0.720s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/oled_service/lib/python3.12/site-packages'
+[0.720s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/oled_service/bin'
+[0.721s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/oled_service/share/oled_service/package.ps1'
+[0.722s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetpack/JetRacer/install/oled_service/share/oled_service/package.dsv'
+[0.722s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/oled_service/share/oled_service/package.sh'
+[0.723s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/oled_service/share/oled_service/package.bash'
+[0.724s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/oled_service/share/oled_service/package.zsh'
+[0.725s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetpack/JetRacer/install/oled_service/share/colcon-core/packages/oled_service)
+[1.027s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetpack/JetRacer/build/bus_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jetpack/JetRacer/build/bus_msgs -- -j4 -l4
+[1.180s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetpack/JetRacer/build/bus_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jetpack/JetRacer/build/bus_msgs
+[1.302s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bus_msgs)
+[1.302s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/bus_msgs' for CMake module files
+[1.303s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetpack/JetRacer/build/bus_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jetpack/JetRacer/build/bus_msgs
+[1.304s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/bus_msgs' for CMake config files
+[1.305s] Level 1:colcon.colcon_core.shell:create_environment_hook('bus_msgs', 'cmake_prefix_path')
+[1.305s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/hook/cmake_prefix_path.ps1'
+[1.305s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/hook/cmake_prefix_path.dsv'
+[1.306s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/hook/cmake_prefix_path.sh'
+[1.307s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/bus_msgs/lib'
+[1.307s] Level 1:colcon.colcon_core.shell:create_environment_hook('bus_msgs', 'ld_library_path_lib')
+[1.307s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/hook/ld_library_path_lib.ps1'
+[1.308s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/hook/ld_library_path_lib.dsv'
+[1.308s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/hook/ld_library_path_lib.sh'
+[1.309s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/bus_msgs/bin'
+[1.309s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/bus_msgs/lib/pkgconfig/bus_msgs.pc'
+[1.310s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages'
+[1.310s] Level 1:colcon.colcon_core.shell:create_environment_hook('bus_msgs', 'pythonpath')
+[1.310s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/hook/pythonpath.ps1'
+[1.311s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/hook/pythonpath.dsv'
+[1.312s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/hook/pythonpath.sh'
+[1.313s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/bus_msgs/bin'
+[1.313s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/package.ps1'
+[1.314s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/package.dsv'
+[1.315s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/package.sh'
+[1.315s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/package.bash'
+[1.316s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/package.zsh'
+[1.317s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetpack/JetRacer/install/bus_msgs/share/colcon-core/packages/bus_msgs)
+[1.467s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bus_msgs)
+[1.467s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/bus_msgs' for CMake module files
+[1.468s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/bus_msgs' for CMake config files
+[1.469s] Level 1:colcon.colcon_core.shell:create_environment_hook('bus_msgs', 'cmake_prefix_path')
+[1.470s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/hook/cmake_prefix_path.ps1'
+[1.470s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/hook/cmake_prefix_path.dsv'
+[1.471s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/hook/cmake_prefix_path.sh'
+[1.472s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/bus_msgs/lib'
+[1.473s] Level 1:colcon.colcon_core.shell:create_environment_hook('bus_msgs', 'ld_library_path_lib')
+[1.473s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/hook/ld_library_path_lib.ps1'
+[1.473s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/hook/ld_library_path_lib.dsv'
+[1.474s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/hook/ld_library_path_lib.sh'
+[1.475s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/bus_msgs/bin'
+[1.475s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/bus_msgs/lib/pkgconfig/bus_msgs.pc'
+[1.475s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages'
+[1.475s] Level 1:colcon.colcon_core.shell:create_environment_hook('bus_msgs', 'pythonpath')
+[1.475s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/hook/pythonpath.ps1'
+[1.476s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/hook/pythonpath.dsv'
+[1.477s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/hook/pythonpath.sh'
+[1.478s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/bus_msgs/bin'
+[1.478s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/package.ps1'
+[1.479s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/package.dsv'
+[1.480s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/package.sh'
+[1.481s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/package.bash'
+[1.481s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/package.zsh'
+[1.482s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetpack/JetRacer/install/bus_msgs/share/colcon-core/packages/bus_msgs)
+[1.483s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jetpack/JetRacer/src/bus_interfaces/can_interface' with build type 'ament_cmake'
+[1.483s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jetpack/JetRacer/src/bus_interfaces/can_interface'
+[1.483s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.483s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.488s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jetpack/JetRacer/src/bus_interfaces/i2c_interface' with build type 'ament_cmake'
+[1.489s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jetpack/JetRacer/src/bus_interfaces/i2c_interface'
+[1.489s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.489s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.494s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jetpack/JetRacer/src/peripherals/servo_motor' with build type 'ament_cmake'
+[1.495s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jetpack/JetRacer/src/peripherals/servo_motor'
+[1.495s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.495s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.501s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jetpack/JetRacer/src/peripherals/speed_sensor' with build type 'ament_cmake'
+[1.501s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jetpack/JetRacer/src/peripherals/speed_sensor'
+[1.501s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.501s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.512s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetpack/JetRacer/build/can_interface': CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/home/jetpack/JetRacer/install/servo_motor:/home/jetpack/JetRacer/install/oled_service:/home/jetpack/JetRacer/install/i2c_interface:/home/jetpack/JetRacer/install/can_interface:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/i2c_interface:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:/home/jetpack/JetRacer/install/can_interface/lib:/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /home/jetpack/JetRacer/build/can_interface -- -j4 -l4
+[1.517s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetpack/JetRacer/build/i2c_interface': CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/home/jetpack/JetRacer/install/servo_motor:/home/jetpack/JetRacer/install/oled_service:/home/jetpack/JetRacer/install/i2c_interface:/home/jetpack/JetRacer/install/can_interface:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/i2c_interface:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:/home/jetpack/JetRacer/install/can_interface/lib:/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /home/jetpack/JetRacer/build/i2c_interface -- -j4 -l4
+[1.521s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetpack/JetRacer/build/servo_motor': CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/home/jetpack/JetRacer/install/servo_motor:/home/jetpack/JetRacer/install/oled_service:/home/jetpack/JetRacer/install/i2c_interface:/home/jetpack/JetRacer/install/can_interface:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/i2c_interface:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:/home/jetpack/JetRacer/install/can_interface/lib:/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /home/jetpack/JetRacer/build/servo_motor -- -j4 -l4
+[1.527s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetpack/JetRacer/build/speed_sensor': CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/home/jetpack/JetRacer/install/servo_motor:/home/jetpack/JetRacer/install/oled_service:/home/jetpack/JetRacer/install/i2c_interface:/home/jetpack/JetRacer/install/can_interface:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/i2c_interface:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:/home/jetpack/JetRacer/install/can_interface/lib:/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /home/jetpack/JetRacer/build/speed_sensor -- -j4 -l4
+[1.664s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetpack/JetRacer/build/servo_motor' returned '0': CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/home/jetpack/JetRacer/install/servo_motor:/home/jetpack/JetRacer/install/oled_service:/home/jetpack/JetRacer/install/i2c_interface:/home/jetpack/JetRacer/install/can_interface:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/i2c_interface:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:/home/jetpack/JetRacer/install/can_interface/lib:/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /home/jetpack/JetRacer/build/servo_motor -- -j4 -l4
+[1.685s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetpack/JetRacer/build/speed_sensor' returned '0': CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/home/jetpack/JetRacer/install/servo_motor:/home/jetpack/JetRacer/install/oled_service:/home/jetpack/JetRacer/install/i2c_interface:/home/jetpack/JetRacer/install/can_interface:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/i2c_interface:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:/home/jetpack/JetRacer/install/can_interface/lib:/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /home/jetpack/JetRacer/build/speed_sensor -- -j4 -l4
+[1.701s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetpack/JetRacer/build/can_interface' returned '0': CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/home/jetpack/JetRacer/install/servo_motor:/home/jetpack/JetRacer/install/oled_service:/home/jetpack/JetRacer/install/i2c_interface:/home/jetpack/JetRacer/install/can_interface:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/i2c_interface:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:/home/jetpack/JetRacer/install/can_interface/lib:/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /home/jetpack/JetRacer/build/can_interface -- -j4 -l4
+[1.722s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetpack/JetRacer/build/servo_motor': CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/home/jetpack/JetRacer/install/servo_motor:/home/jetpack/JetRacer/install/oled_service:/home/jetpack/JetRacer/install/i2c_interface:/home/jetpack/JetRacer/install/can_interface:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/i2c_interface:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:/home/jetpack/JetRacer/install/can_interface/lib:/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --install /home/jetpack/JetRacer/build/servo_motor
+[1.739s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetpack/JetRacer/build/speed_sensor': CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/home/jetpack/JetRacer/install/servo_motor:/home/jetpack/JetRacer/install/oled_service:/home/jetpack/JetRacer/install/i2c_interface:/home/jetpack/JetRacer/install/can_interface:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/i2c_interface:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:/home/jetpack/JetRacer/install/can_interface/lib:/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --install /home/jetpack/JetRacer/build/speed_sensor
+[1.764s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetpack/JetRacer/build/can_interface': CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/home/jetpack/JetRacer/install/servo_motor:/home/jetpack/JetRacer/install/oled_service:/home/jetpack/JetRacer/install/i2c_interface:/home/jetpack/JetRacer/install/can_interface:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/i2c_interface:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:/home/jetpack/JetRacer/install/can_interface/lib:/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --install /home/jetpack/JetRacer/build/can_interface
+[1.783s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(servo_motor)
+[1.783s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/servo_motor' for CMake module files
+[1.784s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetpack/JetRacer/build/servo_motor' returned '0': CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/home/jetpack/JetRacer/install/servo_motor:/home/jetpack/JetRacer/install/oled_service:/home/jetpack/JetRacer/install/i2c_interface:/home/jetpack/JetRacer/install/can_interface:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/i2c_interface:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:/home/jetpack/JetRacer/install/can_interface/lib:/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --install /home/jetpack/JetRacer/build/servo_motor
+[1.786s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/servo_motor' for CMake config files
+[1.787s] Level 1:colcon.colcon_core.shell:create_environment_hook('servo_motor', 'cmake_prefix_path')
+[1.787s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/servo_motor/share/servo_motor/hook/cmake_prefix_path.ps1'
+[1.789s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetpack/JetRacer/install/servo_motor/share/servo_motor/hook/cmake_prefix_path.dsv'
+[1.790s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/servo_motor/share/servo_motor/hook/cmake_prefix_path.sh'
+[1.792s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/servo_motor/lib'
+[1.792s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/servo_motor/bin'
+[1.792s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/servo_motor/lib/pkgconfig/servo_motor.pc'
+[1.792s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/servo_motor/lib/python3.12/site-packages'
+[1.793s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/servo_motor/bin'
+[1.793s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/servo_motor/share/servo_motor/package.ps1'
+[1.794s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetpack/JetRacer/install/servo_motor/share/servo_motor/package.dsv'
+[1.794s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/servo_motor/share/servo_motor/package.sh'
+[1.795s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/servo_motor/share/servo_motor/package.bash'
+[1.795s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/servo_motor/share/servo_motor/package.zsh'
+[1.796s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetpack/JetRacer/install/servo_motor/share/colcon-core/packages/servo_motor)
+[1.800s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(speed_sensor)
+[1.801s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/speed_sensor' for CMake module files
+[1.802s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/speed_sensor' for CMake config files
+[1.803s] Level 1:colcon.colcon_core.shell:create_environment_hook('speed_sensor', 'cmake_prefix_path')
+[1.803s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/speed_sensor/share/speed_sensor/hook/cmake_prefix_path.ps1'
+[1.804s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetpack/JetRacer/build/speed_sensor' returned '0': CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/home/jetpack/JetRacer/install/servo_motor:/home/jetpack/JetRacer/install/oled_service:/home/jetpack/JetRacer/install/i2c_interface:/home/jetpack/JetRacer/install/can_interface:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/i2c_interface:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:/home/jetpack/JetRacer/install/can_interface/lib:/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --install /home/jetpack/JetRacer/build/speed_sensor
+[1.805s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetpack/JetRacer/install/speed_sensor/share/speed_sensor/hook/cmake_prefix_path.dsv'
+[1.805s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/speed_sensor/share/speed_sensor/hook/cmake_prefix_path.sh'
+[1.807s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/speed_sensor/lib'
+[1.807s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/speed_sensor/bin'
+[1.807s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/speed_sensor/lib/pkgconfig/speed_sensor.pc'
+[1.808s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/speed_sensor/lib/python3.12/site-packages'
+[1.808s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/speed_sensor/bin'
+[1.809s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/speed_sensor/share/speed_sensor/package.ps1'
+[1.811s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetpack/JetRacer/install/speed_sensor/share/speed_sensor/package.dsv'
+[1.812s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/speed_sensor/share/speed_sensor/package.sh'
+[1.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/speed_sensor/share/speed_sensor/package.bash'
+[1.814s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/speed_sensor/share/speed_sensor/package.zsh'
+[1.814s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetpack/JetRacer/install/speed_sensor/share/colcon-core/packages/speed_sensor)
+[1.817s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(can_interface)
+[1.819s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/can_interface' for CMake module files
+[1.818s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetpack/JetRacer/build/can_interface' returned '0': CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/home/jetpack/JetRacer/install/servo_motor:/home/jetpack/JetRacer/install/oled_service:/home/jetpack/JetRacer/install/i2c_interface:/home/jetpack/JetRacer/install/can_interface:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/i2c_interface:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:/home/jetpack/JetRacer/install/can_interface/lib:/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --install /home/jetpack/JetRacer/build/can_interface
+[1.821s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/can_interface' for CMake config files
+[1.821s] Level 1:colcon.colcon_core.shell:create_environment_hook('can_interface', 'cmake_prefix_path')
+[1.822s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/can_interface/share/can_interface/hook/cmake_prefix_path.ps1'
+[1.823s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetpack/JetRacer/install/can_interface/share/can_interface/hook/cmake_prefix_path.dsv'
+[1.824s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/can_interface/share/can_interface/hook/cmake_prefix_path.sh'
+[1.825s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/can_interface/lib'
+[1.825s] Level 1:colcon.colcon_core.shell:create_environment_hook('can_interface', 'ld_library_path_lib')
+[1.826s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/can_interface/share/can_interface/hook/ld_library_path_lib.ps1'
+[1.826s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetpack/JetRacer/install/can_interface/share/can_interface/hook/ld_library_path_lib.dsv'
+[1.827s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/can_interface/share/can_interface/hook/ld_library_path_lib.sh'
+[1.828s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/can_interface/bin'
+[1.829s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/can_interface/lib/pkgconfig/can_interface.pc'
+[1.829s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/can_interface/lib/python3.12/site-packages'
+[1.829s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/can_interface/bin'
+[1.830s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/can_interface/share/can_interface/package.ps1'
+[1.831s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetpack/JetRacer/install/can_interface/share/can_interface/package.dsv'
+[1.832s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/can_interface/share/can_interface/package.sh'
+[1.833s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/can_interface/share/can_interface/package.bash'
+[1.833s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/can_interface/share/can_interface/package.zsh'
+[1.835s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetpack/JetRacer/install/can_interface/share/colcon-core/packages/can_interface)
+[1.848s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(servo_motor)
+[1.848s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/servo_motor' for CMake module files
+[1.850s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/servo_motor' for CMake config files
+[1.850s] Level 1:colcon.colcon_core.shell:create_environment_hook('servo_motor', 'cmake_prefix_path')
+[1.850s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/servo_motor/share/servo_motor/hook/cmake_prefix_path.ps1'
+[1.851s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetpack/JetRacer/install/servo_motor/share/servo_motor/hook/cmake_prefix_path.dsv'
+[1.852s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/servo_motor/share/servo_motor/hook/cmake_prefix_path.sh'
+[1.854s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/servo_motor/lib'
+[1.854s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/servo_motor/bin'
+[1.854s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/servo_motor/lib/pkgconfig/servo_motor.pc'
+[1.855s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/servo_motor/lib/python3.12/site-packages'
+[1.855s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/servo_motor/bin'
+[1.856s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/servo_motor/share/servo_motor/package.ps1'
+[1.857s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetpack/JetRacer/install/servo_motor/share/servo_motor/package.dsv'
+[1.858s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/servo_motor/share/servo_motor/package.sh'
+[1.859s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/servo_motor/share/servo_motor/package.bash'
+[1.860s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/servo_motor/share/servo_motor/package.zsh'
+[1.861s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetpack/JetRacer/install/servo_motor/share/colcon-core/packages/servo_motor)
+[1.869s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(speed_sensor)
+[1.869s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/speed_sensor' for CMake module files
+[1.870s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/speed_sensor' for CMake config files
+[1.870s] Level 1:colcon.colcon_core.shell:create_environment_hook('speed_sensor', 'cmake_prefix_path')
+[1.870s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/speed_sensor/share/speed_sensor/hook/cmake_prefix_path.ps1'
+[1.871s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetpack/JetRacer/install/speed_sensor/share/speed_sensor/hook/cmake_prefix_path.dsv'
+[1.872s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/speed_sensor/share/speed_sensor/hook/cmake_prefix_path.sh'
+[1.873s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/speed_sensor/lib'
+[1.873s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/speed_sensor/bin'
+[1.873s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/speed_sensor/lib/pkgconfig/speed_sensor.pc'
+[1.873s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/speed_sensor/lib/python3.12/site-packages'
+[1.874s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/speed_sensor/bin'
+[1.874s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/speed_sensor/share/speed_sensor/package.ps1'
+[1.875s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetpack/JetRacer/install/speed_sensor/share/speed_sensor/package.dsv'
+[1.876s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/speed_sensor/share/speed_sensor/package.sh'
+[1.877s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/speed_sensor/share/speed_sensor/package.bash'
+[1.877s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/speed_sensor/share/speed_sensor/package.zsh'
+[1.878s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetpack/JetRacer/install/speed_sensor/share/colcon-core/packages/speed_sensor)
+[1.887s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(can_interface)
+[1.887s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/can_interface' for CMake module files
+[1.888s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/can_interface' for CMake config files
+[1.889s] Level 1:colcon.colcon_core.shell:create_environment_hook('can_interface', 'cmake_prefix_path')
+[1.889s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/can_interface/share/can_interface/hook/cmake_prefix_path.ps1'
+[1.890s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetpack/JetRacer/install/can_interface/share/can_interface/hook/cmake_prefix_path.dsv'
+[1.890s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/can_interface/share/can_interface/hook/cmake_prefix_path.sh'
+[1.892s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/can_interface/lib'
+[1.892s] Level 1:colcon.colcon_core.shell:create_environment_hook('can_interface', 'ld_library_path_lib')
+[1.892s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/can_interface/share/can_interface/hook/ld_library_path_lib.ps1'
+[1.892s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetpack/JetRacer/install/can_interface/share/can_interface/hook/ld_library_path_lib.dsv'
+[1.893s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/can_interface/share/can_interface/hook/ld_library_path_lib.sh'
+[1.894s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/can_interface/bin'
+[1.894s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/can_interface/lib/pkgconfig/can_interface.pc'
+[1.894s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/can_interface/lib/python3.12/site-packages'
+[1.894s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/can_interface/bin'
+[1.895s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/can_interface/share/can_interface/package.ps1'
+[1.895s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetpack/JetRacer/install/can_interface/share/can_interface/package.dsv'
+[1.896s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/can_interface/share/can_interface/package.sh'
+[1.897s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/can_interface/share/can_interface/package.bash'
+[1.898s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/can_interface/share/can_interface/package.zsh'
+[1.898s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetpack/JetRacer/install/can_interface/share/colcon-core/packages/can_interface)
+[7.904s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetpack/JetRacer/build/i2c_interface' returned '0': CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/home/jetpack/JetRacer/install/servo_motor:/home/jetpack/JetRacer/install/oled_service:/home/jetpack/JetRacer/install/i2c_interface:/home/jetpack/JetRacer/install/can_interface:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/i2c_interface:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:/home/jetpack/JetRacer/install/can_interface/lib:/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /home/jetpack/JetRacer/build/i2c_interface -- -j4 -l4
+[7.945s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jetpack/JetRacer/build/i2c_interface': CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/home/jetpack/JetRacer/install/servo_motor:/home/jetpack/JetRacer/install/oled_service:/home/jetpack/JetRacer/install/i2c_interface:/home/jetpack/JetRacer/install/can_interface:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/i2c_interface:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:/home/jetpack/JetRacer/install/can_interface/lib:/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --install /home/jetpack/JetRacer/build/i2c_interface
+[7.983s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(i2c_interface)
+[7.983s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/i2c_interface' for CMake module files
+[7.984s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jetpack/JetRacer/build/i2c_interface' returned '0': CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/home/jetpack/JetRacer/install/servo_motor:/home/jetpack/JetRacer/install/oled_service:/home/jetpack/JetRacer/install/i2c_interface:/home/jetpack/JetRacer/install/can_interface:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/i2c_interface:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:/home/jetpack/JetRacer/install/can_interface/lib:/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --install /home/jetpack/JetRacer/build/i2c_interface
+[7.984s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/i2c_interface' for CMake config files
+[7.985s] Level 1:colcon.colcon_core.shell:create_environment_hook('i2c_interface', 'cmake_prefix_path')
+[7.985s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/i2c_interface/share/i2c_interface/hook/cmake_prefix_path.ps1'
+[7.986s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetpack/JetRacer/install/i2c_interface/share/i2c_interface/hook/cmake_prefix_path.dsv'
+[7.987s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/i2c_interface/share/i2c_interface/hook/cmake_prefix_path.sh'
+[7.988s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/i2c_interface/lib'
+[7.988s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/i2c_interface/bin'
+[7.988s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/i2c_interface/lib/pkgconfig/i2c_interface.pc'
+[7.988s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/i2c_interface/lib/python3.12/site-packages'
+[7.988s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/i2c_interface/bin'
+[7.989s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/i2c_interface/share/i2c_interface/package.ps1'
+[7.989s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetpack/JetRacer/install/i2c_interface/share/i2c_interface/package.dsv'
+[7.990s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/i2c_interface/share/i2c_interface/package.sh'
+[7.990s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/i2c_interface/share/i2c_interface/package.bash'
+[7.991s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/i2c_interface/share/i2c_interface/package.zsh'
+[7.991s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetpack/JetRacer/install/i2c_interface/share/colcon-core/packages/i2c_interface)
+[8.032s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(i2c_interface)
+[8.033s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/i2c_interface' for CMake module files
+[8.033s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/i2c_interface' for CMake config files
+[8.034s] Level 1:colcon.colcon_core.shell:create_environment_hook('i2c_interface', 'cmake_prefix_path')
+[8.034s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/i2c_interface/share/i2c_interface/hook/cmake_prefix_path.ps1'
+[8.034s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jetpack/JetRacer/install/i2c_interface/share/i2c_interface/hook/cmake_prefix_path.dsv'
+[8.035s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jetpack/JetRacer/install/i2c_interface/share/i2c_interface/hook/cmake_prefix_path.sh'
+[8.037s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/i2c_interface/lib'
+[8.037s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/i2c_interface/bin'
+[8.037s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/i2c_interface/lib/pkgconfig/i2c_interface.pc'
+[8.037s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/i2c_interface/lib/python3.12/site-packages'
+[8.037s] Level 1:colcon.colcon_core.environment:checking '/home/jetpack/JetRacer/install/i2c_interface/bin'
+[8.038s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/i2c_interface/share/i2c_interface/package.ps1'
+[8.038s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jetpack/JetRacer/install/i2c_interface/share/i2c_interface/package.dsv'
+[8.039s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/i2c_interface/share/i2c_interface/package.sh'
+[8.040s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/i2c_interface/share/i2c_interface/package.bash'
+[8.040s] INFO:colcon.colcon_core.shell:Creating package script '/home/jetpack/JetRacer/install/i2c_interface/share/i2c_interface/package.zsh'
+[8.041s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jetpack/JetRacer/install/i2c_interface/share/colcon-core/packages/i2c_interface)
+[8.042s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.043s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.043s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[8.043s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.051s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.051s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.051s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.052s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[8.052s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.053s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetpack/JetRacer/install/local_setup.ps1'
+[8.054s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jetpack/JetRacer/install/_local_setup_util_ps1.py'
+[8.055s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetpack/JetRacer/install/setup.ps1'
+[8.057s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetpack/JetRacer/install/local_setup.sh'
+[8.057s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jetpack/JetRacer/install/_local_setup_util_sh.py'
+[8.058s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetpack/JetRacer/install/setup.sh'
+[8.060s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetpack/JetRacer/install/local_setup.bash'
+[8.060s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetpack/JetRacer/install/setup.bash'
+[8.062s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jetpack/JetRacer/install/local_setup.zsh'
+[8.063s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jetpack/JetRacer/install/setup.zsh'

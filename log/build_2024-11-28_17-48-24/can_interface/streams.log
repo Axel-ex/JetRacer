@@ -1,0 +1,46 @@
+[0.025s] Invoking command in '/home/jetpack/JetRacer/build/can_interface': CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/home/jetpack/JetRacer/install/servo_motor:/home/jetpack/JetRacer/install/oled_service:/home/jetpack/JetRacer/install/i2c_interface:/home/jetpack/JetRacer/install/can_interface:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/i2c_interface:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:/home/jetpack/JetRacer/install/can_interface/lib:/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake /home/jetpack/JetRacer/src/bus_interfaces/can_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jetpack/JetRacer/install/can_interface
+[0.174s] -- The C compiler identification is GNU 13.2.0
+[0.315s] -- The CXX compiler identification is GNU 13.2.0
+[0.347s] -- Detecting C compiler ABI info
+[0.554s] -- Detecting C compiler ABI info - done
+[0.572s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.572s] -- Detecting C compile features
+[0.576s] -- Detecting C compile features - done
+[0.591s] -- Detecting CXX compiler ABI info
+[0.852s] -- Detecting CXX compiler ABI info - done
+[0.869s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.869s] -- Detecting CXX compile features
+[0.870s] -- Detecting CXX compile features - done
+[0.873s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.206s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.389s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.436s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.489s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.509s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.533s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.561s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.673s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.678s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.829s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.861s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.903s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.009s] -- Found bus_msgs: 0.0.0 (/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake)
+[7.551s] -- Configuring done (7.5s)
+[7.620s] -- Generating done (0.0s)
+[7.625s] -- Build files have been written to: /home/jetpack/JetRacer/build/can_interface
+[7.688s] Invoked command in '/home/jetpack/JetRacer/build/can_interface' returned '0': CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/home/jetpack/JetRacer/install/servo_motor:/home/jetpack/JetRacer/install/oled_service:/home/jetpack/JetRacer/install/i2c_interface:/home/jetpack/JetRacer/install/can_interface:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/i2c_interface:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:/home/jetpack/JetRacer/install/can_interface/lib:/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake /home/jetpack/JetRacer/src/bus_interfaces/can_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jetpack/JetRacer/install/can_interface
+[7.689s] Invoking command in '/home/jetpack/JetRacer/build/can_interface': CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/home/jetpack/JetRacer/install/servo_motor:/home/jetpack/JetRacer/install/oled_service:/home/jetpack/JetRacer/install/i2c_interface:/home/jetpack/JetRacer/install/can_interface:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/i2c_interface:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:/home/jetpack/JetRacer/install/can_interface/lib:/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /home/jetpack/JetRacer/build/can_interface -- -j4 -l4
+[7.886s] [ 20%] [32mBuilding CXX object _deps/sockcanpp-build/CMakeFiles/sockcanpp.dir/src/CanDriver.cpp.o[0m
+[10.083s] [ 40%] [32m[1mLinking CXX shared library sockcanpp.so[0m
+[10.608s] [ 40%] Built target sockcanpp
+[10.701s] [ 60%] [32mBuilding CXX object CMakeFiles/can_interface_node.dir/src/main.cpp.o[0m
+[10.708s] [ 80%] [32mBuilding CXX object CMakeFiles/can_interface_node.dir/src/CanInterface.cpp.o[0m
+[11.722s] [01m[K/home/jetpack/JetRacer/src/bus_interfaces/can_interface/src/CanInterface.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kbus_msgs/msg/can_packet.hpp: No such file or directory
+[11.722s]     3 | #include [01;31m[K"bus_msgs/msg/can_packet.hpp"[m[K
+[11.723s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[11.723s] compilation terminated.
+[11.732s] gmake[2]: *** [CMakeFiles/can_interface_node.dir/build.make:90: CMakeFiles/can_interface_node.dir/src/CanInterface.cpp.o] Error 1
+[11.732s] gmake[2]: *** Waiting for unfinished jobs....
+[18.717s] gmake[1]: *** [CMakeFiles/Makefile2:190: CMakeFiles/can_interface_node.dir/all] Error 2
+[18.717s] gmake: *** [Makefile:166: all] Error 2
+[18.721s] Invoked command in '/home/jetpack/JetRacer/build/can_interface' returned '2': CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/home/jetpack/JetRacer/install/servo_motor:/home/jetpack/JetRacer/install/oled_service:/home/jetpack/JetRacer/install/i2c_interface:/home/jetpack/JetRacer/install/can_interface:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/i2c_interface:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:/home/jetpack/JetRacer/install/can_interface/lib:/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /home/jetpack/JetRacer/build/can_interface -- -j4 -l4

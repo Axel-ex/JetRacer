@@ -1,0 +1,17 @@
+/home/jetpack/JetRacer/install/oled_display/lib/oled_display/oled_display_node
+/home/jetpack/JetRacer/install/oled_display/share/ament_index/resource_index/package_run_dependencies/oled_display
+/home/jetpack/JetRacer/install/oled_display/share/ament_index/resource_index/parent_prefix_path/oled_display
+/home/jetpack/JetRacer/install/oled_display/share/oled_display/environment/ament_prefix_path.sh
+/home/jetpack/JetRacer/install/oled_display/share/oled_display/environment/ament_prefix_path.dsv
+/home/jetpack/JetRacer/install/oled_display/share/oled_display/environment/path.sh
+/home/jetpack/JetRacer/install/oled_display/share/oled_display/environment/path.dsv
+/home/jetpack/JetRacer/install/oled_display/share/oled_display/local_setup.bash
+/home/jetpack/JetRacer/install/oled_display/share/oled_display/local_setup.sh
+/home/jetpack/JetRacer/install/oled_display/share/oled_display/local_setup.zsh
+/home/jetpack/JetRacer/install/oled_display/share/oled_display/local_setup.dsv
+/home/jetpack/JetRacer/install/oled_display/share/oled_display/package.dsv
+/home/jetpack/JetRacer/install/oled_display/share/ament_index/resource_index/packages/oled_display
+/home/jetpack/JetRacer/install/oled_display/share/oled_display/cmake/ament_cmake_export_dependencies-extras.cmake
+/home/jetpack/JetRacer/install/oled_display/share/oled_display/cmake/oled_displayConfig.cmake
+/home/jetpack/JetRacer/install/oled_display/share/oled_display/cmake/oled_displayConfig-version.cmake
+/home/jetpack/JetRacer/install/oled_display/share/oled_display/package.xml

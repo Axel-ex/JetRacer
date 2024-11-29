@@ -1,0 +1,41 @@
+[0.028s] Invoking command in '/home/jetpack/JetRacer/build/oled_display': AMENT_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/jetpack/JetRacer/src/peripherals/oled_display -DCMAKE_INSTALL_PREFIX=/home/jetpack/JetRacer/install/oled_display
+[0.559s] -- The C compiler identification is GNU 13.2.0
+[1.011s] -- The CXX compiler identification is GNU 13.2.0
+[1.048s] -- Detecting C compiler ABI info
+[1.225s] -- Detecting C compiler ABI info - done
+[1.239s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.240s] -- Detecting C compile features
+[1.241s] -- Detecting C compile features - done
+[1.257s] -- Detecting CXX compiler ABI info
+[1.427s] -- Detecting CXX compiler ABI info - done
+[1.442s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.442s] -- Detecting CXX compile features
+[1.443s] -- Detecting CXX compile features - done
+[1.449s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.669s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.855s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.932s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.957s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.990s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.024s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.160s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[2.166s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[2.322s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[2.352s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[2.386s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.514s] -- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+[2.541s] -- Found bus_msgs: 0.0.0 (/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake)
+[2.572s] [31mCMake Error at CMakeLists.txt:21 (add_executable):
+[2.572s]   The target name "src/main.cpp" is reserved or not valid for certain CMake
+[2.572s]   features, such as generator expressions, and may result in undefined
+[2.572s]   behavior.
+[2.572s] 
+[2.572s] [0m
+[2.572s] [31mCMake Error at /opt/ros/jazzy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:42 (message):
+[2.573s]   ament_target_dependencies() the first argument must be a valid target name
+[2.573s] Call Stack (most recent call first):
+[2.573s]   CMakeLists.txt:23 (ament_target_dependencies)
+[2.573s] 
+[2.573s] [0m
+[2.573s] -- Configuring incomplete, errors occurred!
+[2.588s] Invoked command in '/home/jetpack/JetRacer/build/oled_display' returned '1': AMENT_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/jetpack/JetRacer/src/peripherals/oled_display -DCMAKE_INSTALL_PREFIX=/home/jetpack/JetRacer/install/oled_display

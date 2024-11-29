@@ -1,0 +1,57 @@
+[0.023s] Invoking command in '/home/jetpack/JetRacer/build/i2c_interface': CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/home/jetpack/JetRacer/install/servo_motor:/home/jetpack/JetRacer/install/oled_service:/home/jetpack/JetRacer/install/i2c_interface:/home/jetpack/JetRacer/install/can_interface:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/i2c_interface:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:/home/jetpack/JetRacer/install/can_interface/lib:/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake /home/jetpack/JetRacer/src/bus_interfaces/i2c_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jetpack/JetRacer/install/i2c_interface
+[0.166s] -- The C compiler identification is GNU 13.2.0
+[0.317s] -- The CXX compiler identification is GNU 13.2.0
+[0.349s] -- Detecting C compiler ABI info
+[0.555s] -- Detecting C compiler ABI info - done
+[0.573s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.574s] -- Detecting C compile features
+[0.575s] -- Detecting C compile features - done
+[0.593s] -- Detecting CXX compiler ABI info
+[0.823s] -- Detecting CXX compiler ABI info - done
+[0.845s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.845s] -- Detecting CXX compile features
+[0.845s] -- Detecting CXX compile features - done
+[0.849s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.196s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.392s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.436s] -- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.494s] -- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.516s] -- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.539s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.568s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.684s] -- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.688s] -- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.845s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.875s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.917s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.034s] -- Found bus_msgs: 0.0.0 (/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake)
+[2.314s] -- Configuring done (2.3s)
+[2.329s] -- Generating done (0.0s)
+[2.332s] -- Build files have been written to: /home/jetpack/JetRacer/build/i2c_interface
+[2.361s] Invoked command in '/home/jetpack/JetRacer/build/i2c_interface' returned '0': CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/home/jetpack/JetRacer/install/servo_motor:/home/jetpack/JetRacer/install/oled_service:/home/jetpack/JetRacer/install/i2c_interface:/home/jetpack/JetRacer/install/can_interface:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/i2c_interface:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:/home/jetpack/JetRacer/install/can_interface/lib:/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake /home/jetpack/JetRacer/src/bus_interfaces/i2c_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jetpack/JetRacer/install/i2c_interface
+[2.363s] Invoking command in '/home/jetpack/JetRacer/build/i2c_interface': CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/home/jetpack/JetRacer/install/servo_motor:/home/jetpack/JetRacer/install/oled_service:/home/jetpack/JetRacer/install/i2c_interface:/home/jetpack/JetRacer/install/can_interface:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/i2c_interface:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:/home/jetpack/JetRacer/install/can_interface/lib:/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /home/jetpack/JetRacer/build/i2c_interface -- -j4 -l4
+[2.492s] [ 33%] [32mBuilding CXX object CMakeFiles/i2c_interface_node.dir/src/main.cpp.o[0m
+[2.508s] [ 66%] [32mBuilding CXX object CMakeFiles/i2c_interface_node.dir/src/I2cInterface.cpp.o[0m
+[17.059s] [100%] [32m[1mLinking CXX executable i2c_interface_node[0m
+[17.520s] [100%] Built target i2c_interface_node
+[17.545s] Invoked command in '/home/jetpack/JetRacer/build/i2c_interface' returned '0': CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/home/jetpack/JetRacer/install/servo_motor:/home/jetpack/JetRacer/install/oled_service:/home/jetpack/JetRacer/install/i2c_interface:/home/jetpack/JetRacer/install/can_interface:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/i2c_interface:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:/home/jetpack/JetRacer/install/can_interface/lib:/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --build /home/jetpack/JetRacer/build/i2c_interface -- -j4 -l4
+[17.604s] Invoking command in '/home/jetpack/JetRacer/build/i2c_interface': CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/home/jetpack/JetRacer/install/servo_motor:/home/jetpack/JetRacer/install/oled_service:/home/jetpack/JetRacer/install/i2c_interface:/home/jetpack/JetRacer/install/can_interface:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/i2c_interface:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:/home/jetpack/JetRacer/install/can_interface/lib:/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --install /home/jetpack/JetRacer/build/i2c_interface
+[17.622s] -- Install configuration: ""
+[17.623s] -- Execute custom install script
+[17.625s] -- Symlinking: /home/jetpack/JetRacer/install/i2c_interface/lib/i2c_interface/i2c_interface_node
+[17.644s] -- Symlinking: /home/jetpack/JetRacer/install/i2c_interface/share/ament_index/resource_index/package_run_dependencies/i2c_interface
+[17.664s] -- Symlinking: /home/jetpack/JetRacer/install/i2c_interface/share/ament_index/resource_index/parent_prefix_path/i2c_interface
+[17.686s] -- Symlinking: /home/jetpack/JetRacer/install/i2c_interface/share/i2c_interface/environment/ament_prefix_path.sh
+[17.704s] -- Symlinking: /home/jetpack/JetRacer/install/i2c_interface/share/i2c_interface/environment/ament_prefix_path.dsv
+[17.724s] -- Symlinking: /home/jetpack/JetRacer/install/i2c_interface/share/i2c_interface/environment/path.sh
+[17.745s] -- Symlinking: /home/jetpack/JetRacer/install/i2c_interface/share/i2c_interface/environment/path.dsv
+[17.765s] -- Symlinking: /home/jetpack/JetRacer/install/i2c_interface/share/i2c_interface/local_setup.bash
+[17.787s] -- Symlinking: /home/jetpack/JetRacer/install/i2c_interface/share/i2c_interface/local_setup.sh
+[17.808s] -- Symlinking: /home/jetpack/JetRacer/install/i2c_interface/share/i2c_interface/local_setup.zsh
+[17.827s] -- Symlinking: /home/jetpack/JetRacer/install/i2c_interface/share/i2c_interface/local_setup.dsv
+[17.850s] -- Symlinking: /home/jetpack/JetRacer/install/i2c_interface/share/i2c_interface/package.dsv
+[17.870s] -- Symlinking: /home/jetpack/JetRacer/install/i2c_interface/share/ament_index/resource_index/packages/i2c_interface
+[17.888s] -- Symlinking: /home/jetpack/JetRacer/install/i2c_interface/share/i2c_interface/cmake/i2c_interfaceConfig.cmake
+[17.910s] -- Symlinking: /home/jetpack/JetRacer/install/i2c_interface/share/i2c_interface/cmake/i2c_interfaceConfig-version.cmake
+[17.926s] -- Symlinking: /home/jetpack/JetRacer/install/i2c_interface/share/i2c_interface/package.xml
+[17.949s] Invoked command in '/home/jetpack/JetRacer/build/i2c_interface' returned '0': CMAKE_PREFIX_PATH=/home/jetpack/JetRacer/install/bus_msgs:/home/jetpack/JetRacer/install/servo_motor:/home/jetpack/JetRacer/install/oled_service:/home/jetpack/JetRacer/install/i2c_interface:/home/jetpack/JetRacer/install/can_interface:/home/jetpack/piracer/install/oled_service:/home/jetpack/piracer/install/i2c_interface:/home/jetpack/piracer/install/can_interface:/home/jetpack/piracer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/jetpack/JetRacer/install/bus_msgs/lib:/home/jetpack/JetRacer/install/can_interface/lib:/home/jetpack/piracer/install/can_interface/lib:/home/jetpack/piracer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib /usr/bin/cmake --install /home/jetpack/JetRacer/build/i2c_interface

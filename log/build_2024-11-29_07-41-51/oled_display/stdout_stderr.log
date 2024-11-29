@@ -1,0 +1,42 @@
+-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)
+-- Found bus_msgs: 0.0.0 (/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake)
+-- Configuring done (0.8s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/jetpack/JetRacer/build/oled_display
+[ 75%] [32mBuilding C object CMakeFiles/oled_display_node.dir/src/ssd1306_linux/ssd1306.c.o[0m
+[ 75%] [32mBuilding C object CMakeFiles/oled_display_node.dir/src/ssd1306_linux/linux_i2c.c.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/oled_display_node.dir/src/main.cpp.o[0m
+[01m[K/home/jetpack/JetRacer/src/peripherals/oled_display/src/ssd1306_linux/ssd1306.c:[m[K In function ‘[01m[Kssd1306_oled_write_string[m[K’:
+[01m[K/home/jetpack/JetRacer/src/peripherals/oled_display/src/ssd1306_linux/ssd1306.c:372:10:[m[K [01;35m[Kwarning: [m[Kassignment discards ‘[01m[Kconst[m[K’ qualifier from pointer target type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdiscarded-qualifiers-Wdiscarded-qualifiers]8;;[m[K]
+  372 |     line [01;35m[K=[m[K ptr;
+      |          [01;35m[K^[m[K
+[100%] [32m[1mLinking CXX executable oled_display_node[0m
+[100%] Built target oled_display_node
+-- Install configuration: ""
+-- Installing: /home/jetpack/JetRacer/install/oled_display/lib/oled_display/oled_display_node
+-- Set non-toolchain portion of runtime path of "/home/jetpack/JetRacer/install/oled_display/lib/oled_display/oled_display_node" to ""
+-- Installing: /home/jetpack/JetRacer/install/oled_display/share/ament_index/resource_index/package_run_dependencies/oled_display
+-- Installing: /home/jetpack/JetRacer/install/oled_display/share/ament_index/resource_index/parent_prefix_path/oled_display
+-- Installing: /home/jetpack/JetRacer/install/oled_display/share/oled_display/environment/ament_prefix_path.sh
+-- Installing: /home/jetpack/JetRacer/install/oled_display/share/oled_display/environment/ament_prefix_path.dsv
+-- Installing: /home/jetpack/JetRacer/install/oled_display/share/oled_display/environment/path.sh
+-- Installing: /home/jetpack/JetRacer/install/oled_display/share/oled_display/environment/path.dsv
+-- Installing: /home/jetpack/JetRacer/install/oled_display/share/oled_display/local_setup.bash
+-- Installing: /home/jetpack/JetRacer/install/oled_display/share/oled_display/local_setup.sh
+-- Installing: /home/jetpack/JetRacer/install/oled_display/share/oled_display/local_setup.zsh
+-- Installing: /home/jetpack/JetRacer/install/oled_display/share/oled_display/local_setup.dsv
+-- Installing: /home/jetpack/JetRacer/install/oled_display/share/oled_display/package.dsv
+-- Installing: /home/jetpack/JetRacer/install/oled_display/share/ament_index/resource_index/packages/oled_display
+-- Installing: /home/jetpack/JetRacer/install/oled_display/share/oled_display/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/jetpack/JetRacer/install/oled_display/share/oled_display/cmake/oled_displayConfig.cmake
+-- Installing: /home/jetpack/JetRacer/install/oled_display/share/oled_display/cmake/oled_displayConfig-version.cmake
+-- Installing: /home/jetpack/JetRacer/install/oled_display/share/oled_display/package.xml

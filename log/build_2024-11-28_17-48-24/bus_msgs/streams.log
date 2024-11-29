@@ -1,0 +1,262 @@
+[0.016s] Invoking command in '/home/jetpack/JetRacer/build/bus_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/jetpack/JetRacer/src/utils/bus_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jetpack/JetRacer/install/bus_msgs
+[0.129s] -- The C compiler identification is GNU 13.2.0
+[0.245s] -- The CXX compiler identification is GNU 13.2.0
+[0.272s] -- Detecting C compiler ABI info
+[0.438s] -- Detecting C compiler ABI info - done
+[0.452s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.453s] -- Detecting C compile features
+[0.453s] -- Detecting C compile features - done
+[0.467s] -- Detecting CXX compiler ABI info
+[0.649s] -- Detecting CXX compiler ABI info - done
+[0.664s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.664s] -- Detecting CXX compile features
+[0.665s] -- Detecting CXX compile features - done
+[0.668s] -- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.910s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.041s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.080s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.088s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.152s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.208s] -- Found rosidl_adapter: 4.6.4 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[2.197s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[2.865s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.754s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.757s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[3.970s] -- Found PythonExtra: /usr/bin/python3  
+[4.693s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[4.750s] -- Found ament_lint_auto: 0.17.1 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[4.778s] -- Added test 'lint_cmake' to check CMake code style
+[4.780s] -- Added test 'xmllint' to check XML markup files
+[4.786s] -- Configuring done (4.8s)
+[4.843s] -- Generating done (0.0s)
+[4.847s] -- Build files have been written to: /home/jetpack/JetRacer/build/bus_msgs
+[4.869s] Invoked command in '/home/jetpack/JetRacer/build/bus_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake /home/jetpack/JetRacer/src/utils/bus_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/jetpack/JetRacer/install/bus_msgs
+[4.871s] Invoking command in '/home/jetpack/JetRacer/build/bus_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jetpack/JetRacer/build/bus_msgs -- -j4 -l4
+[4.957s] [  1%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[4.973s] [  1%] Built target ament_cmake_python_symlink_bus_msgs
+[5.306s] running egg_info
+[5.307s] creating bus_msgs.egg-info
+[5.335s] writing bus_msgs.egg-info/PKG-INFO
+[5.335s] writing dependency_links to bus_msgs.egg-info/dependency_links.txt
+[5.335s] writing top-level names to bus_msgs.egg-info/top_level.txt
+[5.335s] writing manifest file 'bus_msgs.egg-info/SOURCES.txt'
+[5.415s] reading manifest file 'bus_msgs.egg-info/SOURCES.txt'
+[5.416s] writing manifest file 'bus_msgs.egg-info/SOURCES.txt'
+[5.501s] [  1%] Built target ament_cmake_python_build_bus_msgs_egg
+[5.544s] [  1%] Built target bus_msgs__rosidl_generator_type_description
+[5.564s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[5.584s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[6.536s] [  5%] Built target bus_msgs__cpp
+[6.642s] [  7%] [32mBuilding C object CMakeFiles/bus_msgs__rosidl_generator_c.dir/rosidl_generator_c/bus_msgs/msg/detail/can_frame__description.c.o[0m
+[6.647s] [  9%] [32mBuilding C object CMakeFiles/bus_msgs__rosidl_generator_c.dir/rosidl_generator_c/bus_msgs/msg/detail/can_frame__type_support.c.o[0m
+[6.650s] [ 11%] [32mBuilding C object CMakeFiles/bus_msgs__rosidl_generator_c.dir/rosidl_generator_c/bus_msgs/msg/detail/can_frame__functions.c.o[0m
+[6.665s] [ 12%] [32mBuilding C object CMakeFiles/bus_msgs__rosidl_generator_c.dir/rosidl_generator_c/bus_msgs/srv/detail/i2c_service__description.c.o[0m
+[6.736s] [ 14%] [32mBuilding C object CMakeFiles/bus_msgs__rosidl_generator_c.dir/rosidl_generator_c/bus_msgs/srv/detail/i2c_service__functions.c.o[0m
+[6.764s] [ 16%] [32mBuilding C object CMakeFiles/bus_msgs__rosidl_generator_c.dir/rosidl_generator_c/bus_msgs/srv/detail/i2c_service__type_support.c.o[0m
+[6.786s] [ 18%] [32mBuilding C object CMakeFiles/bus_msgs__rosidl_generator_c.dir/rosidl_generator_c/bus_msgs/srv/detail/can_service__description.c.o[0m
+[6.817s] [ 20%] [32mBuilding C object CMakeFiles/bus_msgs__rosidl_generator_c.dir/rosidl_generator_c/bus_msgs/srv/detail/can_service__functions.c.o[0m
+[6.880s] [ 22%] [32mBuilding C object CMakeFiles/bus_msgs__rosidl_generator_c.dir/rosidl_generator_c/bus_msgs/srv/detail/can_service__type_support.c.o[0m
+[7.001s] [ 24%] [32m[1mLinking C shared library libbus_msgs__rosidl_generator_c.so[0m
+[7.075s] [ 24%] Built target bus_msgs__rosidl_generator_c
+[7.100s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[7.100s] [ 27%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[7.101s] [ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[7.116s] [ 31%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[8.060s] [ 33%] [32mBuilding CXX object CMakeFiles/bus_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bus_msgs/msg/can_frame__type_support.cpp.o[0m
+[8.398s] [ 35%] [32mBuilding CXX object CMakeFiles/bus_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/bus_msgs/msg/can_frame__type_support.cpp.o[0m
+[8.432s] [ 37%] [32mBuilding C object CMakeFiles/bus_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/bus_msgs/msg/detail/can_frame__type_support.c.o[0m
+[8.517s] [ 38%] [32mBuilding CXX object CMakeFiles/bus_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/bus_msgs/msg/detail/can_frame__type_support_c.cpp.o[0m
+[8.540s] [ 40%] [32mBuilding C object CMakeFiles/bus_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/bus_msgs/srv/detail/i2c_service__type_support.c.o[0m
+[8.545s] [ 42%] [32mBuilding CXX object CMakeFiles/bus_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/bus_msgs/srv/i2c_service__type_support.cpp.o[0m
+[8.697s] [ 44%] [32mBuilding C object CMakeFiles/bus_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/bus_msgs/srv/detail/can_service__type_support.c.o[0m
+[8.734s] [ 46%] [32mBuilding CXX object CMakeFiles/bus_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/bus_msgs/srv/can_service__type_support.cpp.o[0m
+[8.904s] [ 48%] [32m[1mLinking C shared library libbus_msgs__rosidl_typesupport_introspection_c.so[0m
+[8.945s] [ 50%] [32m[1mLinking CXX shared library libbus_msgs__rosidl_typesupport_c.so[0m
+[8.982s] [ 51%] [32mBuilding CXX object CMakeFiles/bus_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bus_msgs/srv/i2c_service__type_support.cpp.o[0m
+[9.017s] [ 51%] Built target bus_msgs__rosidl_typesupport_introspection_c
+[9.050s] [ 53%] [32mBuilding CXX object CMakeFiles/bus_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/bus_msgs/srv/can_service__type_support.cpp.o[0m
+[9.054s] [ 53%] Built target bus_msgs__rosidl_typesupport_c
+[9.097s] [ 55%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[9.919s] [ 57%] [32mBuilding CXX object CMakeFiles/bus_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/bus_msgs/srv/detail/i2c_service__type_support_c.cpp.o[0m
+[10.375s] [ 59%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[10.585s] [ 61%] [32mBuilding CXX object CMakeFiles/bus_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/bus_msgs/msg/detail/dds_fastrtps/can_frame__type_support.cpp.o[0m
+[10.655s] [ 62%] [32m[1mLinking CXX shared library libbus_msgs__rosidl_typesupport_cpp.so[0m
+[11.001s] [ 62%] Built target bus_msgs__rosidl_typesupport_cpp
+[11.035s] [ 64%] [32mBuilding CXX object CMakeFiles/bus_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/bus_msgs/srv/detail/dds_fastrtps/i2c_service__type_support.cpp.o[0m
+[11.462s] [ 66%] [32mBuilding CXX object CMakeFiles/bus_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/bus_msgs/srv/detail/can_service__type_support_c.cpp.o[0m
+[11.918s] [ 68%] [32mBuilding CXX object CMakeFiles/bus_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/bus_msgs/msg/detail/can_frame__type_support.cpp.o[0m
+[12.238s] [ 70%] [32mBuilding CXX object CMakeFiles/bus_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/bus_msgs/srv/detail/dds_fastrtps/can_service__type_support.cpp.o[0m
+[12.913s] [ 72%] [32mBuilding CXX object CMakeFiles/bus_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/bus_msgs/srv/detail/i2c_service__type_support.cpp.o[0m
+[13.271s] [ 74%] [32m[1mLinking CXX shared library libbus_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[13.371s] [ 75%] [32mBuilding CXX object CMakeFiles/bus_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/bus_msgs/srv/detail/can_service__type_support.cpp.o[0m
+[13.557s] [ 75%] Built target bus_msgs__rosidl_typesupport_fastrtps_c
+[14.250s] [ 77%] [32m[1mLinking CXX shared library libbus_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[14.430s] [ 77%] Built target bus_msgs__rosidl_typesupport_fastrtps_cpp
+[14.623s] [ 79%] [32m[1mLinking CXX shared library libbus_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[14.783s] [ 79%] Built target bus_msgs__rosidl_typesupport_introspection_cpp
+[14.817s] [ 79%] Built target bus_msgs
+[14.854s] [ 81%] [34m[1mGenerating Python code for ROS interfaces[0m
+[16.189s] [ 81%] Built target bus_msgs__py
+[16.227s] [ 85%] [32mBuilding C object CMakeFiles/bus_msgs__rosidl_generator_py.dir/rosidl_generator_py/bus_msgs/msg/_can_frame_s.c.o[0m
+[16.228s] [ 85%] [32mBuilding C object CMakeFiles/bus_msgs__rosidl_generator_py.dir/rosidl_generator_py/bus_msgs/srv/_i2c_service_s.c.o[0m
+[16.228s] [ 87%] [32mBuilding C object CMakeFiles/bus_msgs__rosidl_generator_py.dir/rosidl_generator_py/bus_msgs/srv/_can_service_s.c.o[0m
+[16.574s] [ 88%] [32m[1mLinking C shared library libbus_msgs__rosidl_generator_py.so[0m
+[16.658s] [ 88%] Built target bus_msgs__rosidl_generator_py
+[16.700s] [ 90%] [32mBuilding C object CMakeFiles/bus_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/bus_msgs/_bus_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[16.700s] [ 94%] [32mBuilding C object CMakeFiles/bus_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/bus_msgs/_bus_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[16.700s] [ 94%] [32mBuilding C object CMakeFiles/bus_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/bus_msgs/_bus_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[16.949s] [ 96%] [32m[1mLinking C shared module rosidl_generator_py/bus_msgs/bus_msgs_s__rosidl_typesupport_c.so[0m
+[16.957s] [ 98%] [32m[1mLinking C shared module rosidl_generator_py/bus_msgs/bus_msgs_s__rosidl_typesupport_fastrtps_c.so[0m
+[16.962s] [100%] [32m[1mLinking C shared module rosidl_generator_py/bus_msgs/bus_msgs_s__rosidl_typesupport_introspection_c.so[0m
+[17.014s] [100%] Built target bus_msgs_s__rosidl_typesupport_c
+[17.023s] [100%] Built target bus_msgs_s__rosidl_typesupport_fastrtps_c
+[17.029s] [100%] Built target bus_msgs_s__rosidl_typesupport_introspection_c
+[17.050s] Invoked command in '/home/jetpack/JetRacer/build/bus_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jetpack/JetRacer/build/bus_msgs -- -j4 -l4
+[17.205s] Invoking command in '/home/jetpack/JetRacer/build/bus_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jetpack/JetRacer/build/bus_msgs
+[17.219s] -- Install configuration: ""
+[17.220s] -- Execute custom install script
+[17.220s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/ament_index/resource_index/rosidl_interfaces/bus_msgs
+[17.237s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/msg/CanFrame.json
+[17.257s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/srv/I2cService.json
+[17.277s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/srv/CanService.json
+[17.296s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/can_frame.h
+[17.315s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/detail/can_frame__functions.h
+[17.332s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/detail/can_frame__struct.h
+[17.348s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/detail/can_frame__type_support.h
+[17.364s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/rosidl_generator_c__visibility_control.h
+[17.383s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/srv/can_service.h
+[17.402s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/srv/detail/can_service__functions.h
+[17.420s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/srv/detail/can_service__struct.h
+[17.437s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/srv/detail/can_service__type_support.h
+[17.456s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/srv/detail/i2c_service__functions.h
+[17.472s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/srv/detail/i2c_service__struct.h
+[17.490s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/srv/detail/i2c_service__type_support.h
+[17.507s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/srv/i2c_service.h
+[17.524s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/environment/library_path.sh
+[17.541s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/environment/library_path.dsv
+[17.558s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/detail/can_frame__rosidl_typesupport_fastrtps_c.h
+[17.574s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[17.589s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/srv/detail/can_service__rosidl_typesupport_fastrtps_c.h
+[17.609s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/srv/detail/i2c_service__rosidl_typesupport_fastrtps_c.h
+[17.628s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/detail/can_frame__rosidl_typesupport_introspection_c.h
+[17.646s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[17.667s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/srv/detail/can_service__rosidl_typesupport_introspection_c.h
+[17.687s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/srv/detail/i2c_service__rosidl_typesupport_introspection_c.h
+[17.710s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/can_frame.hpp
+[17.731s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/detail/can_frame__builder.hpp
+[17.754s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/detail/can_frame__struct.hpp
+[17.776s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/detail/can_frame__traits.hpp
+[17.797s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/detail/can_frame__type_support.hpp
+[17.818s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[17.840s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/srv/can_service.hpp
+[17.862s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/srv/detail/can_service__builder.hpp
+[17.885s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/srv/detail/can_service__struct.hpp
+[17.903s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/srv/detail/can_service__traits.hpp
+[17.924s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/srv/detail/can_service__type_support.hpp
+[17.945s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/srv/detail/i2c_service__builder.hpp
+[17.964s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/srv/detail/i2c_service__struct.hpp
+[17.981s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/srv/detail/i2c_service__traits.hpp
+[17.998s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/srv/detail/i2c_service__type_support.hpp
+[18.014s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/srv/i2c_service.hpp
+[18.032s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/detail/can_frame__rosidl_typesupport_fastrtps_cpp.hpp
+[18.051s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[18.067s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/srv/detail/can_service__rosidl_typesupport_fastrtps_cpp.hpp
+[18.085s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/srv/detail/i2c_service__rosidl_typesupport_fastrtps_cpp.hpp
+[18.103s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/msg/detail/can_frame__rosidl_typesupport_introspection_cpp.hpp
+[18.119s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/srv/detail/can_service__rosidl_typesupport_introspection_cpp.hpp
+[18.134s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/include/bus_msgs/bus_msgs/srv/detail/i2c_service__rosidl_typesupport_introspection_cpp.hpp
+[18.151s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/environment/pythonpath.sh
+[18.168s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/environment/pythonpath.dsv
+[18.186s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs-0.0.0-py3.12.egg-info/PKG-INFO
+[18.203s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs-0.0.0-py3.12.egg-info/SOURCES.txt
+[18.218s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs-0.0.0-py3.12.egg-info/dependency_links.txt
+[18.233s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs-0.0.0-py3.12.egg-info/top_level.txt
+[18.251s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/__init__.py
+[18.268s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/_bus_msgs_s.ep.rosidl_typesupport_c.c
+[18.284s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/_bus_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[18.301s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/_bus_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[18.316s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/bus_msgs_s__rosidl_typesupport_c.so
+[18.333s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/bus_msgs_s__rosidl_typesupport_fastrtps_c.so
+[18.348s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/bus_msgs_s__rosidl_typesupport_introspection_c.so
+[18.365s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/msg/__init__.py
+[18.380s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/msg/_can_frame.py
+[18.395s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/msg/_can_frame_s.c
+[18.410s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/srv/__init__.py
+[18.426s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/srv/_can_service.py
+[18.443s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/srv/_can_service_s.c
+[18.458s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/srv/_i2c_service.py
+[18.474s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/srv/_i2c_service_s.c
+[18.490s] -- Up-to-date symlink: /home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/bus_msgs_s__rosidl_typesupport_fastrtps_c.so
+[18.490s] -- Up-to-date symlink: /home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/bus_msgs_s__rosidl_typesupport_introspection_c.so
+[18.491s] -- Up-to-date symlink: /home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/bus_msgs_s__rosidl_typesupport_c.so
+[18.491s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/msg/CanFrame.idl
+[18.506s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/srv/I2cService.idl
+[18.522s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/srv/CanService.idl
+[18.538s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/msg/CanFrame.msg
+[18.553s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/srv/I2cService.srv
+[18.569s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/srv/CanService.srv
+[18.586s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/ament_index/resource_index/package_run_dependencies/bus_msgs
+[18.601s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/ament_index/resource_index/parent_prefix_path/bus_msgs
+[18.618s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/environment/ament_prefix_path.sh
+[18.635s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/environment/ament_prefix_path.dsv
+[18.650s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/environment/path.sh
+[18.666s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/environment/path.dsv
+[18.681s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/local_setup.bash
+[18.697s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/local_setup.sh
+[18.713s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/local_setup.zsh
+[18.735s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/local_setup.dsv
+[18.753s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/package.dsv
+[18.768s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/ament_index/resource_index/packages/bus_msgs
+[18.784s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake/rosidl_cmake-extras.cmake
+[18.800s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[18.816s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[18.832s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[18.849s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[18.864s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[18.881s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[18.896s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake/bus_msgsConfig.cmake
+[18.913s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake/bus_msgsConfig-version.cmake
+[18.928s] -- Symlinking: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/package.xml
+[18.945s] -- Installing: /home/jetpack/JetRacer/install/bus_msgs/lib/libbus_msgs__rosidl_generator_c.so
+[18.945s] -- Set non-toolchain portion of runtime path of "/home/jetpack/JetRacer/install/bus_msgs/lib/libbus_msgs__rosidl_generator_c.so" to ""
+[18.945s] -- Installing: /home/jetpack/JetRacer/install/bus_msgs/lib/libbus_msgs__rosidl_typesupport_fastrtps_c.so
+[18.946s] -- Set non-toolchain portion of runtime path of "/home/jetpack/JetRacer/install/bus_msgs/lib/libbus_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[18.946s] -- Installing: /home/jetpack/JetRacer/install/bus_msgs/lib/libbus_msgs__rosidl_typesupport_introspection_c.so
+[18.947s] -- Set non-toolchain portion of runtime path of "/home/jetpack/JetRacer/install/bus_msgs/lib/libbus_msgs__rosidl_typesupport_introspection_c.so" to ""
+[18.947s] -- Installing: /home/jetpack/JetRacer/install/bus_msgs/lib/libbus_msgs__rosidl_typesupport_c.so
+[18.947s] -- Set non-toolchain portion of runtime path of "/home/jetpack/JetRacer/install/bus_msgs/lib/libbus_msgs__rosidl_typesupport_c.so" to ""
+[18.947s] -- Installing: /home/jetpack/JetRacer/install/bus_msgs/lib/libbus_msgs__rosidl_typesupport_fastrtps_cpp.so
+[18.948s] -- Set non-toolchain portion of runtime path of "/home/jetpack/JetRacer/install/bus_msgs/lib/libbus_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[18.948s] -- Installing: /home/jetpack/JetRacer/install/bus_msgs/lib/libbus_msgs__rosidl_typesupport_introspection_cpp.so
+[18.949s] -- Set non-toolchain portion of runtime path of "/home/jetpack/JetRacer/install/bus_msgs/lib/libbus_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[18.949s] -- Installing: /home/jetpack/JetRacer/install/bus_msgs/lib/libbus_msgs__rosidl_typesupport_cpp.so
+[18.950s] -- Set non-toolchain portion of runtime path of "/home/jetpack/JetRacer/install/bus_msgs/lib/libbus_msgs__rosidl_typesupport_cpp.so" to ""
+[19.016s] Listing '/home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs'...
+[19.016s] Compiling '/home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/__init__.py'...
+[19.016s] Listing '/home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/msg'...
+[19.016s] Compiling '/home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/msg/__init__.py'...
+[19.016s] Compiling '/home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/msg/_can_frame.py'...
+[19.016s] Listing '/home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/srv'...
+[19.016s] Compiling '/home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/srv/__init__.py'...
+[19.016s] Compiling '/home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/srv/_can_service.py'...
+[19.016s] Compiling '/home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages/bus_msgs/srv/_i2c_service.py'...
+[19.028s] -- Installing: /home/jetpack/JetRacer/install/bus_msgs/lib/libbus_msgs__rosidl_generator_py.so
+[19.028s] -- Set non-toolchain portion of runtime path of "/home/jetpack/JetRacer/install/bus_msgs/lib/libbus_msgs__rosidl_generator_py.so" to ""
+[19.028s] -- Installing: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake/export_bus_msgs__rosidl_generator_cExport.cmake
+[19.028s] -- Installing: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake/export_bus_msgs__rosidl_generator_cExport-noconfig.cmake
+[19.029s] -- Installing: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake/export_bus_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[19.029s] -- Installing: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake/export_bus_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[19.029s] -- Installing: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake/bus_msgs__rosidl_typesupport_introspection_cExport.cmake
+[19.029s] -- Installing: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake/bus_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[19.029s] -- Installing: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake/bus_msgs__rosidl_typesupport_cExport.cmake
+[19.029s] -- Installing: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake/bus_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[19.030s] -- Installing: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake/export_bus_msgs__rosidl_generator_cppExport.cmake
+[19.030s] -- Installing: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake/export_bus_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[19.030s] -- Installing: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake/export_bus_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[19.030s] -- Installing: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake/bus_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[19.030s] -- Installing: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake/bus_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[19.031s] -- Installing: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake/bus_msgs__rosidl_typesupport_cppExport.cmake
+[19.031s] -- Installing: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake/bus_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[19.031s] -- Installing: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake/export_bus_msgs__rosidl_generator_pyExport.cmake
+[19.031s] -- Installing: /home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake/export_bus_msgs__rosidl_generator_pyExport-noconfig.cmake
+[19.035s] Invoked command in '/home/jetpack/JetRacer/build/bus_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jetpack/JetRacer/build/bus_msgs

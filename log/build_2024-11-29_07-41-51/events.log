@@ -1,0 +1,200 @@
+[0.000000] (-) TimerEvent: {}
+[0.000237] (-) JobUnselected: {'identifier': 'bus_msgs'}
+[0.000277] (-) JobUnselected: {'identifier': 'can_interface'}
+[0.000312] (-) JobUnselected: {'identifier': 'i2c_interface'}
+[0.000474] (-) JobUnselected: {'identifier': 'oled_service'}
+[0.000493] (-) JobUnselected: {'identifier': 'servo_motor'}
+[0.000510] (-) JobUnselected: {'identifier': 'speed_sensor'}
+[0.000530] (oled_display) JobQueued: {'identifier': 'oled_display', 'dependencies': OrderedDict({'bus_msgs': '/home/jetpack/JetRacer/install/bus_msgs'})}
+[0.000804] (oled_display) JobStarted: {'identifier': 'oled_display'}
+[0.014144] (oled_display) JobProgress: {'identifier': 'oled_display', 'progress': 'cmake'}
+[0.015018] (oled_display) Command: {'cmd': ['/usr/bin/cmake', '/home/jetpack/JetRacer/src/peripherals/oled_display', '-DCMAKE_INSTALL_PREFIX=/home/jetpack/JetRacer/install/oled_display'], 'cwd': '/home/jetpack/JetRacer/build/oled_display', 'env': OrderedDict({'USER': 'jetpack', 'SSH_CLIENT': '192.168.1.16 50963 22', 'STARSHIP_SHELL': 'fish', 'XDG_SESSION_TYPE': 'tty', 'LD_LIBRARY_PATH': '/home/jetpack/JetRacer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'SHLVL': '1', 'HOME': '/home/jetpack', 'SSH_TTY': '/dev/pts/0', 'OPENAI_API_KEY': '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', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'ROS_DISTRO': 'jazzy', 'OMF_PATH': '/home/jetpack/.local/share/omf', 'LOGNAME': 'jetpack', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'XDG_SESSION_ID': '2', 'TERM': 'xterm-256color', 'PATH': '/Users/Axel/miniconda3/bin:/opt/ros/jazzy/bin:/home/jetpack/miniconda3/bin:/Users/Axel/.local/bin:/Users/Axel/.local/share/nvim/mason/bin:usr/bin:/Users/Axel/.fzf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/home/jetpack/JetRacer/install/bus_msgs:/opt/ros/jazzy', 'SHELL': '/usr/bin/fish', 'WIFI_SSID': 'MEO-BD8310', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/jetpack/JetRacer/build/oled_display', 'SSH_CONNECTION': '192.168.1.16 50963 192.168.1.21 22', 'OMF_CONFIG': '/home/jetpack/.config/omf', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'STARSHIP_SESSION_KEY': '1017229824309002', 'COLCON': '1', 'WARP_THEMES_DIR': '/home/jetpack/.warp/themes', 'EDITOR': 'nvim', 'CMAKE_PREFIX_PATH': '/home/jetpack/JetRacer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WIFI_PASSWORD': '9f24731014'}), 'shell': False}
+[0.039812] (oled_display) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099665] (-) TimerEvent: {}
+[0.199978] (-) TimerEvent: {}
+[0.300306] (-) TimerEvent: {}
+[0.359076] (oled_display) StdoutLine: {'line': b'-- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.392460] (oled_display) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.400366] (-) TimerEvent: {}
+[0.405075] (oled_display) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.420548] (oled_display) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.438452] (oled_display) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.500456] (-) TimerEvent: {}
+[0.518019] (oled_display) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.519799] (oled_display) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.600587] (-) TimerEvent: {}
+[0.609315] (oled_display) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.688508] (oled_display) StdoutLine: {'line': b'-- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[0.700654] (-) TimerEvent: {}
+[0.705416] (oled_display) StdoutLine: {'line': b'-- Found bus_msgs: 0.0.0 (/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake)\n'}
+[0.800734] (-) TimerEvent: {}
+[0.872037] (oled_display) StdoutLine: {'line': b'-- Configuring done (0.8s)\n'}
+[0.892145] (oled_display) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[0.894491] (oled_display) StdoutLine: {'line': b'-- Build files have been written to: /home/jetpack/JetRacer/build/oled_display\n'}
+[0.900817] (-) TimerEvent: {}
+[0.908411] (oled_display) CommandEnded: {'returncode': 0}
+[0.909123] (oled_display) JobProgress: {'identifier': 'oled_display', 'progress': 'build'}
+[0.909811] (oled_display) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jetpack/JetRacer/build/oled_display', '--', '-j4', '-l4'], 'cwd': '/home/jetpack/JetRacer/build/oled_display', 'env': OrderedDict({'USER': 'jetpack', 'SSH_CLIENT': '192.168.1.16 50963 22', 'STARSHIP_SHELL': 'fish', 'XDG_SESSION_TYPE': 'tty', 'LD_LIBRARY_PATH': '/home/jetpack/JetRacer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'SHLVL': '1', 'HOME': '/home/jetpack', 'SSH_TTY': '/dev/pts/0', 'OPENAI_API_KEY': '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', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'ROS_DISTRO': 'jazzy', 'OMF_PATH': '/home/jetpack/.local/share/omf', 'LOGNAME': 'jetpack', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'XDG_SESSION_ID': '2', 'TERM': 'xterm-256color', 'PATH': '/Users/Axel/miniconda3/bin:/opt/ros/jazzy/bin:/home/jetpack/miniconda3/bin:/Users/Axel/.local/bin:/Users/Axel/.local/share/nvim/mason/bin:usr/bin:/Users/Axel/.fzf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/home/jetpack/JetRacer/install/bus_msgs:/opt/ros/jazzy', 'SHELL': '/usr/bin/fish', 'WIFI_SSID': 'MEO-BD8310', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/jetpack/JetRacer/build/oled_display', 'SSH_CONNECTION': '192.168.1.16 50963 192.168.1.21 22', 'OMF_CONFIG': '/home/jetpack/.config/omf', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'STARSHIP_SESSION_KEY': '1017229824309002', 'COLCON': '1', 'WARP_THEMES_DIR': '/home/jetpack/.warp/themes', 'EDITOR': 'nvim', 'CMAKE_PREFIX_PATH': '/home/jetpack/JetRacer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WIFI_PASSWORD': '9f24731014'}), 'shell': False}
+[0.997930] (oled_display) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding C object CMakeFiles/oled_display_node.dir/src/ssd1306_linux/ssd1306.c.o\x1b[0m\n'}
+[0.998261] (oled_display) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding C object CMakeFiles/oled_display_node.dir/src/ssd1306_linux/linux_i2c.c.o\x1b[0m\n'}
+[0.998487] (oled_display) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/oled_display_node.dir/src/main.cpp.o\x1b[0m\n'}
+[1.000942] (-) TimerEvent: {}
+[1.072073] (oled_display) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetpack/JetRacer/src/peripherals/oled_display/src/ssd1306_linux/ssd1306.c:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kssd1306_oled_write_string\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.072439] (oled_display) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jetpack/JetRacer/src/peripherals/oled_display/src/ssd1306_linux/ssd1306.c:372:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kassignment discards \xe2\x80\x98\x1b[01m\x1b[Kconst\x1b[m\x1b[K\xe2\x80\x99 qualifier from pointer target type [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wdiscarded-qualifiers\x07-Wdiscarded-qualifiers\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.072573] (oled_display) StderrLine: {'line': b'  372 |     line \x1b[01;35m\x1b[K=\x1b[m\x1b[K ptr;\n'}
+[1.072663] (oled_display) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[1.101073] (-) TimerEvent: {}
+[1.201528] (-) TimerEvent: {}
+[1.301877] (-) TimerEvent: {}
+[1.402240] (-) TimerEvent: {}
+[1.502505] (-) TimerEvent: {}
+[1.602798] (-) TimerEvent: {}
+[1.703068] (-) TimerEvent: {}
+[1.803322] (-) TimerEvent: {}
+[1.903608] (-) TimerEvent: {}
+[2.003901] (-) TimerEvent: {}
+[2.104203] (-) TimerEvent: {}
+[2.204473] (-) TimerEvent: {}
+[2.304715] (-) TimerEvent: {}
+[2.404952] (-) TimerEvent: {}
+[2.505184] (-) TimerEvent: {}
+[2.605421] (-) TimerEvent: {}
+[2.705646] (-) TimerEvent: {}
+[2.805872] (-) TimerEvent: {}
+[2.906088] (-) TimerEvent: {}
+[3.006342] (-) TimerEvent: {}
+[3.106644] (-) TimerEvent: {}
+[3.206898] (-) TimerEvent: {}
+[3.307127] (-) TimerEvent: {}
+[3.407371] (-) TimerEvent: {}
+[3.507666] (-) TimerEvent: {}
+[3.607964] (-) TimerEvent: {}
+[3.708214] (-) TimerEvent: {}
+[3.808449] (-) TimerEvent: {}
+[3.908694] (-) TimerEvent: {}
+[4.008963] (-) TimerEvent: {}
+[4.109228] (-) TimerEvent: {}
+[4.209484] (-) TimerEvent: {}
+[4.309723] (-) TimerEvent: {}
+[4.409980] (-) TimerEvent: {}
+[4.510249] (-) TimerEvent: {}
+[4.610513] (-) TimerEvent: {}
+[4.710763] (-) TimerEvent: {}
+[4.811015] (-) TimerEvent: {}
+[4.911281] (-) TimerEvent: {}
+[5.011565] (-) TimerEvent: {}
+[5.111836] (-) TimerEvent: {}
+[5.212100] (-) TimerEvent: {}
+[5.312350] (-) TimerEvent: {}
+[5.412599] (-) TimerEvent: {}
+[5.512880] (-) TimerEvent: {}
+[5.613171] (-) TimerEvent: {}
+[5.713423] (-) TimerEvent: {}
+[5.813650] (-) TimerEvent: {}
+[5.913898] (-) TimerEvent: {}
+[6.014163] (-) TimerEvent: {}
+[6.114401] (-) TimerEvent: {}
+[6.214612] (-) TimerEvent: {}
+[6.314822] (-) TimerEvent: {}
+[6.415060] (-) TimerEvent: {}
+[6.515339] (-) TimerEvent: {}
+[6.615583] (-) TimerEvent: {}
+[6.715807] (-) TimerEvent: {}
+[6.816034] (-) TimerEvent: {}
+[6.916278] (-) TimerEvent: {}
+[7.016578] (-) TimerEvent: {}
+[7.116838] (-) TimerEvent: {}
+[7.217092] (-) TimerEvent: {}
+[7.317333] (-) TimerEvent: {}
+[7.417581] (-) TimerEvent: {}
+[7.517864] (-) TimerEvent: {}
+[7.618164] (-) TimerEvent: {}
+[7.718457] (-) TimerEvent: {}
+[7.818681] (-) TimerEvent: {}
+[7.918934] (-) TimerEvent: {}
+[8.019213] (-) TimerEvent: {}
+[8.119463] (-) TimerEvent: {}
+[8.219690] (-) TimerEvent: {}
+[8.319903] (-) TimerEvent: {}
+[8.420151] (-) TimerEvent: {}
+[8.520454] (-) TimerEvent: {}
+[8.620713] (-) TimerEvent: {}
+[8.720979] (-) TimerEvent: {}
+[8.821201] (-) TimerEvent: {}
+[8.921440] (-) TimerEvent: {}
+[9.021687] (-) TimerEvent: {}
+[9.121913] (-) TimerEvent: {}
+[9.222146] (-) TimerEvent: {}
+[9.322360] (-) TimerEvent: {}
+[9.422606] (-) TimerEvent: {}
+[9.522887] (-) TimerEvent: {}
+[9.623169] (-) TimerEvent: {}
+[9.723415] (-) TimerEvent: {}
+[9.823652] (-) TimerEvent: {}
+[9.923888] (-) TimerEvent: {}
+[10.024136] (-) TimerEvent: {}
+[10.124358] (-) TimerEvent: {}
+[10.224589] (-) TimerEvent: {}
+[10.324833] (-) TimerEvent: {}
+[10.425069] (-) TimerEvent: {}
+[10.525330] (-) TimerEvent: {}
+[10.625545] (-) TimerEvent: {}
+[10.725763] (-) TimerEvent: {}
+[10.825989] (-) TimerEvent: {}
+[10.926249] (-) TimerEvent: {}
+[11.026525] (-) TimerEvent: {}
+[11.126776] (-) TimerEvent: {}
+[11.227026] (-) TimerEvent: {}
+[11.327264] (-) TimerEvent: {}
+[11.427521] (-) TimerEvent: {}
+[11.527783] (-) TimerEvent: {}
+[11.628041] (-) TimerEvent: {}
+[11.728291] (-) TimerEvent: {}
+[11.828553] (-) TimerEvent: {}
+[11.928804] (-) TimerEvent: {}
+[12.029078] (-) TimerEvent: {}
+[12.129392] (-) TimerEvent: {}
+[12.229787] (-) TimerEvent: {}
+[12.330149] (-) TimerEvent: {}
+[12.430488] (-) TimerEvent: {}
+[12.530792] (-) TimerEvent: {}
+[12.631144] (-) TimerEvent: {}
+[12.731476] (-) TimerEvent: {}
+[12.831833] (-) TimerEvent: {}
+[12.932133] (-) TimerEvent: {}
+[12.958152] (oled_display) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable oled_display_node\x1b[0m\n'}
+[13.032285] (-) TimerEvent: {}
+[13.132709] (-) TimerEvent: {}
+[13.233134] (-) TimerEvent: {}
+[13.333728] (-) TimerEvent: {}
+[13.434078] (-) TimerEvent: {}
+[13.534457] (-) TimerEvent: {}
+[13.634781] (-) TimerEvent: {}
+[13.735065] (-) TimerEvent: {}
+[13.736950] (oled_display) StdoutLine: {'line': b'[100%] Built target oled_display_node\n'}
+[13.756341] (oled_display) CommandEnded: {'returncode': 0}
+[13.797712] (oled_display) JobProgress: {'identifier': 'oled_display', 'progress': 'install'}
+[13.815357] (oled_display) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/jetpack/JetRacer/build/oled_display'], 'cwd': '/home/jetpack/JetRacer/build/oled_display', 'env': OrderedDict({'USER': 'jetpack', 'SSH_CLIENT': '192.168.1.16 50963 22', 'STARSHIP_SHELL': 'fish', 'XDG_SESSION_TYPE': 'tty', 'LD_LIBRARY_PATH': '/home/jetpack/JetRacer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'SHLVL': '1', 'HOME': '/home/jetpack', 'SSH_TTY': '/dev/pts/0', 'OPENAI_API_KEY': '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', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'ROS_DISTRO': 'jazzy', 'OMF_PATH': '/home/jetpack/.local/share/omf', 'LOGNAME': 'jetpack', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'XDG_SESSION_ID': '2', 'TERM': 'xterm-256color', 'PATH': '/Users/Axel/miniconda3/bin:/opt/ros/jazzy/bin:/home/jetpack/miniconda3/bin:/Users/Axel/.local/bin:/Users/Axel/.local/share/nvim/mason/bin:usr/bin:/Users/Axel/.fzf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/home/jetpack/JetRacer/install/bus_msgs:/opt/ros/jazzy', 'SHELL': '/usr/bin/fish', 'WIFI_SSID': 'MEO-BD8310', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/jetpack/JetRacer/build/oled_display', 'SSH_CONNECTION': '192.168.1.16 50963 192.168.1.21 22', 'OMF_CONFIG': '/home/jetpack/.config/omf', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'STARSHIP_SESSION_KEY': '1017229824309002', 'COLCON': '1', 'WARP_THEMES_DIR': '/home/jetpack/.warp/themes', 'EDITOR': 'nvim', 'CMAKE_PREFIX_PATH': '/home/jetpack/JetRacer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WIFI_PASSWORD': '9f24731014'}), 'shell': False}
+[13.828533] (oled_display) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.828812] (oled_display) StdoutLine: {'line': b'-- Installing: /home/jetpack/JetRacer/install/oled_display/lib/oled_display/oled_display_node\n'}
+[13.835135] (-) TimerEvent: {}
+[13.837077] (oled_display) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/jetpack/JetRacer/install/oled_display/lib/oled_display/oled_display_node" to ""\n'}
+[13.837319] (oled_display) StdoutLine: {'line': b'-- Installing: /home/jetpack/JetRacer/install/oled_display/share/ament_index/resource_index/package_run_dependencies/oled_display\n'}
+[13.837613] (oled_display) StdoutLine: {'line': b'-- Installing: /home/jetpack/JetRacer/install/oled_display/share/ament_index/resource_index/parent_prefix_path/oled_display\n'}
+[13.837883] (oled_display) StdoutLine: {'line': b'-- Installing: /home/jetpack/JetRacer/install/oled_display/share/oled_display/environment/ament_prefix_path.sh\n'}
+[13.838044] (oled_display) StdoutLine: {'line': b'-- Installing: /home/jetpack/JetRacer/install/oled_display/share/oled_display/environment/ament_prefix_path.dsv\n'}
+[13.838202] (oled_display) StdoutLine: {'line': b'-- Installing: /home/jetpack/JetRacer/install/oled_display/share/oled_display/environment/path.sh\n'}
+[13.838359] (oled_display) StdoutLine: {'line': b'-- Installing: /home/jetpack/JetRacer/install/oled_display/share/oled_display/environment/path.dsv\n'}
+[13.838520] (oled_display) StdoutLine: {'line': b'-- Installing: /home/jetpack/JetRacer/install/oled_display/share/oled_display/local_setup.bash\n'}
+[13.838673] (oled_display) StdoutLine: {'line': b'-- Installing: /home/jetpack/JetRacer/install/oled_display/share/oled_display/local_setup.sh\n'}
+[13.838838] (oled_display) StdoutLine: {'line': b'-- Installing: /home/jetpack/JetRacer/install/oled_display/share/oled_display/local_setup.zsh\n'}
+[13.838989] (oled_display) StdoutLine: {'line': b'-- Installing: /home/jetpack/JetRacer/install/oled_display/share/oled_display/local_setup.dsv\n'}
+[13.839134] (oled_display) StdoutLine: {'line': b'-- Installing: /home/jetpack/JetRacer/install/oled_display/share/oled_display/package.dsv\n'}
+[13.839373] (oled_display) StdoutLine: {'line': b'-- Installing: /home/jetpack/JetRacer/install/oled_display/share/ament_index/resource_index/packages/oled_display\n'}
+[13.839582] (oled_display) StdoutLine: {'line': b'-- Installing: /home/jetpack/JetRacer/install/oled_display/share/oled_display/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[13.839749] (oled_display) StdoutLine: {'line': b'-- Installing: /home/jetpack/JetRacer/install/oled_display/share/oled_display/cmake/oled_displayConfig.cmake\n'}
+[13.839872] (oled_display) StdoutLine: {'line': b'-- Installing: /home/jetpack/JetRacer/install/oled_display/share/oled_display/cmake/oled_displayConfig-version.cmake\n'}
+[13.840020] (oled_display) StdoutLine: {'line': b'-- Installing: /home/jetpack/JetRacer/install/oled_display/share/oled_display/package.xml\n'}
+[13.842743] (oled_display) CommandEnded: {'returncode': 0}
+[13.909261] (oled_display) JobEnded: {'identifier': 'oled_display', 'rc': 0}
+[13.911426] (-) EventReactorShutdown: {}

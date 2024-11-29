@@ -1,0 +1,79 @@
+[0.000000] (-) TimerEvent: {}
+[0.000369] (-) JobUnselected: {'identifier': 'bus_msgs'}
+[0.000413] (-) JobUnselected: {'identifier': 'can_interface'}
+[0.000435] (-) JobUnselected: {'identifier': 'i2c_interface'}
+[0.000454] (-) JobUnselected: {'identifier': 'oled_service'}
+[0.000471] (-) JobUnselected: {'identifier': 'servo_motor'}
+[0.000488] (-) JobUnselected: {'identifier': 'speed_sensor'}
+[0.000509] (oled_display) JobQueued: {'identifier': 'oled_display', 'dependencies': OrderedDict({'bus_msgs': '/home/jetpack/JetRacer/install/bus_msgs'})}
+[0.000792] (oled_display) JobStarted: {'identifier': 'oled_display'}
+[0.027576] (oled_display) JobProgress: {'identifier': 'oled_display', 'progress': 'cmake'}
+[0.028001] (oled_display) Command: {'cmd': ['/usr/bin/cmake', '/home/jetpack/JetRacer/src/peripherals/oled_display', '-DCMAKE_INSTALL_PREFIX=/home/jetpack/JetRacer/install/oled_display'], 'cwd': '/home/jetpack/JetRacer/build/oled_display', 'env': OrderedDict({'USER': 'jetpack', 'SSH_CLIENT': '192.168.1.16 50963 22', 'STARSHIP_SHELL': 'fish', 'XDG_SESSION_TYPE': 'tty', 'LD_LIBRARY_PATH': '/home/jetpack/JetRacer/install/bus_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'SHLVL': '1', 'HOME': '/home/jetpack', 'SSH_TTY': '/dev/pts/0', 'OPENAI_API_KEY': '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', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'ROS_DISTRO': 'jazzy', 'OMF_PATH': '/home/jetpack/.local/share/omf', 'LOGNAME': 'jetpack', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'XDG_SESSION_ID': '2', 'TERM': 'xterm-256color', 'PATH': '/Users/Axel/miniconda3/bin:/opt/ros/jazzy/bin:/home/jetpack/miniconda3/bin:/Users/Axel/.local/bin:/Users/Axel/.local/share/nvim/mason/bin:usr/bin:/Users/Axel/.fzf/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'C.UTF-8', 'AMENT_PREFIX_PATH': '/home/jetpack/JetRacer/install/bus_msgs:/opt/ros/jazzy', 'SHELL': '/usr/bin/fish', 'WIFI_SSID': 'MEO-BD8310', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/jetpack/JetRacer/build/oled_display', 'SSH_CONNECTION': '192.168.1.16 50963 192.168.1.21 22', 'OMF_CONFIG': '/home/jetpack/.config/omf', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/jetpack/JetRacer/install/bus_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'STARSHIP_SESSION_KEY': '1017229824309002', 'COLCON': '1', 'WARP_THEMES_DIR': '/home/jetpack/.warp/themes', 'EDITOR': 'nvim', 'CMAKE_PREFIX_PATH': '/home/jetpack/JetRacer/install/bus_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'WIFI_PASSWORD': '9f24731014'}), 'shell': False}
+[0.099691] (-) TimerEvent: {}
+[0.200060] (-) TimerEvent: {}
+[0.300380] (-) TimerEvent: {}
+[0.400649] (-) TimerEvent: {}
+[0.500974] (-) TimerEvent: {}
+[0.559297] (oled_display) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.2.0\n'}
+[0.601103] (-) TimerEvent: {}
+[0.701467] (-) TimerEvent: {}
+[0.801789] (-) TimerEvent: {}
+[0.902095] (-) TimerEvent: {}
+[1.002425] (-) TimerEvent: {}
+[1.011843] (oled_display) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.2.0\n'}
+[1.048093] (oled_display) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.102539] (-) TimerEvent: {}
+[1.202943] (-) TimerEvent: {}
+[1.225352] (oled_display) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.240108] (oled_display) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.241159] (oled_display) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.242150] (oled_display) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.257751] (oled_display) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.303055] (-) TimerEvent: {}
+[1.403410] (-) TimerEvent: {}
+[1.427493] (oled_display) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.442753] (oled_display) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.443159] (oled_display) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.443808] (oled_display) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.449653] (oled_display) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[1.503473] (-) TimerEvent: {}
+[1.603753] (-) TimerEvent: {}
+[1.670046] (oled_display) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[1.703865] (-) TimerEvent: {}
+[1.804174] (-) TimerEvent: {}
+[1.855791] (oled_display) StdoutLine: {'line': b'-- Found rclcpp: 28.1.5 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[1.904262] (-) TimerEvent: {}
+[1.932422] (oled_display) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[1.957273] (oled_display) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.4 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[1.990463] (oled_display) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.004337] (-) TimerEvent: {}
+[2.024625] (oled_display) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.104456] (-) TimerEvent: {}
+[2.161047] (oled_display) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.1 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[2.166882] (oled_display) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.1 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.204535] (-) TimerEvent: {}
+[2.304825] (-) TimerEvent: {}
+[2.322799] (oled_display) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[2.352205] (oled_display) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[2.386325] (oled_display) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.404902] (-) TimerEvent: {}
+[2.505166] (-) TimerEvent: {}
+[2.514613] (oled_display) StdoutLine: {'line': b'-- Found std_msgs: 5.3.5 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[2.541193] (oled_display) StdoutLine: {'line': b'-- Found bus_msgs: 0.0.0 (/home/jetpack/JetRacer/install/bus_msgs/share/bus_msgs/cmake)\n'}
+[2.572398] (oled_display) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:21 (add_executable):\n'}
+[2.572694] (oled_display) StderrLine: {'line': b'  The target name "src/main.cpp" is reserved or not valid for certain CMake\n'}
+[2.572798] (oled_display) StderrLine: {'line': b'  features, such as generator expressions, and may result in undefined\n'}
+[2.572911] (oled_display) StderrLine: {'line': b'  behavior.\n'}
+[2.572997] (oled_display) StderrLine: {'line': b'\n'}
+[2.573079] (oled_display) StderrLine: {'line': b'\x1b[0m\n'}
+[2.573159] (oled_display) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/jazzy/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:42 (message):\n'}
+[2.573241] (oled_display) StderrLine: {'line': b'  ament_target_dependencies() the first argument must be a valid target name\n'}
+[2.573327] (oled_display) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.573407] (oled_display) StderrLine: {'line': b'  CMakeLists.txt:23 (ament_target_dependencies)\n'}
+[2.573486] (oled_display) StderrLine: {'line': b'\n'}
+[2.573563] (oled_display) StderrLine: {'line': b'\x1b[0m\n'}
+[2.573642] (oled_display) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.588545] (oled_display) CommandEnded: {'returncode': 1}
+[2.605263] (-) TimerEvent: {}
+[2.627419] (oled_display) JobEnded: {'identifier': 'oled_display', 'rc': 1}
+[2.638011] (-) EventReactorShutdown: {}

@@ -1,0 +1,20 @@
+[100%] Built target servo_motor_node
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/jetpack/JetRacer/install/servo_motor/lib/servo_motor/servo_motor_node
+-- Symlinking: /home/jetpack/JetRacer/install/servo_motor/share/ament_index/resource_index/package_run_dependencies/servo_motor
+-- Symlinking: /home/jetpack/JetRacer/install/servo_motor/share/ament_index/resource_index/parent_prefix_path/servo_motor
+-- Symlinking: /home/jetpack/JetRacer/install/servo_motor/share/servo_motor/environment/ament_prefix_path.sh
+-- Symlinking: /home/jetpack/JetRacer/install/servo_motor/share/servo_motor/environment/ament_prefix_path.dsv
+-- Symlinking: /home/jetpack/JetRacer/install/servo_motor/share/servo_motor/environment/path.sh
+-- Symlinking: /home/jetpack/JetRacer/install/servo_motor/share/servo_motor/environment/path.dsv
+-- Symlinking: /home/jetpack/JetRacer/install/servo_motor/share/servo_motor/local_setup.bash
+-- Symlinking: /home/jetpack/JetRacer/install/servo_motor/share/servo_motor/local_setup.sh
+-- Symlinking: /home/jetpack/JetRacer/install/servo_motor/share/servo_motor/local_setup.zsh
+-- Symlinking: /home/jetpack/JetRacer/install/servo_motor/share/servo_motor/local_setup.dsv
+-- Symlinking: /home/jetpack/JetRacer/install/servo_motor/share/servo_motor/package.dsv
+-- Symlinking: /home/jetpack/JetRacer/install/servo_motor/share/ament_index/resource_index/packages/servo_motor
+-- Symlinking: /home/jetpack/JetRacer/install/servo_motor/share/servo_motor/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/jetpack/JetRacer/install/servo_motor/share/servo_motor/cmake/servo_motorConfig.cmake
+-- Symlinking: /home/jetpack/JetRacer/install/servo_motor/share/servo_motor/cmake/servo_motorConfig-version.cmake
+-- Symlinking: /home/jetpack/JetRacer/install/servo_motor/share/servo_motor/package.xml
