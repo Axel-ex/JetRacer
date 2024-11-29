@@ -27,5 +27,6 @@ class OledDisplayNode : public rclcpp::Node
 
         // display interface
         int initDisplay();
+        int setDefaultConfig();
         int onOffDisplay();
 };

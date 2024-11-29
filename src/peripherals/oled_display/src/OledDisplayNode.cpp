@@ -133,3 +133,25 @@ int OledDisplayNode::onOffDisplay()
     auto future = i2c_client_->async_send_request(request).future.share();
     return waitForFuture(future, "Display on off");
 }
+
+int OledDisplayNode::setDefaultConfig()
+{
+    bus_msgs::srv::I2cService::Request::SharedPtr request =
+        std::make_shared<bus_msgs::srv::I2cService::Request>();
+
+    request->set__read_request(false);
+    request->set__device_address(SSD1306_I2C_ADDR);
+
+    request->write_data.push_back(
+        SSD1306_COMM_CONTROL_BYTE); // command control byte
+    request->write_data.push_back(SSD1306_COMM_DISPLAY_ON); // display on
+    request->write_data.push_back(SSD1306_COMM_DISP_NORM);  // normal display
+    request->write_data.push_back(SSD1306_COMM_CLK_SET);    // set clock div
+    request->write_data.push_back(SSD1306_SCREEN_RATIO);    // ratio 0x80
+    request->write_data.push_back(SSD1306_COMM_MULTIPLEX);  // set multiplex
+    request->write_data.push_back(SSD1306_HEIGHT - 1);
+    request->write_data.push_back(SSD1306_COMM_VERT_OFFSET); // offset
+
+    auto future = i2c_client_->async_send_request(request).future.share();
+    return waitForFuture(future, "set default config");
+}
