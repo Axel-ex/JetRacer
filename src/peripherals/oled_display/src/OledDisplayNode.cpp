@@ -15,7 +15,7 @@ OledDisplayNode::OledDisplayNode() : rclcpp::Node("oled_display")
     while (!i2c_client_->wait_for_service(500ms))
         continue;
 
-    if (initDisplay() != EXIT_SUCCESS && setDefaultConfig() != EXIT_SUCCESS)
+    if (initDisplay() != EXIT_SUCCESS || setDefaultConfig() != EXIT_SUCCESS)
         return;
     RCLCPP_INFO(this->get_logger(), "Starting oled display");
 }
@@ -109,7 +109,7 @@ int OledDisplayNode::initDisplay()
                : EXIT_FAILURE;
 }
 
-int OledDisplayNode::onOffDisplay()
+int OledDisplayNode::onOffDisplay(uint8_t onoff)
 {
     bus_msgs::srv::I2cService::Request::SharedPtr request =
         std::make_shared<bus_msgs::srv::I2cService::Request>();
@@ -117,16 +117,10 @@ int OledDisplayNode::onOffDisplay()
     request->set__read_request(false);
     request->set__device_address(SSD1306_I2C_ADDR);
     request->write_data.push_back(SSD1306_COMM_CONTROL_BYTE);
-    if (!display_on_)
-    {
+    if (!onoff)
         request->write_data.push_back(SSD1306_COMM_DISPLAY_ON);
-        display_on_ = true;
-    }
     else
-    {
         request->write_data.push_back(SSD1306_COMM_DISPLAY_OFF);
-        display_on_ = false;
-    }
 
     auto future = i2c_client_->async_send_request(request).future.share();
     return waitForResponse(future, "Display on off");
