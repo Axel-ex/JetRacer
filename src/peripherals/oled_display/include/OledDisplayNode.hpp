@@ -17,11 +17,9 @@ class OledDisplayNode : public rclcpp::Node
         bool display_on_ = false;
 
         void writeToI2c(const std_msgs::msg::String::SharedPtr msg);
-        void handleI2cResponse(
-            rclcpp::Client<bus_msgs::srv::I2cService>::SharedFuture response);
 
         // Helper
-        int waitForFuture(
+        int waitForResponse(
             rclcpp::Client<bus_msgs::srv::I2cService>::SharedFuture future,
             const std::string& operation);
 

@@ -1,6 +1,8 @@
 #include "OledDisplayNode.hpp"
 #include "ssd1306.h"
 
+using namespace std::chrono_literals;
+
 OledDisplayNode::OledDisplayNode() : rclcpp::Node("oled_display")
 {
     this->get_logger().set_level(rclcpp::Logger::Level::Debug);
@@ -10,7 +12,9 @@ OledDisplayNode::OledDisplayNode() : rclcpp::Node("oled_display")
         "display", 10,
         std::bind(&OledDisplayNode::writeToI2c, this, std::placeholders::_1));
 
-    i2c_client_->wait_for_service(std::chrono::milliseconds(500));
+    while (!i2c_client_->wait_for_service(500ms))
+        continue;
+
     if (initDisplay() != EXIT_SUCCESS && setDefaultConfig() != EXIT_SUCCESS)
         return;
     RCLCPP_INFO(this->get_logger(), "Starting oled display");
@@ -26,13 +30,6 @@ void OledDisplayNode::writeToI2c(const std_msgs::msg::String::SharedPtr msg)
     // check the coontent of the topic and display the appropriated menu
 }
 
-void OledDisplayNode::handleI2cResponse(
-    rclcpp::Client<bus_msgs::srv::I2cService>::SharedFuture response)
-{
-    if (!response.get()->success)
-        RCLCPP_ERROR(this->get_logger(), "Error writing to I2c");
-}
-
 /**
  * @brief wait for the response of the i2c service by blocking since the
  * sequence of writes to the screen is important.
@@ -41,19 +38,20 @@ void OledDisplayNode::handleI2cResponse(
  * @param operation
  * @return
  */
-int OledDisplayNode::waitForFuture(
+int OledDisplayNode::waitForResponse(
     rclcpp::Client<bus_msgs::srv::I2cService>::SharedFuture future,
     const std::string& operation)
 {
     auto status = rclcpp::spin_until_future_complete(
-        this->get_node_base_interface(), future);
+        this->get_node_base_interface(), future, 2s);
 
     if (status == rclcpp::FutureReturnCode::SUCCESS)
     {
         auto response = future.get();
         if (!response->success)
         {
-            RCLCPP_ERROR(this->get_logger(), "FAILURE: %s", operation.c_str());
+            RCLCPP_ERROR(this->get_logger(), "FAILURE: %s: %s",
+                         operation.c_str(), response->message.c_str());
             return EXIT_FAILURE;
         }
         RCLCPP_DEBUG(this->get_logger(), "SUCCESS: %s", operation.c_str());
@@ -103,8 +101,8 @@ int OledDisplayNode::initDisplay()
         i2c_client_->async_send_request(read_request).future.share();
 
     // Try to write and read.
-    int write_result = waitForFuture(future_write, "Init display write");
-    int read_result = waitForFuture(future_read, "Init display read");
+    int write_result = waitForResponse(future_write, "Init display write");
+    int read_result = waitForResponse(future_read, "Init display read");
 
     return write_result == EXIT_SUCCESS && read_result == EXIT_SUCCESS
                ? EXIT_SUCCESS
@@ -131,7 +129,7 @@ int OledDisplayNode::onOffDisplay()
     }
 
     auto future = i2c_client_->async_send_request(request).future.share();
-    return waitForFuture(future, "Display on off");
+    return waitForResponse(future, "Display on off");
 }
 
 int OledDisplayNode::setDefaultConfig()
@@ -171,6 +169,7 @@ int OledDisplayNode::setDefaultConfig()
     request->write_data.push_back(SSD1306_COMM_DISPLAY_ON);
     request->write_data.push_back(SSD1306_COMM_DISABLE_SCROLL);
 
+    display_on_ = true;
     auto future = i2c_client_->async_send_request(request).future.share();
-    return waitForFuture(future, "set default config");
+    return waitForResponse(future, "set default config");
 }
