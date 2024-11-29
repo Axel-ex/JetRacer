@@ -11,7 +11,7 @@ OledDisplayNode::OledDisplayNode() : rclcpp::Node("oled_display")
         std::bind(&OledDisplayNode::writeToI2c, this, std::placeholders::_1));
 
     i2c_client_->wait_for_service(std::chrono::milliseconds(500));
-    if (initDisplay() != EXIT_SUCCESS && onOffDisplay() != EXIT_SUCCESS)
+    if (initDisplay() != EXIT_SUCCESS && setDefaultConfig() != EXIT_SUCCESS)
         return;
     RCLCPP_INFO(this->get_logger(), "Starting oled display");
 }
@@ -142,15 +142,34 @@ int OledDisplayNode::setDefaultConfig()
     request->set__read_request(false);
     request->set__device_address(SSD1306_I2C_ADDR);
 
-    request->write_data.push_back(
-        SSD1306_COMM_CONTROL_BYTE); // command control byte
-    request->write_data.push_back(SSD1306_COMM_DISPLAY_ON); // display on
-    request->write_data.push_back(SSD1306_COMM_DISP_NORM);  // normal display
-    request->write_data.push_back(SSD1306_COMM_CLK_SET);    // set clock div
-    request->write_data.push_back(SSD1306_SCREEN_RATIO);    // ratio 0x80
-    request->write_data.push_back(SSD1306_COMM_MULTIPLEX);  // set multiplex
+    request->write_data.push_back(SSD1306_COMM_CONTROL_BYTE); // ctrl byte
+    request->write_data.push_back(SSD1306_COMM_DISPLAY_OFF);  // display on
+    request->write_data.push_back(SSD1306_COMM_DISP_NORM);    // normal display
+    request->write_data.push_back(SSD1306_COMM_CLK_SET);      // set clock div
+    request->write_data.push_back(SSD1306_SCREEN_RATIO);      // ratio 0x80
+    request->write_data.push_back(SSD1306_COMM_MULTIPLEX);    // set multiplex
     request->write_data.push_back(SSD1306_HEIGHT - 1);
     request->write_data.push_back(SSD1306_COMM_VERT_OFFSET); // offset
+    request->write_data.push_back(0); // no horizontal offset
+    request->write_data.push_back(SSD1306_COMM_START_LINE);
+    request->write_data.push_back(SSD1306_COMM_CHARGE_PUMP);
+    request->write_data.push_back(0x14); // turn on charge pump
+    request->write_data.push_back(SSD1306_COMM_MEMORY_MODE);
+    request->write_data.push_back(SSD1306_PAGE_MODE);
+    request->write_data.push_back(SSD1306_COMM_HORIZ_NORM);
+    request->write_data.push_back(SSD1306_COMM_SCAN_NORM);
+    request->write_data.push_back(SSD1306_COMM_COM_PIN);
+    request->write_data.push_back(0x02); // for display with 32 lines
+    request->write_data.push_back(SSD1306_COMM_CONTRAST);
+    request->write_data.push_back(0x7f); // default contrast value
+    request->write_data.push_back(SSD1306_COMM_PRECHARGE);
+    request->write_data.push_back(0xf1); // default precharge value
+    request->write_data.push_back(SSD1306_COMM_DESELECT_LV);
+    request->write_data.push_back(0x40); // default deselct val
+    request->write_data.push_back(SSD1306_COMM_RESUME_RAM);
+    request->write_data.push_back(SSD1306_COMM_DISP_NORM);
+    request->write_data.push_back(SSD1306_COMM_DISPLAY_ON);
+    request->write_data.push_back(SSD1306_COMM_DISABLE_SCROLL);
 
     auto future = i2c_client_->async_send_request(request).future.share();
     return waitForFuture(future, "set default config");
