@@ -1,8 +1,0 @@
-{
-  "package_name": "bus_msgs",
-  "non_idl_tuples": [
-    "/home/jetpack/JetRacer/src/utils/bus_msgs:msg/CanFrame.msg",
-    "/home/jetpack/JetRacer/src/utils/bus_msgs:srv/I2cService.srv",
-    "/home/jetpack/JetRacer/src/utils/bus_msgs:srv/CanService.srv"
-  ]
-}

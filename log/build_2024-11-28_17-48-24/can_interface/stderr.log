@@ -1,8 +1,0 @@
-[01m[K/home/jetpack/JetRacer/src/bus_interfaces/can_interface/src/CanInterface.cpp:3:10:[m[K [01;31m[Kfatal error: [m[Kbus_msgs/msg/can_packet.hpp: No such file or directory
-    3 | #include [01;31m[K"bus_msgs/msg/can_packet.hpp"[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/can_interface_node.dir/build.make:90: CMakeFiles/can_interface_node.dir/src/CanInterface.cpp.o] Error 1
-gmake[2]: *** Waiting for unfinished jobs....
-gmake[1]: *** [CMakeFiles/Makefile2:190: CMakeFiles/can_interface_node.dir/all] Error 2
-gmake: *** [Makefile:166: all] Error 2

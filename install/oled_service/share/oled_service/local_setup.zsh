@@ -1,1 +1,0 @@
-/home/jetpack/JetRacer/build/oled_service/ament_cmake_environment_hooks/local_setup.zsh

@@ -1,4 +1,0 @@
-Invoking command in '/home/jetpack/JetRacer/build/bus_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jetpack/JetRacer/build/bus_msgs -- -j4 -l4
-Invoked command in '/home/jetpack/JetRacer/build/bus_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --build /home/jetpack/JetRacer/build/bus_msgs -- -j4 -l4
-Invoking command in '/home/jetpack/JetRacer/build/bus_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jetpack/JetRacer/build/bus_msgs
-Invoked command in '/home/jetpack/JetRacer/build/bus_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy /usr/bin/cmake --install /home/jetpack/JetRacer/build/bus_msgs
