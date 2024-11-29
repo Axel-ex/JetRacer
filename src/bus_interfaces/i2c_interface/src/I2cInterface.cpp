@@ -1,18 +1,10 @@
 #include "I2cInterface.hpp"
 #include "bus_msgs/srv/i2c_service.hpp"
-#include <cstddef>
-#include <cstdint>
 #include <fcntl.h>
 #include <linux/i2c-dev.h>
-#include <rclcpp/future_return_code.hpp>
-#include <rclcpp/logger.hpp>
-#include <rclcpp/logging.hpp>
-#include <stdexcept>
 #include <string>
 #include <sys/ioctl.h>
-#include <sys/types.h>
 #include <unistd.h>
-#include <vector>
 
 I2cInterface::I2cInterface() : Node("i2c_interface")
 {
