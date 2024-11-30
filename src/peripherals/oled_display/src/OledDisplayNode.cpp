@@ -7,8 +7,10 @@ using namespace std::chrono_literals;
 OledDisplayNode::OledDisplayNode() : rclcpp::Node("oled_display")
 {
     this->get_logger().set_level(rclcpp::Logger::Level::Debug);
+    // Create a mutually exclusive callback group for I2C client handling
 
     i2c_client_ = this->create_client<bus_msgs::srv::I2cService>("i2c_service");
+
     display_subscriber_ = this->create_subscription<std_msgs::msg::String>(
         "display", 10,
         std::bind(&OledDisplayNode::writeToI2c, this, std::placeholders::_1));
@@ -46,7 +48,10 @@ int OledDisplayNode::waitForResponse(
     const std::string& operation)
 {
     // Wait for the future to be ready or timeout
-    if (future.wait_for(std::chrono::seconds(2)) == std::future_status::ready)
+    auto status = rclcpp::spin_until_future_complete(
+        this->get_node_base_interface(), future);
+    RCLCPP_DEBUG(this->get_logger(), "status: %d", static_cast<int>(status));
+    if (status == rclcpp::FutureReturnCode::SUCCESS)
     {
         // Extract the response
         auto response = future.get();
@@ -56,7 +61,7 @@ int OledDisplayNode::waitForResponse(
                          operation.c_str(), response->message.c_str());
             return EXIT_FAILURE;
         }
-        RCLCPP_INFO(this->get_logger(), "SUCCESS: %s", operation.c_str());
+        RCLCPP_DEBUG(this->get_logger(), "SUCCESS: %s", operation.c_str());
         return EXIT_SUCCESS;
     }
     else
