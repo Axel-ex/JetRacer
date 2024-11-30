@@ -1,6 +1,6 @@
 #include "OledDisplayNode.hpp"
-#include "font.h"
-#include "ssd1306.h"
+#include "font.hpp"
+#include "ssd1306.hpp"
 
 using namespace std::chrono_literals;
 
