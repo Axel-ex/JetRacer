@@ -28,9 +28,15 @@ OledDisplayNode::~OledDisplayNode() {}
 
 void OledDisplayNode::writeToI2c(const std_msgs::msg::String::SharedPtr msg)
 {
-    if (clearScreen())
-        return;
-    if (setCursor(2, 0))
+    current_line++;
+    if (current_line == 4)
+    {
+        current_line = 0;
+        if (clearScreen())
+            return;
+    }
+
+    if (setCursor(2, current_line))
         return;
     if (writeString(SSD1306_FONT_NORMAL, msg->data))
         return;
