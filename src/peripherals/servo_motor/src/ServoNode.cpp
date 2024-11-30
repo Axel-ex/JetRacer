@@ -15,20 +15,17 @@ ServoNode::ServoNode() : Node("servo_node")
     i2c_client_ = this->create_client<bus_msgs::srv::I2cService>("i2c_service");
     direction_subscriber_ = this->create_subscription<std_msgs::msg::UInt8>(
         "direction", 10,
-        std::bind(&ServoNode::writeDirectionToI2C, this,
-                  std::placeholders::_1));
+        std::bind(&ServoNode::writeToI2c, this, std::placeholders::_1));
 
-    while (!i2c_client_->wait_for_service())
-    {
+    while (!i2c_client_->wait_for_service(2s))
         RCLCPP_INFO(this->get_logger(), "Waiting for i2c interface to start");
-        std::this_thread::sleep_for(1s);
-    }
 
     if (init_() != EXIT_SUCCESS)
     {
         RCLCPP_ERROR(this->get_logger(), "Fail initiating servo motor");
         return;
     }
+
     RCLCPP_INFO(this->get_logger(), "Starting the Servo node");
 }
 
@@ -40,22 +37,27 @@ ServoNode::~ServoNode() {}
  *
  * @param direction
  */
-void ServoNode::writeDirectionToI2C(
-    const std_msgs::msg::UInt8::SharedPtr direction)
+void ServoNode::writeToI2c(const std_msgs::msg::UInt8::SharedPtr direction)
 {
-    // create the request
-    bus_msgs::srv::I2cService::Request::SharedPtr request =
-        std::make_shared<bus_msgs::srv::I2cService::Request>();
-    ;
 
-    // populate it with the right data
-    request->set__device_address(SERVO_ADRESS);
-    request->write_data.push_back(direction->data);
+    if (direction->data > 180)
+    {
+        RCLCPP_ERROR(this->get_logger(),
+                     "writing direction: invalid direction %d",
+                     direction->data);
+        return;
+    }
 
-    // send it to the i2c interface via the client
-    auto response = i2c_client_->async_send_request(
-        request,
-        std::bind(&ServoNode::handleI2CResponse, this, std::placeholders::_1));
+    // Map the angle (0 to 180) to a pulse width (750 us = 0 degres to 2250 us =
+    // 180).
+    int pulseWidth = MIN_PW + (direction->data * (MAX_PW - MIN_PW)) / 180;
+    // Calculate the on time and off time in microseconds
+    int onTime = pulseWidth; // on time is the pulse width
+    int offTime =
+        20000 - onTime; // off time is the rest of the period (20 ms 0 20000 us)
+
+    // Pass the calculated on/off times to setPWM
+    this->setPWM(DEFAULT_CHANNEL, onTime, offTime);
 }
 
 /**
@@ -63,7 +65,7 @@ void ServoNode::writeDirectionToI2C(
  *
  * @param response
  */
-void ServoNode::handleI2CResponse(
+void ServoNode::asyncI2CResponse(
     rclcpp::Client<bus_msgs::srv::I2cService>::SharedFuture response)
 {
     if (response.get()->success)
@@ -98,7 +100,7 @@ int ServoNode::setRegister_(uint8_t reg, uint8_t value)
 
     i2c_client_->async_send_request(
         request,
-        std::bind(&ServoNode::handleI2CResponse, this, std::placeholders::_1));
+        std::bind(&ServoNode::asyncI2CResponse, this, std::placeholders::_1));
 
     return EXIT_SUCCESS;
 }

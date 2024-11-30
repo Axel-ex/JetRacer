@@ -15,8 +15,8 @@ OledDisplayNode::OledDisplayNode() : rclcpp::Node("oled_display")
         "display", 10,
         std::bind(&OledDisplayNode::writeToI2c, this, std::placeholders::_1));
 
-    while (!i2c_client_->wait_for_service(500ms))
-        continue;
+    while (!i2c_client_->wait_for_service(2s))
+        RCLCPP_INFO(this->get_logger(), "Waiting for i2c service to start");
 
     if (initDisplay() != EXIT_SUCCESS || setDefaultConfig() != EXIT_SUCCESS)
         return;
@@ -26,17 +26,23 @@ OledDisplayNode::OledDisplayNode() : rclcpp::Node("oled_display")
 
 OledDisplayNode::~OledDisplayNode() {}
 
+/**
+ * @brief request to the i2c service a write operation upon receiving a message
+ * in the display_topic
+ *
+ * @param msg
+ */
 void OledDisplayNode::writeToI2c(const std_msgs::msg::String::SharedPtr msg)
 {
-    current_line++;
-    if (current_line == 4)
+    current_page++;
+    if (current_page == 4)
     {
-        current_line = 0;
+        current_page = 0;
         if (clearScreen())
             return;
     }
 
-    if (setCursor(2, current_line))
+    if (setCursor(2, current_page))
         return;
     if (writeString(SSD1306_FONT_NORMAL, msg->data))
         return;
@@ -44,7 +50,9 @@ void OledDisplayNode::writeToI2c(const std_msgs::msg::String::SharedPtr msg)
 
 /**
  * @brief wait for the response of the i2c service by blocking since the
- * sequence of writes to the screen is important.
+ * sequence of writes to the screen is important. this function can not be
+ * called in a call back since its blocking. If so rclcpp runtime throw an
+ * exception
  *
  * @param future
  * @param operation
@@ -54,7 +62,8 @@ int OledDisplayNode::waitForResponse(
     rclcpp::Client<bus_msgs::srv::I2cService>::SharedFuture future,
     const std::string& operation)
 {
-    // Wait for the future to be ready or timeout
+    // TODO: try while !future.valid()
+    //  Wait for the future to be ready or timeout
     auto status = rclcpp::spin_until_future_complete(
         this->get_node_base_interface(), future);
     RCLCPP_DEBUG(this->get_logger(), "status: %d", static_cast<int>(status));
@@ -78,13 +87,14 @@ int OledDisplayNode::waitForResponse(
         return EXIT_FAILURE;
     }
 }
+
 // DISPLAY INTERFACE
 // When requesting to the i2c interface, we either block until receiving a
 // response (for critical operation like init the display) or we can handle the
 // response asynchronously to avoid blocking the thread.
 
 /**
- * @brief try to read and write
+ * @brief try to read and write dummy bytes to the display.
  *
  * @return
  */
@@ -115,7 +125,7 @@ int OledDisplayNode::initDisplay()
                : EXIT_FAILURE;
 }
 
-void OledDisplayNode::handleAsyncResponse(
+void OledDisplayNode::asyncI2cResponse(
     rclcpp::Client<bus_msgs::srv::I2cService>::SharedFuture future)
 {
     auto response = future.get();
@@ -200,7 +210,7 @@ int OledDisplayNode::setCursor(uint8_t x, uint8_t y)
     request->write_data.push_back(SSD1306_COMM_HIGH_COLUMN | ((x >> 4) & 0x0f));
 
     i2c_client_->async_send_request(
-        request, std::bind(&OledDisplayNode::handleAsyncResponse, this,
+        request, std::bind(&OledDisplayNode::asyncI2cResponse, this,
                            std::placeholders::_1));
     return EXIT_SUCCESS;
 }
@@ -224,7 +234,7 @@ int OledDisplayNode::clearRow(uint8_t row)
         request->write_data.push_back(0x00);
 
     i2c_client_->async_send_request(
-        request, std::bind(&OledDisplayNode::handleAsyncResponse, this,
+        request, std::bind(&OledDisplayNode::asyncI2cResponse, this,
                            std::placeholders::_1));
     return EXIT_SUCCESS;
 }
@@ -278,7 +288,7 @@ int OledDisplayNode::writeString(uint8_t size, const std::string& msg)
     }
 
     i2c_client_->async_send_request(
-        request, std::bind(&OledDisplayNode::handleAsyncResponse, this,
+        request, std::bind(&OledDisplayNode::asyncI2cResponse, this,
                            std::placeholders::_1));
     return EXIT_SUCCESS;
 }

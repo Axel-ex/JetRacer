@@ -20,9 +20,9 @@ class OledDisplayNode : public rclcpp::Node
         int waitForResponse(
             rclcpp::Client<bus_msgs::srv::I2cService>::SharedFuture future,
             const std::string& operation);
-        void handleAsyncResponse(
+        void asyncI2cResponse(
             rclcpp::Client<bus_msgs::srv::I2cService>::SharedFuture future);
-        int current_line = -1;
+        int current_page = -1;
 
         // display interface
         int initDisplay();
