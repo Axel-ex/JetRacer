@@ -20,6 +20,7 @@ OledDisplayNode::OledDisplayNode() : rclcpp::Node("oled_display")
 
     if (initDisplay() != EXIT_SUCCESS || setDefaultConfig() != EXIT_SUCCESS)
         return;
+    clearScreen();
     RCLCPP_INFO(this->get_logger(), "Starting oled display");
 }
 
@@ -108,16 +109,16 @@ int OledDisplayNode::initDisplay()
                : EXIT_FAILURE;
 }
 
-// void OledDisplayNode::handleAsyncResponse(
-//     rclcpp::Client<bus_msgs::srv::I2cService>::SharedFuture future)
-// {
-//     auto response = future.get();
-//     if (!response->success)
-//         RCLCPP_ERROR(this->get_logger(), "FAILURE: %s",
-//                      response->message.c_str());
-//     else
-//         RCLCPP_DEBUG(this->get_logger(), "SUCCESS");
-// }
+void OledDisplayNode::handleAsyncResponse(
+    rclcpp::Client<bus_msgs::srv::I2cService>::SharedFuture future)
+{
+    auto response = future.get();
+    if (!response->success)
+        RCLCPP_ERROR(this->get_logger(), "FAILURE: %s",
+                     response->message.c_str());
+    else
+        RCLCPP_DEBUG(this->get_logger(), "SUCCESS");
+}
 
 int OledDisplayNode::onOffDisplay(uint8_t onoff)
 {
@@ -192,8 +193,10 @@ int OledDisplayNode::setCursor(uint8_t x, uint8_t y)
     request->write_data.push_back(SSD1306_COMM_LOW_COLUMN | (x & 0x0f));
     request->write_data.push_back(SSD1306_COMM_HIGH_COLUMN | ((x >> 4) & 0x0f));
 
-    auto future = i2c_client_->async_send_request(request).future.share();
-    return waitForResponse(future, "set cursor");
+    i2c_client_->async_send_request(
+        request, std::bind(&OledDisplayNode::handleAsyncResponse, this,
+                           std::placeholders::_1));
+    return EXIT_SUCCESS;
 }
 
 int OledDisplayNode::clearRow(uint8_t row)
@@ -214,8 +217,10 @@ int OledDisplayNode::clearRow(uint8_t row)
     for (uint8_t i = 0; i < SSD1306_WIDTH; i++)
         request->write_data.push_back(0x00);
 
-    auto future = i2c_client_->async_send_request(request).future.share();
-    return waitForResponse(future, "clear row");
+    i2c_client_->async_send_request(
+        request, std::bind(&OledDisplayNode::handleAsyncResponse, this,
+                           std::placeholders::_1));
+    return EXIT_SUCCESS;
 }
 
 int OledDisplayNode::clearScreen()
@@ -266,6 +271,8 @@ int OledDisplayNode::writeString(uint8_t size, const std::string& msg)
             request->write_data.push_back(0x00);
     }
 
-    auto future = i2c_client_->async_send_request(request).future.share();
-    return waitForResponse(future, "write string");
+    i2c_client_->async_send_request(
+        request, std::bind(&OledDisplayNode::handleAsyncResponse, this,
+                           std::placeholders::_1));
+    return EXIT_SUCCESS;
 }
