@@ -5,6 +5,7 @@ project(oled_display)
 set(exec_name ${PROJECT_NAME}_node)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_CXX_FLAGS "-g")
 
 # Include directories for the ssd1306 and linux_i2c sources
 include_directories(

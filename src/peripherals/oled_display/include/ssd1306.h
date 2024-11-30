@@ -1,7 +1,7 @@
 #ifndef __SSD1306_H__
 #define __SSD1306_H__
 
-#define SSD1306_I2C_ADDR 0x8
+#define SSD1306_I2C_ADDR 0x3c
 #define SSD1306_SCREEN_RATIO 0x80
 #define SSD1306_HEIGHT 32
 #define SSD1306_WIDTH 128

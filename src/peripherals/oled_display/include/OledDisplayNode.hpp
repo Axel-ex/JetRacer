@@ -20,14 +20,15 @@ class OledDisplayNode : public rclcpp::Node
         int waitForResponse(
             rclcpp::Client<bus_msgs::srv::I2cService>::SharedFuture future,
             const std::string& operation);
+        void handleAsyncResponse(
+            rclcpp::Client<bus_msgs::srv::I2cService>::SharedFuture future);
 
         // display interface
         int initDisplay();
         int setDefaultConfig();
-        int onOffDisplay();
-
-        // TODO: int setXY(uint8_t x, uint8_t y);
-        // int writeString(uint8_t size, const std::string &msg);
-        // int clearRow(uint8_t row);
-        // int clearScreen();
+        int onOffDisplay(uint8_t onoff);
+        int setCursor(uint8_t x, uint8_t y);
+        int clearRow(uint8_t row);
+        int clearScreen();
+        int writeString(uint8_t size, const std::string& msg);
 };
