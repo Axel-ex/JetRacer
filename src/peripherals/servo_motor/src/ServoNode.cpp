@@ -20,7 +20,7 @@ ServoNode::ServoNode() : Node("servo_node")
     while (!i2c_client_->wait_for_service(2s))
         RCLCPP_INFO(this->get_logger(), "Waiting for i2c interface to start");
 
-    if (init_() != EXIT_SUCCESS)
+    if (this->init_() != EXIT_SUCCESS)
     {
         RCLCPP_ERROR(this->get_logger(), "Fail initiating servo motor");
         return;
@@ -32,11 +32,31 @@ ServoNode::ServoNode() : Node("servo_node")
 ServoNode::~ServoNode() {}
 
 /**
- * @brief request to the i2c service a write operation upon receiving a message
- * in the direction topic
+ * @brief Handles incoming direction messages and maps the angle to a PWM pulse
+ * width, then sends the calculated duty cycle to the I2C service.
  *
- * @param direction
+ * This function subscribes to a topic providing direction as an angle (0 to 180
+ * degrees). It validates the input and calculates the corresponding pulse width
+ * for a servo motor, where:
+ * - 0 degrees corresponds to 750 microseconds (us) pulse width.
+ * - 180 degrees corresponds to 2250 microseconds (us) pulse width.
+ *
+ * The pulse width is linearly interpolated using the formula:
+ * pulseWidth = MIN_PW + (angle * (MAX_PW - MIN_PW)) / 180
+ *
+ * The pulse width determines the "on" time in microseconds, while the remaining
+ * period up to 20ms (20000us) determines the "off" time:
+ * - onTime = pulseWidth
+ * - offTime = 20000 - onTime
+ *
+ * For example:
+ * - For 0 degrees: onTime = 750, offTime = 19250.
+ * - For 180 degrees: onTime = 2250, offTime = 17750.
+ *
+ * @param direction Shared pointer to the incoming UInt8 message containing the
+ * angle.
  */
+
 void ServoNode::writeToI2c(const std_msgs::msg::UInt8::SharedPtr direction)
 {
 
@@ -48,15 +68,13 @@ void ServoNode::writeToI2c(const std_msgs::msg::UInt8::SharedPtr direction)
         return;
     }
 
-    // Map the angle (0 to 180) to a pulse width (750 us = 0 degres to 2250 us =
-    // 180).
+    // Map the angle (0 to 180) to a pulse width (750 us to 2250).
     int pulseWidth = MIN_PW + (direction->data * (MAX_PW - MIN_PW)) / 180;
-    // Calculate the on time and off time in microseconds
-    int onTime = pulseWidth; // on time is the pulse width
-    int offTime =
-        20000 - onTime; // off time is the rest of the period (20 ms 0 20000 us)
 
-    // Pass the calculated on/off times to setPWM
+    // Calculate the on time and off time in microseconds
+    int onTime = pulseWidth;
+    int offTime = 20000 - onTime;
+
     this->setPWM(DEFAULT_CHANNEL, onTime, offTime);
 }
 
@@ -77,7 +95,7 @@ void ServoNode::asyncI2CResponse(
 
 // Init PCA9685
 /**
- * @brief init the pCA9685 by writing to the write register (see
+ * @brief init the pCA9685 by writing to the right register (see
  * https://github.com/mincrmatt12/PCA9685/blob/master/src/PCA9685.cpp)
  *
  * @return
@@ -106,12 +124,23 @@ int ServoNode::setRegister_(uint8_t reg, uint8_t value)
 }
 
 /**
- * @brief set
+ * @brief Sets the duty cycle for a specified PWM channel on the PCA9685.
  *
- * @param channel to control
- * @param on
- * @param off
- * @return
+ * The PCA9685 uses a 12-bit resolution (0-4095) to encode the duty cycle.
+ * The "on" and "off" parameters specify the start and end of the PWM signal
+ * within this 12-bit range. For example:
+ * - on = 0, off = 2048 sets a 50% duty cycle:
+ *   duty cycle (%) = ((off - on) / 4096) * 100 = 50%
+ *
+ * Since the 12-bit values must be written across two 8-bit registers,
+ * the values are split into:
+ * - Low byte (first 8 bits)
+ * - High byte (last 4 bits)
+ *
+ * @param channel The PWM channel to control (0-15).
+ * @param on The 12-bit start time of the signal (0-4095).
+ * @param off The 12-bit end time of the signal (0-4095).
+ * @return EXIT_SUCCESS on success, EXIT_FAILURE on invalid input.
  */
 int ServoNode::setPWM(int channel, int on, int off)
 {
