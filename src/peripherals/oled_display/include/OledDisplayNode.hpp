@@ -1,7 +1,7 @@
 #pragma once
 
-#include <bus_msgs/srv/i2c_service.hpp>
 #include <cstdint>
+#include <custom_msgs/srv/i2c_service.hpp>
 #include <rclcpp/rclcpp.hpp>
 #include <std_msgs/msg/string.hpp>
 
@@ -12,16 +12,16 @@ class OledDisplayNode : public rclcpp::Node
         ~OledDisplayNode();
 
     private:
-        rclcpp::Client<bus_msgs::srv::I2cService>::SharedPtr i2c_client_;
+        rclcpp::Client<custom_msgs::srv::I2cService>::SharedPtr i2c_client_;
         rclcpp::Subscription<std_msgs::msg::String>::SharedPtr
             display_subscriber_;
 
         void writeToI2c(const std_msgs::msg::String::SharedPtr msg);
         int waitForResponse(
-            rclcpp::Client<bus_msgs::srv::I2cService>::SharedFuture future,
+            rclcpp::Client<custom_msgs::srv::I2cService>::SharedFuture future,
             const std::string& operation);
         void asyncI2cResponse(
-            rclcpp::Client<bus_msgs::srv::I2cService>::SharedFuture future);
+            rclcpp::Client<custom_msgs::srv::I2cService>::SharedFuture future);
         int current_page = -1;
 
         // display interface

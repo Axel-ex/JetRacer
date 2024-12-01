@@ -9,10 +9,11 @@ OledDisplayNode::OledDisplayNode() : rclcpp::Node("oled_display")
     this->get_logger().set_level(rclcpp::Logger::Level::Debug);
     // Create a mutually exclusive callback group for I2C client handling
 
-    i2c_client_ = this->create_client<bus_msgs::srv::I2cService>("i2c_service");
+    i2c_client_ =
+        this->create_client<custom_msgs::srv::I2cService>("i2c_service");
 
     display_subscriber_ = this->create_subscription<std_msgs::msg::String>(
-        "display", 10,
+        "cmd_display", 10,
         std::bind(&OledDisplayNode::writeToI2c, this, std::placeholders::_1));
 
     while (!i2c_client_->wait_for_service(2s))
@@ -59,7 +60,7 @@ void OledDisplayNode::writeToI2c(const std_msgs::msg::String::SharedPtr msg)
  * @return
  */
 int OledDisplayNode::waitForResponse(
-    rclcpp::Client<bus_msgs::srv::I2cService>::SharedFuture future,
+    rclcpp::Client<custom_msgs::srv::I2cService>::SharedFuture future,
     const std::string& operation)
 {
     // TODO: try while !future.valid()
@@ -93,15 +94,17 @@ int OledDisplayNode::waitForResponse(
 // response (for critical operation like init the display) or we can handle the
 // response asynchronously to avoid blocking the thread.
 
-/**
+/*custom_msgs
  * @brief try to read and write dummy bytes to the display.
  *
  * @return
  */
 int OledDisplayNode::initDisplay()
 {
-    auto write_request = std::make_shared<bus_msgs::srv::I2cService::Request>();
-    auto read_request = std::make_shared<bus_msgs::srv::I2cService::Request>();
+    auto write_request =
+        std::make_shared<custom_msgs::srv::I2cService::Request>();
+    auto read_request =
+        std::make_shared<custom_msgs::srv::I2cService::Request>();
 
     write_request->set__read_request(false);
     write_request->set__device_address(SSD1306_I2C_ADDR);
@@ -126,7 +129,7 @@ int OledDisplayNode::initDisplay()
 }
 
 void OledDisplayNode::asyncI2cResponse(
-    rclcpp::Client<bus_msgs::srv::I2cService>::SharedFuture future)
+    rclcpp::Client<custom_msgs::srv::I2cService>::SharedFuture future)
 {
     auto response = future.get();
     if (!response->success)
@@ -138,7 +141,7 @@ void OledDisplayNode::asyncI2cResponse(
 
 int OledDisplayNode::onOffDisplay(uint8_t onoff)
 {
-    auto request = std::make_shared<bus_msgs::srv::I2cService::Request>();
+    auto request = std::make_shared<custom_msgs::srv::I2cService::Request>();
 
     request->set__read_request(false);
     request->set__device_address(SSD1306_I2C_ADDR);
@@ -154,7 +157,7 @@ int OledDisplayNode::onOffDisplay(uint8_t onoff)
 
 int OledDisplayNode::setDefaultConfig()
 {
-    auto request = std::make_shared<bus_msgs::srv::I2cService::Request>();
+    auto request = std::make_shared<custom_msgs::srv::I2cService::Request>();
 
     request->set__read_request(false);
     request->set__device_address(SSD1306_I2C_ADDR);
@@ -200,7 +203,7 @@ int OledDisplayNode::setCursor(uint8_t x, uint8_t y)
         return EXIT_FAILURE;
     }
 
-    auto request = std::make_shared<bus_msgs::srv::I2cService::Request>();
+    auto request = std::make_shared<custom_msgs::srv::I2cService::Request>();
 
     request->set__read_request(false);
     request->set__device_address(SSD1306_I2C_ADDR);
@@ -223,7 +226,7 @@ int OledDisplayNode::clearRow(uint8_t row)
         return EXIT_FAILURE;
     }
 
-    auto request = std::make_shared<bus_msgs::srv::I2cService::Request>();
+    auto request = std::make_shared<custom_msgs::srv::I2cService::Request>();
 
     setCursor(0, row);
     request->set__read_request(false);
@@ -262,33 +265,32 @@ int OledDisplayNode::writeString(uint8_t size, const std::string& msg)
     {
         font_table = (uint8_t*)font8x8;
         font_table_width = 8;
+
+        auto request =
+            std::make_shared<custom_msgs::srv::I2cService::Request>();
+
+        request->set__read_request(false);
+        request->set__device_address(SSD1306_I2C_ADDR);
+        request->write_data.push_back(SSD1306_DATA_CONTROL_BYTE);
+
+        // font table range in ascii table is from 0x20(space) to 0x7e(~)
+        for (char c : msg)
+        {
+            if (c < ' ' || c > '~')
+                return EXIT_FAILURE;
+
+            uint8_t* font_ptr = &font_table[(c - 0x20) * font_table_width];
+            uint8_t j = 0;
+            for (j = 0; j < font_table_width; j++)
+                request->write_data.push_back(font_ptr[j]);
+
+            if (size == SSD1306_FONT_SMALL)
+                request->write_data.push_back(0x00);
+        }
+
+        i2c_client_->async_send_request(
+            request, std::bind(&OledDisplayNode::asyncI2cResponse, this,
+                               std::placeholders::_1));
     }
-    else
-        return EXIT_FAILURE;
-
-    auto request = std::make_shared<bus_msgs::srv::I2cService::Request>();
-
-    request->set__read_request(false);
-    request->set__device_address(SSD1306_I2C_ADDR);
-    request->write_data.push_back(SSD1306_DATA_CONTROL_BYTE);
-
-    // font table range in ascii table is from 0x20(space) to 0x7e(~)
-    for (char c : msg)
-    {
-        if (c < ' ' || c > '~')
-            return EXIT_FAILURE;
-
-        uint8_t* font_ptr = &font_table[(c - 0x20) * font_table_width];
-        uint8_t j = 0;
-        for (j = 0; j < font_table_width; j++)
-            request->write_data.push_back(font_ptr[j]);
-
-        if (size == SSD1306_FONT_SMALL)
-            request->write_data.push_back(0x00);
-    }
-
-    i2c_client_->async_send_request(
-        request, std::bind(&OledDisplayNode::asyncI2cResponse, this,
-                           std::placeholders::_1));
     return EXIT_SUCCESS;
 }

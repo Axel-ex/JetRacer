@@ -8,8 +8,8 @@ SpeedSensorNode::SpeedSensorNode() : rclcpp::Node("speed_sensor")
     raw_can_subscriber_ = this->create_subscription<bus_msgs::msg::CanFrame>(
         "raw_can", 10,
         std::bind(&SpeedSensorNode::writeSpeed, this, std::placeholders::_1));
-    speed_publisher_ =
-        this->create_publisher<std_msgs::msg::UInt8>("speed_sensor", 10);
+    speed_publisher_ = this->create_publisher<std_msgs::msg::UInt8>(
+        "speed_sensor_readings", 10);
 
     RCLCPP_INFO(this->get_logger(), "Starting speed sensor node");
 }

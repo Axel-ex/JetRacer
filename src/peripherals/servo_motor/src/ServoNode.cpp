@@ -1,5 +1,5 @@
 #include "ServoNode.hpp"
-#include "bus_msgs/srv/i2c_service.hpp"
+#include "custom_msgs/srv/i2c_service.hpp"
 #include "std_msgs/msg/u_int8.hpp"
 #include <functional>
 #include <rclcpp/client.hpp>
@@ -12,9 +12,10 @@ ServoNode::ServoNode() : Node("servo_node")
 {
     this->get_logger().set_level(rclcpp::Logger::Level::Debug);
 
-    i2c_client_ = this->create_client<bus_msgs::srv::I2cService>("i2c_service");
+    i2c_client_ =
+        this->create_client<custom_msgs::srv::I2cService>("i2c_service");
     direction_subscriber_ = this->create_subscription<std_msgs::msg::UInt8>(
-        "direction", 10,
+        "cmd_direction", 10,
         std::bind(&ServoNode::writeToI2c, this, std::placeholders::_1));
 
     while (!i2c_client_->wait_for_service(2s))
@@ -84,7 +85,7 @@ void ServoNode::writeToI2c(const std_msgs::msg::UInt8::SharedPtr direction)
  * @param response
  */
 void ServoNode::asyncI2CResponse(
-    rclcpp::Client<bus_msgs::srv::I2cService>::SharedFuture response)
+    rclcpp::Client<custom_msgs::srv::I2cService>::SharedFuture response)
 {
     if (response.get()->success)
         RCLCPP_DEBUG(this->get_logger(), "SUCCESS");
@@ -109,7 +110,7 @@ int ServoNode::init_()
 
 int ServoNode::setRegister_(uint8_t reg, uint8_t value)
 {
-    auto request = std::make_shared<bus_msgs::srv::I2cService::Request>();
+    auto request = std::make_shared<custom_msgs::srv::I2cService::Request>();
 
     request->set__read_request(false);
     request->set__device_address(SERVO_ADRESS);

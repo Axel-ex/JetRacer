@@ -1,8 +1,8 @@
 #pragma once
 
-#include "bus_msgs/srv/i2c_service.hpp"
+#include "custom_msgs/srv/i2c_service.hpp"
 #include "std_msgs/msg/u_int8.hpp"
-#include <bus_msgs/srv/i2c_service.hpp>
+#include <custom_msgs/srv/i2c_service.hpp>
 #include <rclcpp/client.hpp>
 #include <rclcpp/rclcpp.hpp>
 #include <rclcpp/subscription.hpp>
@@ -25,12 +25,13 @@ class ServoNode : public rclcpp::Node
         ~ServoNode();
 
     private:
-        rclcpp::Client<bus_msgs::srv::I2cService>::SharedPtr i2c_client_;
+        rclcpp::Client<custom_msgs::srv::I2cService>::SharedPtr i2c_client_;
         rclcpp::Subscription<std_msgs::msg::UInt8>::SharedPtr
             direction_subscriber_;
 
         void asyncI2CResponse(
-            rclcpp::Client<bus_msgs::srv::I2cService>::SharedFuture response);
+            rclcpp::Client<custom_msgs::srv::I2cService>::SharedFuture
+                response);
         void writeToI2c(const std_msgs::msg::UInt8::SharedPtr direction);
 
         int init_();
