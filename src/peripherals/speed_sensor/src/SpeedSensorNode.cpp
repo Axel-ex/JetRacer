@@ -5,7 +5,7 @@
 
 SpeedSensorNode::SpeedSensorNode() : rclcpp::Node("speed_sensor")
 {
-    raw_can_subscriber_ = this->create_subscription<bus_msgs::msg::CanFrame>(
+    raw_can_subscriber_ = this->create_subscription<custom_msgs::msg::CanFrame>(
         "raw_can", 10,
         std::bind(&SpeedSensorNode::writeSpeed, this, std::placeholders::_1));
     speed_publisher_ = this->create_publisher<std_msgs::msg::UInt8>(
@@ -23,7 +23,7 @@ SpeedSensorNode::~SpeedSensorNode() {}
  * @param can_frame
  */
 void SpeedSensorNode::writeSpeed(
-    const bus_msgs::msg::CanFrame::SharedPtr can_frame)
+    const custom_msgs::msg::CanFrame::SharedPtr can_frame)
 {
     std_msgs::msg::UInt8 speed_msg;
 

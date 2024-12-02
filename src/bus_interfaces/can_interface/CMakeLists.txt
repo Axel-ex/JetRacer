@@ -22,7 +22,7 @@ include_directories(
 # Find dependencies and custom message
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(bus_msgs REQUIRED)
+find_package(custom_msgs REQUIRED)
 
 # Fetch external library for CAN driver
 include(FetchContent)
@@ -35,7 +35,7 @@ FetchContent_MakeAvailable(sockcanpp)
 
 # Add the executable
 add_executable(${exec_name} ${srcs})
-ament_target_dependencies(${exec_name} rclcpp bus_msgs)
+ament_target_dependencies(${exec_name} rclcpp custom_msgs)
 
 # Link external libraries
 target_link_libraries(${exec_name} sockcanpp)

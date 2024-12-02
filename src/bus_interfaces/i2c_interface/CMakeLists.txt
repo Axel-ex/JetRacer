@@ -22,11 +22,11 @@ include_directories(
 # Find dependencies and custom message
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
-find_package(bus_msgs REQUIRED)
+find_package(custom_msgs REQUIRED)
 
 # Add the executable
 add_executable(${exec_name} ${srcs})
-ament_target_dependencies(${exec_name} rclcpp bus_msgs)
+ament_target_dependencies(${exec_name} rclcpp custom_msgs)
 
 # Install target
 install(TARGETS ${exec_name} DESTINATION lib/${PROJECT_NAME})

@@ -1,5 +1,5 @@
 #include "I2cInterface.hpp"
-#include "bus_msgs/srv/i2c_service.hpp"
+#include "custom_msgs/srv/i2c_service.hpp"
 #include <fcntl.h>
 #include <linux/i2c-dev.h>
 #include <string>
@@ -10,7 +10,7 @@ I2cInterface::I2cInterface() : Node("i2c_interface")
 {
     this->get_logger().set_level(rclcpp::Logger::Level::Debug);
     init_();
-    i2c_service_ = this->create_service<bus_msgs::srv::I2cService>(
+    i2c_service_ = this->create_service<custom_msgs::srv::I2cService>(
         "i2c_service", std::bind(&I2cInterface::handleI2cRequest, this,
                                  std::placeholders::_1, std::placeholders::_2));
     RCLCPP_INFO(this->get_logger(), "Starting i2c interface");
@@ -103,8 +103,8 @@ std::vector<uint8_t> I2cInterface::read_(size_t length)
 /**
  * @brief function beeing called upon a request to the i2c service. the struct
  * of the i2c service allows writting and reading operation. To see the service
- * definition do "ros2 interface show bus_msgs/srv/I2cService" or see
- * JetRacer/src/bus_interfaces/bus_msgs/srv/I2cService.
+ * definition do "ros2 interface show custom_msgs/srv/I2cService" or see
+ * JetRacer/src/bus_interfaces/custom_msgs/srv/I2cService.
  *
  * this node essentially write to the bus using the information passed in the
  * request and construct an appropriated response
@@ -113,8 +113,8 @@ std::vector<uint8_t> I2cInterface::read_(size_t length)
  * @param response
  */
 void I2cInterface::handleI2cRequest(
-    const std::shared_ptr<bus_msgs::srv::I2cService::Request> request,
-    std::shared_ptr<bus_msgs::srv::I2cService::Response> response)
+    const std::shared_ptr<custom_msgs::srv::I2cService::Request> request,
+    std::shared_ptr<custom_msgs::srv::I2cService::Response> response)
 {
     response->set__success(true);
 

@@ -1,8 +1,8 @@
 #pragma once
 
-#include "bus_msgs/msg/can_frame.hpp"
+#include "custom_msgs/msg/can_frame.hpp"
 #include "std_msgs/msg/u_int8.hpp"
-#include <bus_msgs/srv/i2c_service.hpp>
+#include <custom_msgs/srv/i2c_service.hpp>
 #include <rclcpp/client.hpp>
 #include <rclcpp/publisher.hpp>
 #include <rclcpp/rclcpp.hpp>
@@ -18,9 +18,9 @@ class SpeedSensorNode : public rclcpp::Node
         ~SpeedSensorNode();
 
     private:
-        rclcpp::Subscription<bus_msgs::msg::CanFrame>::SharedPtr
+        rclcpp::Subscription<custom_msgs::msg::CanFrame>::SharedPtr
             raw_can_subscriber_;
         rclcpp::Publisher<std_msgs::msg::UInt8>::SharedPtr speed_publisher_;
 
-        void writeSpeed(const bus_msgs::msg::CanFrame::SharedPtr can_frame);
+        void writeSpeed(const custom_msgs::msg::CanFrame::SharedPtr can_frame);
 };
