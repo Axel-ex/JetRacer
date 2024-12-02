@@ -6,9 +6,6 @@ using namespace std::chrono_literals;
 
 OledDisplayNode::OledDisplayNode() : rclcpp::Node("oled_display")
 {
-    this->get_logger().set_level(rclcpp::Logger::Level::Debug);
-    // Create a mutually exclusive callback group for I2C client handling
-
     i2c_client_ =
         this->create_client<custom_msgs::srv::I2cService>("i2c_service");
 

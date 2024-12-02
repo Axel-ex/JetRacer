@@ -10,8 +10,6 @@ using namespace std::chrono_literals;
 
 ServoNode::ServoNode() : Node("servo_node")
 {
-    this->get_logger().set_level(rclcpp::Logger::Level::Debug);
-
     i2c_client_ =
         this->create_client<custom_msgs::srv::I2cService>("i2c_service");
     direction_subscriber_ = this->create_subscription<std_msgs::msg::UInt8>(

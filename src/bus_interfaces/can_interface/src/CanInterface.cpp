@@ -12,8 +12,6 @@ using sockcanpp::CanMessage;
 
 CanInterface::CanInterface() : Node("can_interface")
 {
-    this->get_logger().set_level(rclcpp::Logger::Level::Debug);
-
     can_driver_ = std::make_shared<CanDriver>("can0", CAN_RAW);
     publisher_ =
         this->create_publisher<custom_msgs::msg::CanFrame>("raw_CAN", 10);

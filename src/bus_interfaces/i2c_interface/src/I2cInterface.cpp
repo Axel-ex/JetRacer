@@ -8,7 +8,6 @@
 
 I2cInterface::I2cInterface() : Node("i2c_interface")
 {
-    this->get_logger().set_level(rclcpp::Logger::Level::Debug);
     init_();
     i2c_service_ = this->create_service<custom_msgs::srv::I2cService>(
         "i2c_service", std::bind(&I2cInterface::handleI2cRequest, this,
