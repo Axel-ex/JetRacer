@@ -102,4 +102,3 @@ To build the JetRacer project, follow these steps:
     ```
 
 This will compile the source code and set up the appropriate environment for running the nodes.
-
