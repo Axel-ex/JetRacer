@@ -125,7 +125,7 @@ int OledDisplayNode::initDisplay()
     // return write_result == EXIT_SUCCESS && read_result == EXIT_SUCCESS
     //            ? EXIT_SUCCESS
     //            : EXIT_FAILURE;
-    retunr EXIT_SUCCESS;
+    return EXIT_SUCCESS;
 }
 
 void OledDisplayNode::asyncI2cResponse(
