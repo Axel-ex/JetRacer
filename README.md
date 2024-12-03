@@ -8,7 +8,6 @@ The JetRacer project is organized into a modular structure, where each package r
 - **Peripherals**: Communicate with the bus interfaces and manage device-specific logic.
 - **Head Unit**: Coordinates the peripherals and handles higher-level logic.
 
-
 ```
 JetRacer/
 ├── src/
