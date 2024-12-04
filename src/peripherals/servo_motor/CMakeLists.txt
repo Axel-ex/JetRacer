@@ -16,7 +16,9 @@ include_directories(
 # ADD source files
 set(srcs 
 	src/main.cpp
-	src/ServoNode.cpp)
+	src/ServoNode.cpp
+	src/PCA9685Driver.cpp
+)
 
 # Find dependencies
 find_package(ament_cmake REQUIRED)
