@@ -4,7 +4,12 @@
 int main(int argc, char** argv)
 {
     rclcpp::init(argc, argv);
-    rclcpp::spin(std::make_shared<I2cInterface>());
+
+    auto exec = std::make_shared<rclcpp::executors::SingleThreadedExecutor>();
+    auto i2c_node = std::make_shared<I2cInterface>();
+    exec->add_node(i2c_node);
+    exec->spin();
     rclcpp::shutdown();
+
     return 0;
 }

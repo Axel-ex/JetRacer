@@ -8,10 +8,18 @@
 
 I2cInterface::I2cInterface() : Node("i2c_interface")
 {
-    init_();
+    // Set up service with Reliable QoS
+    rclcpp::QoS qos(rclcpp::KeepLast(40));
+    qos.reliable();
+    qos.durability_volatile();
+
     i2c_service_ = this->create_service<custom_msgs::srv::I2cService>(
-        "i2c_service", std::bind(&I2cInterface::handleI2cRequest, this,
-                                 std::placeholders::_1, std::placeholders::_2));
+        "i2c_service",
+        std::bind(&I2cInterface::handleI2cRequest, this, std::placeholders::_1,
+                  std::placeholders::_2),
+        qos);
+    init_();
+
     RCLCPP_INFO(this->get_logger(), "Starting i2c interface");
 }
 
