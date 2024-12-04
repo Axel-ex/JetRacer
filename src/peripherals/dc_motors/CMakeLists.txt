@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.8)
 
-project(servo_motor)
+project(dc_motors)
 
 # Export compile command for LSP
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
@@ -11,7 +11,7 @@ set(exec_name ${PROJECT_NAME}_node)
 # Add source files
 set(srcs
     src/main.cpp
-    src/ServoNode.cpp
+	src/DcMotorsNode.cpp
 )
 
 # Find dependencies
@@ -21,6 +21,7 @@ find_package(std_msgs REQUIRED)
 find_package(pca9685_driver REQUIRED)
 find_package(custom_msgs REQUIRED)
 
+#specify the full path of where th lib should be 
 link_directories(/home/jetpack/JetRacer/install/pca9685_driver/lib)
 
 # Include directories

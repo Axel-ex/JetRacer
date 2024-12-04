@@ -17,8 +17,9 @@ class PCA9685Driver
 
         rclcpp::Client<custom_msgs::srv::I2cService>::SharedPtr getI2cClient();
         void setRegister(uint8_t reg, uint8_t value);
-        void setPWMFrequency(uint8_t freq_Hz);
+        void setPWMFrequency(float freq_Hz);
         void setPWMDutyCycle(uint8_t channel, uint16_t on, uint16_t off);
+        void setGPIO(uint8_t channel, bool on);
 
         void handleI2cResponse(
             rclcpp::Client<custom_msgs::srv::I2cService>::SharedFuture

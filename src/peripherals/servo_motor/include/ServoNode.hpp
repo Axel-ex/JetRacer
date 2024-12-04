@@ -2,7 +2,6 @@
 
 #include "PCA9685Driver.hpp"
 #include "std_msgs/msg/u_int8.hpp"
-#include <custom_msgs/srv/i2c_service.hpp>
 #include <rclcpp/client.hpp>
 #include <rclcpp/rclcpp.hpp>
 #include <rclcpp/subscription.hpp>
@@ -10,7 +9,7 @@
 
 #define MIN_COUNT 102
 #define MAX_COUNT 510
-#define SERVO_ADRESS 0x40
+#define PCA_SERVO_ADDRESS 0x40
 
 class ServoNode : public rclcpp::Node
 {

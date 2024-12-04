@@ -50,7 +50,7 @@ void PCA9685Driver::handleI2cResponse(
                      response.get()->message.c_str());
 }
 
-void PCA9685Driver::setPWMFrequency(uint8_t freq_Hz)
+void PCA9685Driver::setPWMFrequency(float freq_Hz)
 {
     uint8_t prescale =
         static_cast<uint8_t>((25000000.0 / (4096 * freq_Hz)) - 1.0);
@@ -98,4 +98,18 @@ void PCA9685Driver::setPWMDutyCycle(uint8_t channel, uint16_t on, uint16_t off)
     setRegister((uint8_t)(CHANNEL_REGISTER + (channel * 4) + 1), highON);
     setRegister((uint8_t)(CHANNEL_REGISTER + (channel * 4) + 2), lowOFF);
     setRegister((uint8_t)(CHANNEL_REGISTER + (channel * 4) + 3), highOFF);
+}
+
+/**
+ * @brief set a gpio of the PCA9685 high or low
+ *
+ * Set ON to 0x1000 and OFF to 0x0000 to make the output HIGH.
+ * Set ON to 0x0000 and OFF to 0x1000 to make the output LOW.
+ *
+ * @param channel
+ * @param on
+ */
+void PCA9685Driver::setGPIO(uint8_t channel, bool on)
+{
+    setPWMDutyCycle(channel, on * 0x1000, !on * 0x1000);
 }
