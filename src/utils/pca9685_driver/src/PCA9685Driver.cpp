@@ -29,12 +29,6 @@ void PCA9685Driver::setRegister(uint8_t reg, uint8_t value)
                                               this, std::placeholders::_1));
 }
 
-rclcpp::Client<custom_msgs::srv::I2cService>::SharedPtr
-PCA9685Driver::getI2cClient()
-{
-    return i2c_client_;
-}
-
 /**
  * @brief handle the response from the i2c service
  *

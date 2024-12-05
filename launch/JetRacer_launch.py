@@ -29,4 +29,9 @@ def generate_launch_description():
             executable='servo_motor_node',
             name='servo_motor'
         ),
+        Node (
+            package='battery',
+            executable='battery_node',
+            name='battery'
+        ),
     ])
