@@ -1,6 +1,6 @@
 #pragma once
 
-#include "std_msgs/msg/u_int16.hpp"
+#include "std_msgs/msg/float64.hpp"
 #include <custom_msgs/srv/i2c_service.hpp>
 #include <rclcpp/rclcpp.hpp>
 
@@ -136,14 +136,14 @@ class INA219Driver
         void handleI2cWriteResponse(
             rclcpp::Client<custom_msgs::srv::I2cService>::SharedFuture
                 response);
-        void publishShuntVoltage();
+        void publishBusVoltage();
 
         void setCalibration_32V_1A();
 
     private:
         std::shared_ptr<rclcpp::Node> node_;
         rclcpp::Client<custom_msgs::srv::I2cService>::SharedPtr i2c_client_;
-        rclcpp::Publisher<std_msgs::msg::UInt16>::SharedPtr publisher_;
+        rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr publisher_;
 
         uint8_t device_address_;
         uint32_t current_divider_mA_;

@@ -13,6 +13,9 @@ PCA9685Driver::PCA9685Driver(std::shared_ptr<rclcpp::Node> node,
         RCLCPP_INFO(node->get_logger(), "Waiting for i2c service to start");
 
     setPWMFrequency(50);
+    RCLCPP_INFO(node->get_logger(),
+                "PCA9685 succefully initiated at address: 0x%02X",
+                device_address_);
 }
 
 void PCA9685Driver::setRegister(uint8_t reg, uint8_t value)

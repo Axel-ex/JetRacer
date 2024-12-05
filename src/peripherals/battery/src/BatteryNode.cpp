@@ -17,12 +17,6 @@ void BatteryNode::initINA219()
 {
     ina219_driver_ = std::make_shared<INA219Driver>(this->shared_from_this(),
                                                     INA219_ADDRESS);
-
-    RCLCPP_INFO(this->get_logger(), "Started INA219 at address: 0x%02X",
-                INA219_ADDRESS);
 }
 
-void BatteryNode::publishBatteryLevel()
-{
-    ina219_driver_->publishShuntVoltage();
-}
+void BatteryNode::publishBatteryLevel() { ina219_driver_->publishBusVoltage(); }

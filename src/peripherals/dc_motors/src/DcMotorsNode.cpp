@@ -23,8 +23,6 @@ void DcMotorsNode::initPCA9685()
     pca9685_ =
         std::make_shared<PCA9685Driver>(shared_from_this(), PCA_MOTORS_ADDRESS);
     pca9685_->setPWMFrequency(1600);
-
-    RCLCPP_INFO(this->get_logger(), "dc_motors PCA9685 initiated");
 }
 
 /**

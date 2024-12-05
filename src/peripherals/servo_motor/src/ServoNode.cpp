@@ -23,8 +23,6 @@ void ServoNode::initPCA9685()
     pca9685_ =
         std::make_shared<PCA9685Driver>(shared_from_this(), PCA_SERVO_ADDRESS);
     pca9685_->setPWMFrequency(50);
-
-    RCLCPP_INFO(this->get_logger(), "Servos PCA9685 initiated");
 }
 
 /**

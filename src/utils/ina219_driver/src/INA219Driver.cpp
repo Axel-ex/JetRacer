@@ -10,9 +10,11 @@ INA219Driver::INA219Driver(std::shared_ptr<rclcpp::Node> node,
     i2c_client_ =
         node_->create_client<custom_msgs::srv::I2cService>("i2c_service");
     publisher_ =
-        node_->create_publisher<std_msgs::msg::UInt16>("battery_readings", 10);
+        node_->create_publisher<std_msgs::msg::Float64>("battery_readings", 10);
 
-    RCLCPP_INFO(node->get_logger(), "INA219 succefully initiated");
+    RCLCPP_INFO(node->get_logger(),
+                "INA219 succefully initiated at address: 0x%02X",
+                device_address_);
 }
 
 /**
@@ -63,6 +65,7 @@ void INA219Driver::readRegister(uint8_t reg, uint8_t length,
     request->set__device_address(INA219_ADDRESS);
     request->set__read_request(true);
     request->set__read_length(length);
+    request->write_data.push_back(reg);
 
     // store the callback
     read_callbacks_[reg] = callback;
@@ -115,17 +118,27 @@ void INA219Driver::handleI2cWriteResponse(
     }
 }
 
-void INA219Driver::publishShuntVoltage()
+void INA219Driver::publishBusVoltage()
 {
-    readRegister(INA219_REG_SHUNTVOLTAGE, 2,
+    readRegister(INA219_REG_BUSVOLTAGE, 2,
                  [this](std::vector<uint8_t> data)
                  {
-                     uint16_t value = (data[0] << 8) | data[1];
-                     RCLCPP_INFO(rclcpp::get_logger("INA219"),
-                                 "Read value: 0x%04X", value);
+                     if (data.size() >= 2)
+                     {
+                         uint16_t raw_value = (data[0] << 8) | data[1];
+                         float bus_voltage =
+                             (raw_value >> 3) * 0.004; // Convert to volts
+                         RCLCPP_DEBUG(rclcpp::get_logger("INA219"),
+                                      "Bus Voltage: %.2f V", bus_voltage);
 
-                     auto msg = std_msgs::msg::UInt16();
-                     msg.set__data(value);
-                     this->publisher_->publish(msg);
+                         auto msg = std_msgs::msg::Float64();
+                         msg.set__data(bus_voltage);
+                         this->publisher_->publish(msg);
+                     }
+                     else
+                     {
+                         RCLCPP_ERROR(rclcpp::get_logger("INA219"),
+                                      "Failed to read Bus Voltage");
+                     }
                  });
 }
