@@ -1,6 +1,7 @@
 #pragma once
 
 #include <INA219Driver.hpp>
+#include <INA219def.hpp>
 #include <rclcpp/client.hpp>
 #include <rclcpp/rclcpp.hpp>
 #include <rclcpp/subscription.hpp>
