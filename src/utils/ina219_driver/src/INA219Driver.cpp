@@ -1,4 +1,5 @@
 #include "INA219Driver.hpp"
+#include "INA219def.hpp"
 
 using namespace std::chrono_literals;
 
@@ -18,8 +19,9 @@ INA219Driver::INA219Driver(std::shared_ptr<rclcpp::Node> node,
 }
 
 /**
- * @brief set callibration value according to the range of voltage expected. To
- * see more about how the value is obtained, refer to:
+ * @brief set callibration value according to the range of voltage expected.
+ *
+ * To see more about how the value is obtained, refer to:
  * https://github.com/adafruit/Adafruit_INA219/blob/master/Adafruit_INA219.cpp
  */
 void INA219Driver::setCalibration_32V_1A()
@@ -31,7 +33,7 @@ void INA219Driver::setCalibration_32V_1A()
     power_multiplier_mW_ = 0.8f;
 
     // Set calibration register
-    setRegister(INA219_REG_CALIBRATION, calibration_value_);
+    writeRegister(INA219_REG_CALIBRATION, calibration_value_);
 
     // Set Config register to take into account the settings above
     uint16_t config = INA219_CONFIG_BVOLTAGERANGE_32V |
@@ -39,10 +41,19 @@ void INA219Driver::setCalibration_32V_1A()
                       INA219_CONFIG_SADCRES_12BIT_1S_532US |
                       INA219_CONFIG_MODE_SANDBVOLT_CONTINUOUS;
 
-    setRegister(INA219_REG_CONFIG, config);
+    writeRegister(INA219_REG_CONFIG, config);
 }
 
-void INA219Driver::setRegister(uint8_t reg, uint16_t value)
+/**
+ * @brief Write a 16-bit value to a specified register.
+ *
+ * The 16-bit value is split into two 8-bit values because the I2C service
+ * processes data as arrays of bytes.
+ *
+ * @param reg Register address to write to.
+ * @param value 16-bit value to write to the register.
+ */
+void INA219Driver::writeRegister(uint8_t reg, uint16_t value)
 {
     auto request = std::make_shared<custom_msgs::srv::I2cService::Request>();
 
@@ -56,6 +67,21 @@ void INA219Driver::setRegister(uint8_t reg, uint16_t value)
         request, std::bind(&INA219Driver::handleI2cWriteResponse, this,
                            std::placeholders::_1));
 }
+
+/**
+ * @brief Read data from a specific register of the INA219.
+ *
+ * This function sends an asynchronous I2C read request to the device.
+ * The response is handled via a callback. A "callback registry" pattern
+ * is used, where callbacks associated with specific registers are stored
+ * in a map. Upon receiving the response, the corresponding callback is
+ * invoked to process the data.
+ *
+ * @param reg Register address to read from.
+ * @param length Number of bytes to read.
+ * @param callback Function to call with the retrieved data once the read
+ * operation completes.
+ */
 
 void INA219Driver::readRegister(uint8_t reg, uint8_t length,
                                 ReadCallback callback)
@@ -77,6 +103,17 @@ void INA219Driver::readRegister(uint8_t reg, uint8_t length,
         { this->handleI2cReadResponse(response, reg); });
 }
 
+/**
+ * @brief Handle the asynchronous response of a read request.
+ *
+ * This function retrieves the callback associated with the register that was
+ * read, using the callback registry. If a callback is found, it is invoked
+ * with the retrieved data and removed.
+ *
+ * @param response Future object containing the result of the I2C read request.
+ * @param reg The register address that was read, used to find the associated
+ * callback.
+ */
 void INA219Driver::handleI2cReadResponse(
     rclcpp::Client<custom_msgs::srv::I2cService>::SharedFuture response,
     uint8_t reg)
