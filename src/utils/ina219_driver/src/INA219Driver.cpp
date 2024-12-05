@@ -13,6 +13,9 @@ INA219Driver::INA219Driver(std::shared_ptr<rclcpp::Node> node,
     publisher_ =
         node_->create_publisher<std_msgs::msg::Float64>("battery_readings", 10);
 
+    while (i2c_client_->wait_for_service(2s))
+        RCLCPP_INFO(node_->get_logger(), "Waiting for i2c service to start");
+
     RCLCPP_INFO(node->get_logger(),
                 "INA219 succefully initiated at address: 0x%02X",
                 device_address_);

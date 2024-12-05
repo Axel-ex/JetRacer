@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.8)
 
-project(test_all_peripherals)
+project(display_routine)
 
 # Enable compile commands export
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
@@ -11,6 +11,7 @@ set(exec_name ${PROJECT_NAME}_node)
 # Add source files
 set(srcs
   src/main.cpp
+  src/DisplayRoutineNode
 )
 
 # Include necessary directories
@@ -32,4 +33,3 @@ install(TARGETS ${exec_name} DESTINATION lib/${PROJECT_NAME})
 
 # Export dependencies
 ament_package()
-

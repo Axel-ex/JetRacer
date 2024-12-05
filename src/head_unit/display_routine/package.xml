@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-	<name>test_all_peripherals</name>
+	<name>display_routine</name>
   <version>0.0.0</version>
   <description>test all peripheral at the same time</description>
   <maintainer email="axel.chabrerie@gmail.com">pi</maintainer>
