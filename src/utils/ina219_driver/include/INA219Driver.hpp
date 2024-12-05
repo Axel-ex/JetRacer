@@ -5,7 +5,7 @@
 #include <rclcpp/rclcpp.hpp>
 
 /** default I2C address **/
-#define INA219_ADDRESS (0x40) // 1000000 (A0+A1=GND)
+#define INA219_ADDRESS (0x41) // 1000000 (A0+A1=GND)
 /** read **/
 #define INA219_READ (0x01)
 /** config register address **/
