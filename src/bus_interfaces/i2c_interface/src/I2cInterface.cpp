@@ -57,8 +57,10 @@ int I2cInterface::setAddress_(uint8_t address)
 }
 
 /**
- * @brief write to the i2c bus. the function is designed to handle partial
- * writes
+ * @brief write to the i2c bus.
+ *
+ * the function is designed to handle partial writes and to retry writting if
+ * unsucceful
  *
  * @param data
  * @return
@@ -66,22 +68,24 @@ int I2cInterface::setAddress_(uint8_t address)
 int I2cInterface::write_(std::vector<uint8_t>& data)
 {
     size_t total_written = 0;
+    uint8_t retry = 0;
+
     while (total_written < data.size())
     {
         ssize_t bytes_written = write(i2c_fd_, data.data() + total_written,
                                       data.size() - total_written);
-        if (bytes_written < 0)
-        {
-            RCLCPP_ERROR(this->get_logger(), "Failed to write to I2C device");
+        if (bytes_written < 0 && retry >= MAX_RETRY)
             return -1;
-        }
         total_written += bytes_written;
+        retry++;
     }
     return 0;
 }
 
 /**
- * @brief Read from i2c bus. The function is designed to handle partial reads
+ * @brief Read from i2c bus.
+ *
+ * The function is designed to handle partial reads
  *
  * @param length
  * @return
@@ -93,8 +97,8 @@ std::vector<uint8_t> I2cInterface::read_(size_t length)
     ssize_t bytes_read = read(i2c_fd_, buffer.data(), length);
     if (bytes_read < 0)
     {
-        RCLCPP_ERROR(this->get_logger(), "Failed to read from I2C device");
         buffer.clear();
+        return buffer;
     }
     if (static_cast<size_t>(bytes_read) < length)
     {
@@ -108,10 +112,11 @@ std::vector<uint8_t> I2cInterface::read_(size_t length)
 }
 
 /**
- * @brief function beeing called upon a request to the i2c service. the struct
- * of the i2c service allows writting and reading operation. To see the service
- * definition do "ros2 interface show custom_msgs/srv/I2cService" or see
- * JetRacer/src/bus_interfaces/custom_msgs/srv/I2cService.
+ * @brief function beeing called upon a request to the i2c service.
+ *
+ * the struct of the i2c service allows writting and reading operation. To see
+ * the service definition do "ros2 interface show custom_msgs/srv/I2cService" or
+ * see JetRacer/src/bus_interfaces/custom_msgs/srv/I2cService.
  *
  * this node essentially write to the bus using the information passed in the
  * request and construct an appropriated response

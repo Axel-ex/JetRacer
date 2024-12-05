@@ -8,6 +8,8 @@
 #include <rclcpp/service.hpp>
 #include <vector>
 
+const uint8_t MAX_RETRY = 5;
+
 class I2cInterface : public rclcpp::Node
 {
     public:
