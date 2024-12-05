@@ -71,9 +71,6 @@ class TesterNode : public rclcpp::Node
                 direction = 0;
 
             msg.data = direction;
-            RCLCPP_INFO(this->get_logger(), "updating direction: %d",
-                        direction);
-
             direction_publisher_->publish(msg);
             direction += 10;
         }
